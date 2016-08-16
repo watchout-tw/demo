@@ -1,0 +1,734 @@
+@charset "utf-8";
+section > .container {
+	@include MQ(XS) {
+		padding: 0 15px;
+	}
+}
+
+.section-title {
+	text-align: center;
+	margin-bottom: 50px;
+	h2 {
+		font-size: 30px;
+		color: #7a7973;
+		font-weight: 500;
+		position: relative;
+		&:after {
+			content: '';
+			width: 60px;
+			height: 3px;
+			background: $color-2;
+			position: absolute;
+			left: calc(50% - 30px);
+			bottom: -20px;
+		}
+		@include MQ(S) {
+			font-size: 24px;
+		}
+		@include MQ(XS) {
+			font-size: 18px;
+		}
+	}
+}
+
+
+/* --------------------------------
+Index - Banner
+-------------------------------- */
+
+section.sec-main {
+	position: relative;
+	img {
+		width: 100%;
+	}
+}
+
+
+/* --------------------------------
+About Watchout 關於沃草
+-------------------------------- */
+
+section.sec-about {
+	padding: 3%;
+	background: #f6f5f0;
+	.main-content {
+		margin: 5%;
+	}
+	.inner-wrap {
+		max-width: 1400px;
+		margin: 0 auto;
+	}
+	.about-block {
+		background: #fff;
+		padding: 8% 10%;
+		margin-bottom: 30px;
+		.image {
+			align-items: center;
+			display: flex;
+			height: 100px;
+			margin-bottom: 20px;
+		}
+		.image img {
+			max-height: 100%;
+			max-width: 100%;
+			margin: 0 auto;
+			display: block;
+		}
+		@include MQ(M) {
+			.image {
+				height: 160px;
+			}
+			.image img {
+				max-height: 160px;
+			}
+		}
+		.caption {
+			font-size: 14px;
+			margin-bottom: 15px;
+			line-height: 180%;
+		}
+		.btn {
+			width: 100%;
+			text-align: center;
+			background: #959e60;
+			color: #fff;
+			border-radius: 30px;
+			padding: 15px 0;
+			&:hover,
+			&:focus {
+				background: #707743;
+			}
+		}
+	}
+}
+
+
+/* --------------------------------
+About Timeline 關於沃草歷史
+-------------------------------- */
+
+section.sec-timeline {
+	padding: 3%;
+	margin-top: -200px;
+	padding-top: 200px;
+	background: #e4e2cf;
+	.inner-wrap {
+		max-width: 1400px;
+		margin: 0 auto;
+		position: relative;
+	}
+	.main-content {
+		margin: 5%;
+	}
+	.content {
+		max-width: 790px;
+		margin: 0 auto;
+	}
+}
+
+.entries {
+	margin-left: 1rem;
+	justify-content: space-between;
+	display: flex;
+	@include MQ(M) {
+		padding-top: 20px;
+		flex-direction: column;
+		margin-left: 4rem;
+	}
+}
+
+.timeline {
+	width: 100%;
+	height: 0.9rem;
+	background-color: #9a966e;
+	border-width: 0.2rem;
+	border-radius: 10px;
+	border-color: #fff;
+	@include MQ(M) {
+		height: 100%;
+		width: 10px;
+		position: absolute;
+		margin-left: 85px;
+	}
+}
+
+.entry {
+	float: left;
+	position: relative;
+	margin: 0 1rem;
+	margin-top: 0.7rem;
+	width: auto;
+	min-width: 22%;
+	.time {
+		position: absolute;
+		top: -3.5em;
+		font-weight: bold;
+		font-size: 18px;
+		color: #7d735c;
+	}
+	.dot {
+		position: absolute;
+		width: 2em;
+		height: 2em;
+		background-color: #9a966e;
+		left: 5%;
+		margin-left: -0.6rem;
+		margin-top: -1.8em;
+		border-radius: 100%;
+		box-sizing: border-box;
+		border: 8px solid #dad8c4;
+		box-shadow: 0px 0px 0px 5px #95916a;
+	}
+	&:hover .dot {
+		background-color: #959e60;
+		box-shadow: 0px 0px 0px 5px #959e60;
+	}
+	.label {
+		position: relative;
+		margin-top: 2em;
+		display: flex;
+		.icon {
+			max-width: 2.5em;
+			max-height: 2em;
+			width: auto;
+			img {
+				width: 100%;
+			}
+		}
+		.detail {
+			margin-left: 10px;
+			font-size: 0.8rem;
+			h4 {
+				margin: 0;
+				padding-top: 10px;
+			}
+		}
+	}
+	&:after,
+	&:before {
+		border: solid transparent;
+		content: " ";
+		height: 0;
+		width: 0;
+		position: absolute;
+		pointer-events: none;
+		visibility: visible;
+	}
+	&:before {
+		border-width: 10px;
+		border-left-color: #e4e2cf;
+		right: -30px;
+		top: -8px;
+		margin-top: -16px;
+	}
+	&:after {
+		border-width: 5px;
+		border-left-color: #9a966e;
+		right: -20px;
+		top: -3px;
+		margin-top: -16px;
+	}
+	@include MQ(M) {
+		margin-bottom: 2em;
+		.time {
+			top: 0;
+			left: -2.8em;
+		}
+		.label {
+			margin-left: 6em;
+			margin-top: 0;
+		}
+		.dot {
+			margin-top: 0;
+			left: 25px;
+		}
+		&:after,
+		&:before {
+			transform: rotate(90deg);
+		}
+		&:before {
+			left: 20px;
+			top: 73px;
+			right: initial;
+		}
+		&:after {
+			left: 24px;
+			right: initial;
+			margin-top: 0;
+			z-index: 0000;
+			top: 57px;
+			border-width: 6px;
+		}
+	}
+}
+
+
+/* --------------------------------
+Feature 公民社會的肥沃土地
+-------------------------------- */
+
+section.sec-feature {
+	padding: 3%;
+	background: #f6f5f0;
+	background-image: url('../images/feature/feature_bg.svg');
+	background-size: contain;
+	background-position: bottom center;
+	background-repeat: no-repeat;
+	padding-bottom: 15%;
+	.inner-wrap {
+		max-width: 1400px;
+		margin: 0 auto;
+	}
+	.content {
+		max-width: 790px;
+		margin: 5% auto;
+	}
+	.feature-item-wrap {
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+	.feature-item {
+		padding: 3% 0;
+		text-align: center;
+		.image {
+			align-items: center;
+			display: flex;
+			height: 130px;
+			margin-bottom: 30px;
+		}
+		.image img {
+			max-width: 100%;
+			max-height: 100%;
+			margin: 0 auto;
+			display: block;
+		}
+		@include MQ(M) {
+			.image {
+				height: 100px;
+			}
+			.image img {
+				max-height: 100px;
+			}
+		}
+		.count {
+			font-size: 30px;
+			font-weight: 700;
+			color: #3e3e3e;
+			span {
+				font-size: 15px;
+			}
+		}
+		.caption {
+			font-size: 14px;
+			margin-bottom: 15px;
+			line-height: 180%;
+			text-align: center;
+		}
+	}
+}
+
+
+/* --------------------------------
+Contribution 你還可以做什麼
+-------------------------------- */
+
+section.sec-contribution {
+	padding: 5%;
+	background: #e3e1cb;
+	background-image: url('../images/contribution/bg.png');
+	background-repeat: repeat;
+	.main-content {
+		margin: 5%;
+	}
+	.content {
+		max-width: 790px;
+		margin: 0 auto;
+	}
+	.item-wrap {
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+	.sec-title {
+		text-align: center;
+		margin-top: 5%;
+	}
+	.item {
+		padding: 3% 0;
+		text-align: center;
+		.image {
+			align-items: center;
+			display: flex;
+			height: 130px;
+			margin-bottom: 30px;
+		}
+		.image img {
+			max-width: 100%;
+			max-height: 100%;
+			margin: 0 auto;
+			display: block;
+		}
+		.caption {
+			font-size: 14px;
+			text-align: center;
+			background: #959e60;
+			color: #fff;
+			border-radius: 30px;
+			padding: 3% 10%;
+			width: auto;
+			display: inline-block;
+		}
+		@include MQ(M) {
+			.image {
+				height: 100px;
+			}
+			.image img {
+				max-height: 100px;
+			}
+		}
+	}
+}
+
+
+/* --------------------------------
+People 大草民計畫
+-------------------------------- */
+
+section.sec-people {
+	padding: 5%;
+	background: #f6f5f0;
+	.main-content {}
+	.inner-wrap {
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+	.title-block {
+		background: #dcddc9;
+		border-radius: 10px;
+		padding: 2%;
+		width: 100%;
+		color: #959e60;
+		text-align: center;
+	}
+	.member-item {
+		padding: 3% 0;
+		text-align: center;
+		.image {
+			align-items: center;
+			display: flex;
+			height: 100px;
+			margin-bottom: 30px;
+		}
+		.image img {
+			max-width: 100%;
+			max-height: 100%;
+			margin: 0 auto;
+			display: block;
+		}
+		.caption {
+			font-size: 16px;
+			text-align: center;
+			color: #3e3e3e;
+		}
+		@include MQ(M) {
+			.image {
+				height: 60px;
+			}
+			.image img {
+				max-height: 60px;
+			}
+			.caption {
+				font-size: 12px;
+			}
+		}
+	}
+	.vip-item {
+		padding: 3%;
+		text-align: center;
+		position: relative;
+		.image {
+			align-items: center;
+			display: flex;
+			height: 200px;
+			width: 200px;
+			margin: 0 auto;
+			margin-bottom: 30px;
+			background: #fff;
+			border-radius: 50%;
+		}
+		.image img {
+			max-width: 100%;
+			max-height: 100%;
+			margin: 0 auto;
+			display: block;
+		}
+		.caption {
+			font-size: 16px;
+			text-align: center;
+			color: #3e3e3e;
+			line-height: 150%;
+		}
+		&:after {
+			content: '';
+			width: 20px;
+			height: 20px;
+			position: absolute;
+			right: -5%;
+			top: calc(50% - 40px);
+			background: url('../images/people/plus.svg') no-repeat;
+		}
+		&:last-child {
+			&:after {
+				display: none;
+			}
+		}
+		@include MQ(M) {
+			.image {
+				height: 140px;
+				width: 140px;
+			}
+			.image img {
+				max-height: 140px;
+			}
+		}
+		@include MQ(S) {
+			.image {
+				height: 100px;
+				width: 100px;
+				margin-bottom: 15px;
+			}
+			.image img {
+				max-height: 100px;
+			}
+			.caption {
+				font-size: 14px;
+			}
+			&:after {
+				width: 10px;
+				height: 10px;
+				top: calc(50% - 20px);
+			}
+		}
+		@include MQ(XS) {
+			.image {
+				height: 70px;
+				width: 70px;
+				margin-bottom: 15px;
+			}
+			.image img {
+				max-height: 70px;
+			}
+			.caption {
+				font-size: 14px;
+			}
+			&:after {
+				width: 10px;
+				height: 10px;
+				top: calc(50% - 20px);
+			}
+		}
+	}
+	.gift-item {
+		padding: 10% 0;
+		text-align: center;
+		background: #fff;
+		border-radius: 15px;
+		box-shadow: 0px 0px 20px #dcdcdc;
+		margin-bottom: 30px;
+		.image {
+			align-items: center;
+			display: flex;
+			height: 180px;
+			margin-bottom: 30px;
+			position: relative;
+		}
+		.image img {
+			max-width: 100%;
+			max-height: 100%;
+			margin: 0 auto;
+			display: block;
+		}
+		@include MQ(M) {
+			.image {
+				height: 80px;
+			}
+			.image img {
+				max-height: 80px;
+			}
+		}
+		.plan {
+			font-size: 14px;
+			text-align: center;
+			background: #e99e36;
+			color: #fff;
+			border-radius: 15px;
+			padding: 0px 10px;
+			width: auto;
+			display: inline-block;
+		}
+		.price {
+			color: #a5a66b;
+			font-size: 18px;
+			margin: 5% 0;
+		}
+		.btn {
+			font-size: 14px;
+			text-align: center;
+			background: #959e60;
+			color: #fff;
+			border-radius: 30px;
+			padding: 5% 10%;
+			width: auto;
+			display: inline-block;
+			&:hover,
+			&:focus {
+				background: #707743;
+			}
+		}
+		.multiply-num {
+			position: absolute;
+			color: #fff;
+			width: 30px;
+			height: 30px;
+			right: 15%;
+			top: -moz-calc(50% - 40px);
+			top: calc(30%);
+			background: #e99e36;
+			border-radius: 50%;
+		}
+	}
+}
+
+
+/* --------------------------------
+Feed 阿草飼料費
+-------------------------------- */
+
+section.sec-feed {
+	padding: 5%;
+	background: #e9e9e9;
+	.section-title {
+		h2 {
+			&:after {
+				background: #68718d;
+			}
+		}
+	}
+	.inner-wrap {
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+	.title-block {
+		background: #d9dadd;
+		border-radius: 10px;
+		padding: 2%;
+		width: 100%;
+		color: #68718d;
+		text-align: center;
+	}
+	.gift-item-wrap {
+		margin-top: 30px;
+	}
+	.gift-item {
+		margin-bottom: 30px;
+		.gift-inner {
+			padding: 20px;
+			text-align: center;
+			background: #fff;
+			border-radius: 10px;
+			box-shadow: 0px 0px 20px #dcdcdc;
+		}
+		.image {
+			align-items: center;
+			display: flex;
+			height: 180px;
+			margin-bottom: 30px;
+			position: relative;
+		}
+		.image img {
+			max-width: 100%;
+			max-height: 100%;
+			margin: 0 auto;
+			display: block;
+		}
+		@include MQ(M) {
+			.image {
+				height: 160px;
+			}
+			.image img {
+				max-height: 160px;
+			}
+		}
+		.title {
+			color: #68718d;
+		}
+		.caption {
+			font-size: 14px;
+			margin-bottom: 15px;
+		}
+		.btn {
+			font-size: 14px;
+			text-align: center;
+			background: #68718d;
+			color: #fff;
+			border-radius: 30px;
+			width: auto;
+			display: inline-block;
+			&:hover,
+			&:focus {
+				background: #3f4c75;
+			}
+		}
+	}
+}
+
+
+/* --------------------------------
+We Are You 我們就是你
+-------------------------------- */
+
+section.sec-weareyou {
+	padding: 3%;
+	background: #f4f3e9;
+	background-image: url('../images/weareyou/bg.png');
+	background-size: 80%;
+	background-position: bottom right;
+	background-repeat: no-repeat;
+	padding-bottom: 20%;
+	.inner-wrap {
+		width: 70%;
+		text-align: left;
+		margin-left: 10%;
+	}
+	.section-title {
+		text-align: left;
+		h2 {
+			font-size: 66px;
+			color: #959e60;
+			&:after {
+				display: none;
+			}
+		}
+	}
+	.title-block {
+		background: #d9dadd;
+		border-radius: 10px;
+		padding: 2%;
+		width: 100%;
+		color: #68718d;
+		text-align: center;
+	}
+	@include MQ(M) {
+		.section-title h2 {
+			font-size: 30px;
+		}
+		.inner-wrap {
+			width: 100%;
+			margin-left: 0;
+		}
+	}
+	@include MQ(S) {
+		.section-title h2 {
+			font-size: 24px;
+		}
+	}
+}

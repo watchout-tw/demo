@@ -1,0 +1,67 @@
+.sec-about,.sec-people,.sec-member-regular,.sec-feed,.sec-timeline{
+	position: relative;
+}
+section.sec-about .about-block{
+	position: relative;
+	z-index: 3;
+}
+#section-about{
+	position: absolute;
+	top:-45px;
+}
+#section-people,#section-feed{
+	position: absolute;
+	top:-15px;
+}
+#member-regular{
+	position: absolute;
+	top:-85px;
+
+}
+
+.sf-menu a{
+	padding: .2em 1em;
+}
+header .logo{
+	padding: 8px 15px;
+}
+
+.congressthon span{
+	top: -7px;
+}
+
+.sf-menu *{
+	padding: .7em;
+}
+
+@media only screen and (max-width: 991px){
+	#section-about{
+	position: absolute;
+	top:-25px;
+}
+#section-people,#section-feed{
+	position: absolute;
+	top:-5px;
+}
+#member-regular{
+	position: absolute;
+	top:-75px;
+
+}
+}
+
+@media only screen and (max-width: 480px){
+		#section-about{
+	position: absolute;
+	top:-45px;
+}
+#section-people,#section-feed{
+	position: absolute;
+	top:-40px;
+}
+#member-regular{
+	position: absolute;
+	top:-75px;
+
+}
+}

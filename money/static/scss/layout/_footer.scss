@@ -1,0 +1,83 @@
+@charset "utf-8";
+
+/* --------------------------------
+FOOTER STYLE
+-------------------------------- */
+
+.footer {
+	color: #fff;
+	background: #303436;
+	padding: 20px;
+	font-size: 13px;
+	display: flex;
+	justify-content: space-between;
+	.right {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		line-height: 150%;
+	}
+	.left {
+		justify-content: flex-start;
+		display: flex;
+		@include MQ(M
+) {
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+		}
+	}
+	.footer-block {
+		justify-content: flex-start;
+		display: flex;
+		margin-right: 50px;
+		@include MQ(M) {
+			margin-bottom: 30px;
+			font-size: 12px;
+		}
+		.fb-icon {
+			width: 50px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			img {
+				max-height: 30px;
+			}
+		}
+		.sticler-img {
+			width: 100px;
+			margin-right: 20px;
+		}
+		.right-content {
+			align-items: center;
+			display: flex;
+			line-height: 150%;
+			text-align: left;
+		}
+	}
+		.sticker-wrap {
+			justify-content: flex-start;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			@include MQ(M) {
+				flex-direction: row;
+			}
+			@include MQ(S) {
+				flex-direction: column;
+			}
+		}
+	a {
+		color: #fff;
+	}
+	@include MQ(S) {
+		text-align: center;
+		.copyright {
+			float: none;
+			text-align: center;
+		}
+	}
+	@include MQ(M) {
+		flex-direction: column;
+	}
+}
