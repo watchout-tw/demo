@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>直播列表與管理</title>
+<title>新增議題</title>
 <link href="css/reset.css" rel="stylesheet" type="text/css" />
 <link href="css/style.css" rel="stylesheet" type="text/css" />
 <link href="../css/thickbox.css" rel="stylesheet" type="text/css" />
@@ -18,13 +18,15 @@
       <h4><a href="admin_index.html">後台管理首頁</a></h4>
     </div>
     <div class="side_block">
-    <h4>看直播</h4>
+      <h4>看會議</h4>
       <ul>
-        <li><a href="video.html">直播列表與管理</a></li>
-        <li><a href="video_now.html">正在直播設定</a></li>
-        <li><a href="video_add.html">新增歷史直播</a></li>
+        <li><a href="meeting_now.html">正在直播設定</a></li>
+        <li><a href="meeting.html">會議列表與管理</a></li>
+        <li><a href="meeting_add.html">新增會議</a></li>
+        <li><a href="meeting_sort.html">會議分類與管理</a></li>
+        <li><a href="meeting_sort_add.html">新增會議分類</a></li>
       </ul>
-    </div>
+  </div>
     <div class="side_block">
     <h4>有話要說</h4>
       <ul>
@@ -35,19 +37,11 @@
     <div class="side_block">
     <h4>議題開講</h4>
       <ul>
-        <li><a href="issue.html">議題列表與管理</a></li>
+        <li><a href="issue_info.html">前台說明文字設定</a></li>
+<li><a href="issue.html">議題列表與管理</a></li>
         <li><a href="issue_add.html">新增議題</a></li>
         <li><a href="issue_sort.html">議題分類與管理</a></li>
         <li><a href="issue_sort_add.html">新增議題分類</a></li>
-      </ul>
-    </div>
-    <div class="side_block">
-    <h4>看會議</h4>
-      <ul>
-        <li><a href="meeting.html">會議列表與管理</a></li>
-        <li><a href="meeting_add.html">新增會議</a></li>
-        <li><a href="meeting_sort.html">會議分類與管理</a></li>
-        <li><a href="meeting_sort_add.html">新增會議分類</a></li>
       </ul>
     </div>
     <div class="side_block">
@@ -84,50 +78,40 @@
   <div id="main" class="inner">
 <div id="header">司改國是會議意見平台網站管理後台 - <a href="admin_login.html" class="logout">我要登出</a> 
 </div>
-    <h1>直播列表與管理</h1>
-    <div id="search_bar">
-     標題
-       <input type="text" name="textfield2" id="textfield2" />
-       <input type="submit" name="button" id="button" value="搜尋" />
-    </div>
+    <h1>會員資料</h1>
     <table width="100%" border="1" cellpadding="5">
       <tr>
-        <th>編號</th>
-        <th width="362">標題</th>
-        <th>會議日期</th>
-        <th>發表時間</th>
-        <th>操作</th>
+        <th width="16%">暱稱</th>
+        <td width="33%">徐就以</td>
+        <th width="17%">來源</th>
+        <td width="34%">facebook / google / 本站註冊</td>
       </tr>
       <tr>
-        <td width="35" align="center" valign="top">1</td>
-        <td><a href="video_view.html">直播標題直播標題直播標題直播標題</a></td>
-        <td width="136" align="center">2012-10-10</td>
-        <td width="113" align="center">2012-10-12 24:00:00</td>
-        <td width="127" align="center"><a href="#">編輯</a>｜<a href="#">刪除</a></td>
+        <th valign="top">email</th>
+        <td>buttom.hsu@gmail.com</td>
+        <th>認證狀態</th>
+        <td>未認證 / 已認證</td>
       </tr>
-      <tr class="even">
-        <td align="center" valign="top">2</td>
-        <td><a href="video_view.html">直播標題直播標題直播標題直播標題</a></td>
-        <td align="center">2012-10-10</td>
-        <td align="center">2012-10-12 24:00:00</td>
-        <td align="center"><a href="#">編輯</a>｜<a href="#">刪除</a></td>
+      <tr>
+        <th valign="top">權限</th>
+        <td colspan="3">無 / 正常 / 隱藏留言 / 停權<br /></td>
       </tr>
-  </table>
-    <div id="page">
-<ul>
-        	<li class="select"><a href="#">1</a></li>
-            <li><a href="#">2</a></li>
-            <li><a href="#">3</a></li>
-            <li><a href="#">4</a></li>
-            <li><a href="#">5</a></li>
-            <li><a href="#">6</a></li>
-            <li><a href="#">7</a></li>
-            <li><a href="#">8</a></li>
-            <li><a href="#">9</a></li>
-            <li><a href="#">10</a></li>
-            <li class="more"><a href="#">下10筆</a></li>
-        </ul>
-    </div>
+      <tr>
+        <th valign="top">年齡區間</th>
+        <td colspan="3">10~20歲</td>
+      </tr>
+      <tr>
+        <th valign="top">FB 生日</th>
+        <td colspan="3">1981-10-10</td>
+      </tr>
+      <tr>
+        <th valign="top">登入所在區域</th>
+        <td colspan="3">（這個FB有資料可以拉得過來嗎？如果拉得過來才拉）</td>
+      </tr>
+    </table>
+    <div class="btn">
+        <input type="submit" name="button" id="button" value="回上頁" class="submit"/>
+</div>
         
 
 

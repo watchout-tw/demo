@@ -18,13 +18,15 @@
       <h4><a href="admin_index.html">後台管理首頁</a></h4>
     </div>
     <div class="side_block">
-    <h4>看直播</h4>
+      <h4>看會議</h4>
       <ul>
-        <li><a href="video.html">直播列表與管理</a></li>
-        <li><a href="video_now.html">正在直播設定</a></li>
-        <li><a href="video_add.html">新增歷史直播</a></li>
+        <li><a href="meeting_now.html">正在直播設定</a></li>
+        <li><a href="meeting.html">會議列表與管理</a></li>
+        <li><a href="meeting_add.html">新增會議</a></li>
+        <li><a href="meeting_sort.html">會議分類與管理</a></li>
+        <li><a href="meeting_sort_add.html">新增會議分類</a></li>
       </ul>
-    </div>
+  </div>
     <div class="side_block">
     <h4>有話要說</h4>
       <ul>
@@ -35,19 +37,11 @@
     <div class="side_block">
     <h4>議題開講</h4>
       <ul>
-        <li><a href="issue.html">議題列表與管理</a></li>
+        <li><a href="issue_info.html">前台說明文字設定</a></li>
+<li><a href="issue.html">議題列表與管理</a></li>
         <li><a href="issue_add.html">新增議題</a></li>
         <li><a href="issue_sort.html">議題分類與管理</a></li>
         <li><a href="issue_sort_add.html">新增議題分類</a></li>
-      </ul>
-    </div>
-    <div class="side_block">
-    <h4>看會議</h4>
-      <ul>
-        <li><a href="meeting.html">會議列表與管理</a></li>
-        <li><a href="meeting_add.html">新增會議</a></li>
-        <li><a href="meeting_sort.html">會議分類與管理</a></li>
-        <li><a href="meeting_sort_add.html">新增會議分類</a></li>
       </ul>
     </div>
     <div class="side_block">
@@ -117,7 +111,7 @@
                   <th width="90%">項目與說明</th>
                 </tr>
                 <tr>
-                  <td align="center"><input type="checkbox" name="checkbox" id="checkbox" /></td>
+                  <td align="center"><input name="checkbox" type="checkbox" disabled="disabled" id="checkbox" /></td>
                   <td>看直播：直播列表管理（增刪修），正在直播設定</td>
                 </tr>
                 <tr>
@@ -127,6 +121,10 @@
                 <tr>
                   <td align="center"><input name="checkbox3" type="checkbox" disabled="disabled" id="checkbox3" checked="checked" /></td>
                   <td>議題開講：議題列表管理（增刪修），議題分類管理（增刪修）</td>
+                </tr>
+                <tr>
+                  <td align="center"><input name="checkbox9" type="checkbox" disabled="disabled" id="checkbox9" checked="checked" /></td>
+                  <td>議題開講：審稿正式發佈</td>
                 </tr>
                 <tr>
                   <td align="center"><input name="checkbox4" type="checkbox" disabled="disabled" id="checkbox4" checked="checked" /></td>
