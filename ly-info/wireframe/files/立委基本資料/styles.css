@@ -840,3 +840,27 @@
   width:57px;
   white-space:nowrap;
 }
+#u280_img {
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:28px;
+  height:28px;
+}
+#u280 {
+  position:absolute;
+  left:426px;
+  top:316px;
+  width:28px;
+  height:28px;
+  font-family:'PingFangTC-Regular', 'PingFang TC';
+  font-weight:400;
+  font-style:normal;
+}
+#u281 {
+  position:absolute;
+  left:2px;
+  top:5px;
+  width:24px;
+  word-wrap:break-word;
+}
