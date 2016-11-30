@@ -1,0 +1,165 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>新增消息</title>
+<link href="css/reset.css" rel="stylesheet" type="text/css" />
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="../css/thickbox.css" rel="stylesheet" type="text/css" />
+</head>
+
+
+<body>
+
+<div id="all">
+<div id="content_wrap">
+<div id="side_menu">
+    <div class="side_block">
+      <h4><a href="admin_index.html">後台管理首頁</a></h4>
+    </div>
+    <div class="side_block">
+      <h4>看會議</h4>
+      <ul>
+        <li><a href="meeting_now.html">正在直播設定</a></li>
+        <li><a href="meeting.html">會議列表與管理</a></li>
+        <li><a href="meeting_add.html">新增會議</a></li>
+        <li><a href="meeting_sort.html">會議分類與管理</a></li>
+        <li><a href="meeting_sort_add.html">新增會議分類</a></li>
+      </ul>
+  </div>
+    <div class="side_block">
+    <h4>有話要說</h4>
+      <ul>
+        <li><a href="opinion_info.html">前台說明文字設定</a></li>
+        <li><a href="opinion.html">意見列表與管理</a></li>
+      </ul>
+    </div>
+    <div class="side_block">
+    <h4>議題開講</h4>
+      <ul>
+        <li><a href="issue_info.html">前台說明文字設定</a></li>
+<li><a href="issue.html">議題列表與管理</a></li>
+        <li><a href="issue_add.html">新增議題</a></li>
+        <li><a href="issue_sort.html">議題分類與管理</a></li>
+        <li><a href="issue_sort_add.html">新增議題分類</a></li>
+      </ul>
+    </div>
+    <div class="side_block">
+    <h4>新消息</h4>
+      <ul>
+        <li><a href="news.html">消息列表與管理</a></li>
+        <li><a href="news_add.html">新增消息</a></li>
+        <li><a href="news_sort.html">消息分類與管理</a></li>
+        <li><a href="news_sort_add.html">新增消息分類</a></li>
+      </ul>
+    </div>
+    <div class="side_block">
+    <h4>關於本會</h4>
+      <ul>
+        <li><a href="info.html">其他說明管理</a></li>
+        <li><a href="info_add.html">新增說明</a></li>
+      </ul>
+    </div>
+    <div class="side_block">
+    <h4>會員管理</h4>
+      <ul>
+        <li><a href="member.html">會員帳號管理</a></li>
+      </ul>
+    </div>
+<div class="side_block">
+    <h4>平台管理員設定</h4>
+    <ul>
+    	<li><a href="pw_edit.html">密碼變更</a></li>
+        <li><a href="admin_manager.html">管理員權限設定</a></li>
+<li><a href="admin_manager_add.html">新增管理員</a></li>
+    </ul>
+    </div>
+  </div>
+  <div id="main" class="inner">
+<div id="header">沃草大專案整合管理後台 - <a href="admin_login.html" class="logout">我要登出</a> 
+</div>
+    <h1>新增管理員</h1>
+<table width="100%" border="1" cellpadding="5">
+          <tr>
+            <th width="16%">*姓名</th>
+            <td width="33%"><input name="textfield4" type="text" class="input_04" id="textfield4" /></td>
+            <th width="17%">加入時間</th>
+            <td width="34%">(系統於資料送出後自動記錄)</td>
+          </tr>
+          <tr>
+            <th>*帳號</th>
+            <td><input name="textfield3" type="text" class="input_04" id="textfield3" /></td>
+            <th>email</th>
+            <td><input name="textfield5" type="text" class="input_04" id="textfield5" /></td>
+          </tr>
+          <tr>
+            <th valign="top">*密碼</th>
+            <td><input name="textfield6" type="text" class="input_04" id="textfield6" /></td>
+            <th>職稱</th>
+            <td><input name="textfield7" type="text" class="input_04" id="textfield7" /></td>
+          </tr>
+          <tr>
+            <th valign="top">說明</th>
+            <td colspan="3"><input name="textfield8" type="text" class="input_04" id="textfield8" /></td>
+          </tr>
+          <tr>
+            <th valign="top">*權限設定</th>
+            <td colspan="3">（所有管理員都可以變更自己的密碼，故「密碼變更」不列入權限設定範圍中）<br />
+              <table width="100%" border="1">
+              <tbody>
+                <tr>
+                  <th width="10%">選取</th>
+                  <th width="90%">項目與說明</th>
+                </tr>
+                <tr>
+                  <td align="center"><input type="checkbox" name="checkbox" id="checkbox" /></td>
+                  <td>看直播：直播列表管理（增刪修），正在直播設定</td>
+                </tr>
+                <tr>
+                  <td align="center"><input type="checkbox" name="checkbox2" id="checkbox2" /></td>
+                  <td>有話要說：前台說明文字設定，意見列表管理（刪除）</td>
+                </tr>
+                <tr>
+                  <td align="center"><input type="checkbox" name="checkbox3" id="checkbox3" /></td>
+                  <td>議題開講：議題列表管理（增刪修），議題分類管理（增刪修）</td>
+                </tr>
+                <tr>
+                  <td align="center"><input type="checkbox" name="checkbox9" id="checkbox9" /></td>
+                  <td>議題開講：審稿正式發佈</td>
+                </tr>
+                <tr>
+                  <td align="center"><input type="checkbox" name="checkbox4" id="checkbox4" /></td>
+                  <td>看會議：會議列表管理（增刪修），會議分類管理（增刪修）</td>
+                </tr>
+                <tr>
+                  <td align="center"><input type="checkbox" name="checkbox5" id="checkbox5" /></td>
+                  <td>新消息：消息列表管理（增刪修），消息分類管理（增刪修）</td>
+                </tr>
+                <tr>
+                  <td align="center"><input type="checkbox" name="checkbox6" id="checkbox6" /></td>
+                  <td>關於本會：說明列表管理（增刪修）</td>
+                </tr>
+                <tr>
+                  <td align="center"><input type="checkbox" name="checkbox7" id="checkbox7" /></td>
+                  <td>會員帳號管理（刪停權）</td>
+                </tr>
+                <tr>
+                  <td align="center"><input type="checkbox" name="checkbox8" id="checkbox8" /></td>
+                  <td>管理員權限設定（增刪修）</td>
+                </tr>
+              </tbody>
+            </table></td>
+          </tr>
+          </table>
+<div class="btn">
+        <input type="submit" name="button" id="button" value="儲存" class="submit"/>
+</div>
+        
+
+
+  </div>
+</div>
+</div>
+
+</body>
+</html>
