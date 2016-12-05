@@ -17,6 +17,9 @@
 }
 .placeholder {
 }
+.link_button {
+  color:#169BD5;
+}
 .heading_1 {
   font-family:'ArialMT', 'Arial';
   font-weight:bold;
@@ -68,4 +71,11 @@
 .flow_shape {
 }
 .line {
+}
+.droplist {
+  color:#000000;
+  text-align:left;
+}
+.html_button {
+  text-align:center;
 }
