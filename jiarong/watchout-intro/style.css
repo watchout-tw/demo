@@ -1,0 +1,84 @@
+.title {
+font-size: 6em;
+font-weight:bold;
+color:#121212;
+text-align: center;
+margin: 80px;
+}
+
+.mascotname {
+  font-size: 3em;
+}
+
+#picture1 {
+  width:250px;
+  height:250px;
+  float:left;
+}
+
+#mascot1 {
+  background-color: #E7A977;
+  margin: 80px;
+  padding-top: 20px;
+  padding-bottom: 5px;
+}
+
+.mascot1 {
+  text-align: left;
+  line-height: 10px;
+}
+
+#picture2 {
+  width:250px;
+  height:250px;
+  float:right;
+}
+
+#mascot2 {
+  background-color: #7EA172;
+  margin: 80px;
+  padding-top: 20px;
+  padding-bottom: 5px;
+}
+
+.mascot2 {
+  text-align:right;
+  line-height: 10px;
+}
+
+#picture3 {
+  width:250px;
+  height:250px;
+  float:left;
+}
+
+#mascot3 {
+  background-color: #36C0AE;
+  margin: 80px;
+  padding-top: 20px;
+  padding-bottom: 5px;
+}
+
+.mascot3 {
+  text-align: left;
+  line-height: 10px;
+}
+
+#picture4 {
+  width:250px;
+  height:250px;
+  float:right;
+}
+
+#mascot4 {
+  margin:80px;
+  padding-top: 20px;
+  padding-bottom: 5px;
+  border-style: solid;
+  border-width:10px;
+}
+
+.mascot4 {
+  text-align: right;
+  line-height: 10px;
+}
