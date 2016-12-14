@@ -1,9 +1,10 @@
-.title {
-font-size: 6em;
-font-weight:bold;
-color:#121212;
-text-align: center;
-margin: 80px;
+#title{
+  text-decoration: none;
+  font-size: 6em;
+  font-weight:bold;
+  color:#121212;
+  display: block;
+  text-align: center;
 }
 
 .mascotname {
