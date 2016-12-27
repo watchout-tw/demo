@@ -1,0 +1,19 @@
+.center-block-clear{
+	margin: auto;
+	float: none;
+}
+
+.btn-group-block{
+	padding: 0 0 20px 0;
+	overflow: hidden;
+	text-align: center;
+}
+
+.search-bar{
+	overflow: hidden;
+	padding:0 0 15px 0;
+}
+
+.add-btn-group{
+	float: right;
+}
