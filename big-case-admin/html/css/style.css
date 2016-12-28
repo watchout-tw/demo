@@ -1,19 +1,10 @@
-.center-block-clear{
-	margin: auto;
-	float: none;
+.table th{
+background-color: #eaf1f7;	
 }
 
-.btn-group-block{
-	padding: 0 0 20px 0;
-	overflow: hidden;
-	text-align: center;
-}
-
-.search-bar{
-	overflow: hidden;
-	padding:0 0 15px 0;
-}
-
-.add-btn-group{
-	float: right;
+.line{
+	border-bottom: 1px dotted #ccc;
+	padding: 25px 0 0 0;
+	margin: 0 0 35px 0;
+	clear: both;
 }
