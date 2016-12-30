@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>編輯小議題首頁</title>
+<!-- Bootstrap -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<!-- HTML5 shim and Respond.js 讓 IE8 支援 HTML5 元素與媒體查詢 -->
+<!-- 警告：Respond.js 無法在 file:// 協定下運作 -->
+<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      <a class="navbar-brand" href="login-index.html">沃草大平台管理後台</a></div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">立院資料設定 <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="ly-name-list.html">立委資料管理</a></li>
+            <li><a href="ly-session-list.html">立院屆次會期設定管理</a></li>
+            <li><a href="ly-committee-list.html">立院委員會設定管理</a></li>
+            <li><a href="ly-area-list.html">選區設定管理</a></li>
+            <li><a href="ly-party-list.html">政黨設定管理</a></li>
+            <li><a href="ly-pgroup-list.html">黨政團設定管理</a></li>
+          </ul>
+        </li>
+        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">議題基本設定 <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="basic-big-issue-list.html">大議題設定管理</a></li>
+            <li><a href="basic-small-issue-list.html">小議題設定管理</a></li>
+            <li><a href="basic-law-names-list.html">法案名目設定管理</a></li>
+            <li><a href="basic-law-item-list.html">法案比較項目設定管理</a></li>
+          </ul>
+        </li>
+        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">立委表態原始資料管理 <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="data-say-list.html">發言資料管理</a></li>
+            <li><a href="data-law-proposal-list.html">法案提案連署內容管理</a></li>
+            <li><a href="data-vote-result-list.html">表決結果資料管理</a></li>
+          </ul>
+        </li>
+        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">議題實驗室頁面組版管理 <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="page-law-comparison-list.html">立委修法版本比較頁/提案連署統計管理</a></li>
+            <li><a href="page-say-standpoint-list.html">立委/政黨發言立場統計頁管理</a></li>
+            <li><a href="page-issue-list.html">小議題首頁管理</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="container">
+  <div class="row">
+    <h2 class="text-center">編輯小議題首頁</h2>
+    <div class="col-md-12">
+      <div class="row col-md-12">
+        <div class="panel panel-default">
+          <div class="panel-heading">小議題首頁文字設定</div>
+          <div class="panel-body">
+            <div class="col-md-3">
+              <div class="form-group col-md-12">
+                <label for="fileField">小議題</label>
+                罷免 </div>
+              <div class="form-group col-md-12">
+                <label for="fileField">上下架狀態</label>
+                <select class="form-control">
+                  <option>上架</option>
+                  <option>下架</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-3">
+                <div class="form-group col-md-12">
+                  <label for="fileField">議題引言</label>
+                  <textarea rows="7" maxlength="50" class="form-control">（限50字）</textarea>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group col-md-12">
+                  <label for="fileField">前言說明</label>
+                  <textarea rows="7" maxlength="50" class="form-control">（限300字）</textarea>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading">議題時間軸設定</div>
+          <div class="panel-body">
+              <div class="form-group col-md-12">
+                <table class="table">
+                  <tr>
+                    <th width="20%">時間</th>
+                    <th width="26%">小title <br>
+                      大title</th>
+                    <th width="30%">內容</th>
+                    <th width="12%">醒目顯示</th>
+                    <th width="12%">操作</th>
+                  </tr>
+                  <tr>
+                    <td><input type="text" class="form-control"></td>
+                    <td><input type="text" class="form-control" placeholder="輸入小title">
+                      <input type="text" class="form-control" placeholder="輸入大title"></td>
+                    <td><textarea rows="5" maxlength="50" class="form-control"></textarea></td>
+                    <td><select name="select" class="form-control">
+                        <option>是</option>
+                        <option>否</option>
+                      </select></td>
+                    <td><button type="button" class="btn btn-primary">新增</button></td>
+                  </tr>
+                  <tr>
+                    <td><input type="text" class="form-control"></td>
+                    <td><input type="text" class="form-control" placeholder="輸入小title">
+                      <input type="text" class="form-control" placeholder="輸入大title"></td>
+                    <td><textarea rows="5" maxlength="50" class="form-control"></textarea></td>
+                    <td><select name="select" class="form-control">
+                        <option>是</option>
+                        <option>否</option>
+                      </select></td>
+                    <td><button type="button" class="btn btn-link">刪除</button></td>
+                  </tr>
+                  <tr>
+                    <td><input type="text" class="form-control"></td>
+                    <td><input type="text" class="form-control" placeholder="輸入小title">
+                      <input type="text" class="form-control" placeholder="輸入大title"></td>
+                    <td><textarea rows="5" maxlength="50" class="form-control"></textarea></td>
+                    <td><select name="select" class="form-control">
+                        <option>是</option>
+                        <option>否</option>
+                      </select></td>
+                    <td><button type="button" class="btn btn-link">刪除</button></td>
+                  </tr>
+                  <tr>
+                    <td><input type="text" class="form-control"></td>
+                    <td><input type="text" class="form-control" placeholder="輸入小title">
+                      <input type="text" class="form-control" placeholder="輸入大title"></td>
+                    <td><textarea rows="5" maxlength="50" class="form-control"></textarea></td>
+                    <td><select name="select" class="form-control">
+                        <option>是</option>
+                        <option>否</option>
+                      </select></td>
+                    <td><button type="button" class="btn btn-link">刪除</button></td>
+                  </tr>
+                  <tr>
+                    <td><input type="text" class="form-control"></td>
+                    <td><input type="text" class="form-control" placeholder="輸入小title">
+                      <input type="text" class="form-control" placeholder="輸入大title"></td>
+                    <td><textarea rows="5" maxlength="50" class="form-control"></textarea></td>
+                    <td><select name="select" class="form-control">
+                        <option>是</option>
+                        <option>否</option>
+                      </select></td>
+                    <td><button type="button" class="btn btn-link">刪除</button></td>
+                  </tr>
+                  <tr>
+                    <td><input type="text" class="form-control"></td>
+                    <td><input type="text" class="form-control" placeholder="輸入小title">
+                      <input type="text" class="form-control" placeholder="輸入大title"></td>
+                    <td><textarea rows="5" maxlength="50" class="form-control"></textarea></td>
+                    <td><select name="select" class="form-control">
+                        <option>是</option>
+                        <option>否</option>
+                      </select></td>
+                    <td><button type="button" class="btn btn-link">刪除</button></td>
+                  </tr>
+                  <tr>
+                    <td><input type="text" class="form-control"></td>
+                    <td><input type="text" class="form-control" placeholder="輸入小title">
+                      <input type="text" class="form-control" placeholder="輸入大title"></td>
+                    <td><textarea rows="5" maxlength="50" class="form-control"></textarea></td>
+                    <td><select name="select" class="form-control">
+                        <option>是</option>
+                        <option>否</option>
+                      </select></td>
+                    <td><button type="button" class="btn btn-link">刪除</button></td>
+                  </tr>
+                  <tr>
+                    <td><input type="text" class="form-control"></td>
+                    <td><input type="text" class="form-control" placeholder="輸入小title">
+                      <input type="text" class="form-control" placeholder="輸入大title"></td>
+                    <td><textarea rows="5" maxlength="50" class="form-control"></textarea></td>
+                    <td><select name="select" class="form-control">
+                        <option>是</option>
+                        <option>否</option>
+                      </select></td>
+                    <td><button type="button" class="btn btn-link">刪除</button></td>
+                  </tr>
+                  <tr>
+                    <td><input type="text" class="form-control"></td>
+                    <td><input type="text" class="form-control" placeholder="輸入小title">
+                      <input type="text" class="form-control" placeholder="輸入大title"></td>
+                    <td><textarea rows="5" maxlength="50" class="form-control"></textarea></td>
+                    <td><select name="select" class="form-control">
+                        <option>是</option>
+                        <option>否</option>
+                      </select></td>
+                    <td><button type="button" class="btn btn-link">刪除</button></td>
+                  </tr>
+                  <tr>
+                    <td><input type="text" class="form-control"></td>
+                    <td><input type="text" class="form-control" placeholder="輸入小title">
+                      <input type="text" class="form-control" placeholder="輸入大title"></td>
+                    <td><textarea rows="5" maxlength="50" class="form-control"></textarea></td>
+                    <td><select name="select" class="form-control">
+                        <option>是</option>
+                        <option>否</option>
+                      </select></td>
+                    <td><button type="button" class="btn btn-link">刪除</button></td>
+                  </tr>
+                </table>
+              </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading">圖表頁入口顯示設定</div>
+          <div class="panel-body">
+            <div class="form-group col-md-12">
+              <h3 class="text-center">立委修法版本比較</h3>
+                <table class="table">
+                  <tr>
+                    <th width="34%">修法方向</th>
+                    <th width="43%">法案名目</th>
+                    <th width="23%">顯示</th>
+                  </tr>
+                  <tr>
+                    <td>降低罷免門檻</td>
+                    <td>公職人員選舉罷免法</td>
+                    <td><select name="select" class="form-control">
+                        <option>是</option>
+                        <option>否</option>
+                      </select></td>
+                  </tr>
+                  <tr>
+                    <td>提高罷免門檻</td>
+                    <td>公職人員選舉罷免法</td>
+                    <td><select name="select" class="form-control">
+                        <option>是</option>
+                        <option>否</option>
+                      </select></td>
+                  </tr>
+                  <tr>
+                    <td>降低罷免門檻</td>
+                    <td>總統副總統選舉罷免法</td>
+                    <td><select name="select" class="form-control">
+                        <option>是</option>
+                        <option>否</option>
+                      </select></td>
+                  </tr>
+                  <tr>
+                    <td>下修罷免門檻</td>
+                    <td>公職人員選舉罷免法</td>
+                    <td><select name="select" class="form-control">
+                        <option>是</option>
+                        <option>否</option>
+                      </select></td>
+                  </tr>
+                  <tr>
+                    <td>降低罷免門檻</td>
+                    <td>公職人員選舉罷免法</td>
+                    <td><select name="select" class="form-control">
+                        <option>是</option>
+                        <option>否</option>
+                      </select></td>
+                  </tr>
+                  <tr>
+                    <td>降低罷免門檻</td>
+                    <td>總統副總統選舉罷免法</td>
+                    <td><select name="select" class="form-control">
+                        <option>是</option>
+                        <option>否</option>
+                      </select></td>
+                  </tr>
+                </table>
+                <h3 class="text-center">立委提案連署統計</h3>
+                <table class="table">
+                  <tr>
+                    <th width="34%">修法方向</th>
+                    <th width="43%">法案名目</th>
+                    <th width="23%">顯示</th>
+                  </tr>
+                  <tr>
+                    <td>降低罷免門檻</td>
+                    <td>公職人員選舉罷免法</td>
+                    <td><select name="select3" class="form-control">
+                      <option>是</option>
+                      <option>否</option>
+                    </select></td>
+                  </tr>
+                  <tr>
+                    <td>提高罷免門檻</td>
+                    <td>公職人員選舉罷免法</td>
+                    <td><select name="select3" class="form-control">
+                      <option>是</option>
+                      <option>否</option>
+                    </select></td>
+                  </tr>
+                  <tr>
+                    <td>降低罷免門檻</td>
+                    <td>總統副總統選舉罷免法</td>
+                    <td><select name="select3" class="form-control">
+                      <option>是</option>
+                      <option>否</option>
+                    </select></td>
+                  </tr>
+                  <tr>
+                    <td>下修罷免門檻</td>
+                    <td>公職人員選舉罷免法</td>
+                    <td><select name="select3" class="form-control">
+                      <option>是</option>
+                      <option>否</option>
+                    </select></td>
+                  </tr>
+                  <tr>
+                    <td>降低罷免門檻</td>
+                    <td>公職人員選舉罷免法</td>
+                    <td><select name="select3" class="form-control">
+                      <option>是</option>
+                      <option>否</option>
+                    </select></td>
+                  </tr>
+                  <tr>
+                    <td>降低罷免門檻</td>
+                    <td>總統副總統選舉罷免法</td>
+                    <td><select name="select3" class="form-control">
+                      <option>是</option>
+                      <option>否</option>
+                    </select></td>
+                  </tr>
+                </table>
+                <h3 class="text-center">立委發言立場統計</h3>
+                <table class="table">
+                  <tr>
+                    <th width="66%">爭點命題</th>
+                    <th width="34%">顯示</th>
+                  </tr>
+                  <tr>
+                    <td>你支持下修罷免門檻嗎？</td>
+                    <td><select name="select2" class="form-control">
+                      <option>是</option>
+                      <option>否</option>
+                    </select></td>
+                  </tr>
+                  <tr>
+                    <td>你支持刪除禁制區嗎？</td>
+                    <td><select name="select2" class="form-control">
+                      <option>是</option>
+                      <option>否</option>
+                    </select></td>
+                  </tr>
+                  <tr>
+                    <td>你支持下修罷免門檻嗎？</td>
+                    <td><select name="select2" class="form-control">
+                      <option>是</option>
+                      <option>否</option>
+                    </select></td>
+                  </tr>
+                  <tr>
+                    <td>你支持刪除禁制區嗎？</td>
+                    <td><select name="select2" class="form-control">
+                      <option>是</option>
+                      <option>否</option>
+                    </select></td>
+                  </tr>
+              </table>
+              <h3 class="text-center">政黨發言立場統計</h3>
+                <table class="table">
+                  <tr>
+                    <th width="66%">爭點命題</th>
+                    <th width="34%">顯示</th>
+                  </tr>
+                  <tr>
+                    <td>你支持下修罷免門檻嗎？</td>
+                    <td><select name="select2" class="form-control">
+                      <option>是</option>
+                      <option>否</option>
+                    </select></td>
+                  </tr>
+                  <tr>
+                    <td>你支持刪除禁制區嗎？</td>
+                    <td><select name="select2" class="form-control">
+                      <option>是</option>
+                      <option>否</option>
+                    </select></td>
+                  </tr>
+                  <tr>
+                    <td>你支持下修罷免門檻嗎？</td>
+                    <td><select name="select2" class="form-control">
+                      <option>是</option>
+                      <option>否</option>
+                    </select></td>
+                  </tr>
+                  <tr>
+                    <td>你支持刪除禁制區嗎？</td>
+                    <td><select name="select2" class="form-control">
+                      <option>是</option>
+                      <option>否</option>
+                    </select></td>
+                  </tr>
+              </table>
+              </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading">主打文章設定</div>
+          <div class="panel-body">
+          	<table class="table">
+                  <tr>
+                    <th width="20%">圖片</th>
+                    <th width="26%">標題</th>
+                    <th width="30%">連結</th>
+                    <th width="12%">操作</th>
+                  </tr>
+                  <tr>
+                    <td>
+                    <input type="file" name="fileField" id="fileField" class="form-control"></td>
+                    <td><input type="text" class="form-control"></td>
+                    <td><input type="text" class="form-control"></td>
+                    <td><button type="button" class="btn btn-primary">新增</button></td>
+                  </tr>
+                  <tr>
+                    <td><input type="file" name="fileField2" id="fileField2" class="form-control"></td>
+                    <td><input type="text" class="form-control"></td>
+                    <td><input type="text" class="form-control"></td>
+                    <td><button type="button" class="btn btn-link">刪除</button></td>
+                  </tr>
+                  <tr>
+                    <td><input type="file" name="fileField3" id="fileField3" class="form-control"></td>
+                    <td><input type="text" class="form-control"></td>
+                    <td><input type="text" class="form-control"></td>
+                    <td><button type="button" class="btn btn-link">刪除</button></td>
+                  </tr>
+                  <tr>
+                    <td><input type="file" name="fileField4" id="fileField4" class="form-control"></td>
+                    <td><input type="text" class="form-control"></td>
+                    <td><input type="text" class="form-control"></td>
+                    <td><button type="button" class="btn btn-link">刪除</button></td>
+                  </tr>
+                </table>
+          	
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading">相關文章設定</div>
+          <div class="panel-body">
+          	<table class="table">
+                  <tr>
+                    <th width="20%">圖片</th>
+                    <th width="26%">標題</th>
+                    <th width="30%">連結</th>
+                    <th width="12%">操作</th>
+                  </tr>
+                  <tr>
+                    <td>
+                    <input type="file" name="fileField" id="fileField" class="form-control"></td>
+                    <td><input type="text" class="form-control"></td>
+                    <td><input type="text" class="form-control"></td>
+                    <td><button type="button" class="btn btn-primary">新增</button></td>
+                  </tr>
+                  <tr>
+                    <td><input type="file" name="fileField2" id="fileField2" class="form-control"></td>
+                    <td><input type="text" class="form-control"></td>
+                    <td><input type="text" class="form-control"></td>
+                    <td><button type="button" class="btn btn-link">刪除</button></td>
+                  </tr>
+                  <tr>
+                    <td><input type="file" name="fileField3" id="fileField3" class="form-control"></td>
+                    <td><input type="text" class="form-control"></td>
+                    <td><input type="text" class="form-control"></td>
+                    <td><button type="button" class="btn btn-link">刪除</button></td>
+                  </tr>
+                  <tr>
+                    <td><input type="file" name="fileField4" id="fileField4" class="form-control"></td>
+                    <td><input type="text" class="form-control"></td>
+                    <td><input type="text" class="form-control"></td>
+                    <td><button type="button" class="btn btn-link">刪除</button></td>
+                  </tr>
+                </table>
+          	
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="text-center">
+    <button type="submit" class="btn btn-default">取消</button>
+    <button type="submit" class="btn btn-primary" onclick="javascript:location.href='page-law-comparison-02-add.html'">儲存及下一步</button>
+  </div>
+</div>
+</div>
+<!-- jQuery (Bootstrap 所有外掛均需要使用) --> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
+<!-- 依需要參考已編譯外掛版本（如下），或各自獨立的外掛版本 --> 
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

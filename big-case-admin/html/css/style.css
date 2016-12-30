@@ -8,3 +8,11 @@ background-color: #eaf1f7;
 	margin: 0 0 35px 0;
 	clear: both;
 }
+
+.graphic-view{
+	min-height: 430px;
+	border: 1px solid #ccc;
+	clear: both;
+	background: #ccc;
+	margin-bottom: 15px;
+}

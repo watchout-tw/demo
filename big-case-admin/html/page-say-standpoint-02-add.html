@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>新增屆次</title>
+<title>新增發言立場統計-02</title>
 <!-- Bootstrap -->
 <link href="css/bootstrap.min.css" rel="stylesheet">
 <link href="css/style.css" rel="stylesheet">
@@ -61,115 +61,105 @@
 </nav>
 <div class="container">
   <div class="row">
-    <h2 class="text-center">新增屆次</h2>
+    <h2 class="text-center">新增發言立場統計-02</h2>
+    <ul class="list-inline text-center">
+      <li><a href="page-say-standpoint-01-add.html">選時間範圍與委員會</a></li>
+      <li><a href="page-say-standpoint-02-add.html">設定立委發言立場統計頁面</a></li>
+      <li><a href="page-say-standpoint-03-add.html">設定政黨發言立場統計頁面</a></li>
+    </ul>
     <div class="col-md-12">
-      <div class="row col-md-6 col-md-offset-3">
+      <div class="row col-md-12">
         <div class="panel panel-default">
-          <div class="panel-heading" id="1">屆次資料</div>
+          <div class="panel-heading">立委發言立場統計文字設定</div>
           <div class="panel-body">
-            <div class="form-group col-md-12">
-              <label>屆次</label>
-              <input type="text" class="form-control" placeholder="輸入數字">
-            </div>
-            <div class="form-group col-md-6">
-              <label>起始年月</label>
-              <div class="row">
-                <div class="col-md-6">
-                  <select class="form-control">
-                    <option>2012</option>
-                    <option>2013</option>
-                    <option>2014</option>
-                  </select>
-                </div>
-                <div class="col-md-1"> / </div>
-                <div class="col-md-4">
-                  <select class="form-control">
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                  </select>
-                </div>
+           <div class="col-md-4 col-md-offset-4">
+              <div class="form-group col-md-12">
+                <label for="fileField">頁面上下架</label>
+                <select class="form-control">
+                  <option>下架</option>
+                  <option>上架</option>
+                </select>
               </div>
             </div>
-            <div class="form-group col-md-6">
-              <label>結束年月</label>
-              <div class="row">
-                <div class="col-md-6">
+            <div class="col-md-12">
+              <h3 class="text-center">立委發言次數統計</h3>
+              <div class="col-md-5">
+                <div class="form-group col-md-12">
+                  <label for="fileField">顯示 / 不顯示</label>
                   <select class="form-control">
-                    <option>2012</option>
-                    <option>2013</option>
-                    <option>2014</option>
+                    <option>顯示</option>
+                    <option>不顯示</option>
                   </select>
                 </div>
-                <div class="col-md-1"> / </div>
-                <div class="col-md-4">
-                  <select class="form-control">
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                  </select>
+                <div class="form-group col-md-12">
+                  <label for="fileField">自訂標題</label>
+                  <input type="text" class="form-control">
+                </div>
+                <div class="form-group col-md-12">
+                  <label for="fileField">圖表說明</label>
+                  <textarea class="form-control" rows="5"></textarea>
+                </div>
+                <div class="form-group col-md-12">
+                  <label for="fileField">小結</label>
+                  <textarea class="form-control" rows="5"></textarea>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-        <div class="panel panel-default">
-          <div class="panel-heading" id="1">政黨/黨團</div>
-          <div class="panel-body">
-            <div class="form-group col-md-6 ">
-              <label>有席次的政黨</label>
-              <div class="checkbox">
-                <label>
-                  <input type="checkbox" value="">
-                  國民黨</label>
-              </div>
-              <div class="checkbox">
-                <label>
-                  <input type="checkbox" value="">
-                  民進黨</label>
-              </div>
-              <div class="checkbox">
-                <label>
-                  <input type="checkbox" value="">
-                  台聯</label>
-              </div>
-              <div class="checkbox">
-                <label>
-                  <input type="checkbox" value="">
-                  親民黨</label>
-              </div>
-              <div class="checkbox">
-                <label>
-                  <input type="checkbox" value="">
-                  時代力量</label>
+              <div class="col-md-7">
+                <div class="graphic-view"> 圖表預覽放這，應該是用iframe嵌入即可 </div>
               </div>
             </div>
-            <div class="form-group col-md-6 ">
-              <label>當屆黨團/政團</label>
-              <div class="checkbox">
-                <label>
-                  <input type="checkbox" value="">
-                  國民黨黨團</label>
+            <div class="col-md-12">
+              <h3 class="text-center">發言時間軸</h3>
+              <div class="col-md-5">
+                <div class="form-group col-md-12">
+                  <label for="fileField">顯示 / 不顯示</label>
+                  <select class="form-control">
+                    <option>顯示</option>
+                    <option>不顯示</option>
+                  </select>
+                </div>
+                <div class="form-group col-md-12">
+                  <label for="fileField">自訂標題</label>
+                  <input type="text" class="form-control">
+                </div>
+                <div class="form-group col-md-12">
+                  <label for="fileField">圖表說明</label>
+                  <textarea class="form-control" rows="5"></textarea>
+                </div>
+                <div class="form-group col-md-12">
+                  <label for="fileField">小結</label>
+                  <textarea class="form-control" rows="5"></textarea>
+                </div>
               </div>
-              <div class="checkbox">
-                <label>
-                  <input type="checkbox" value="">
-                  民進黨黨團</label>
+              <div class="col-md-7">
+                <div class="graphic-view"> 圖表預覽放這，應該是用iframe嵌入即可 </div>
               </div>
-              <div class="checkbox">
-                <label>
-                  <input type="checkbox" value="">
-                  台聯黨團</label>
+            </div>
+            <div class="col-md-12">
+              <h3 class="text-center">修法時間軸</h3>
+              <div class="col-md-5">
+                <div class="form-group col-md-12">
+                  <label for="fileField">顯示 / 不顯示</label>
+                  <select class="form-control">
+                    <option>顯示</option>
+                    <option>不顯示</option>
+                  </select>
+                </div>
+                <div class="form-group col-md-12">
+                  <label for="fileField">自訂標題</label>
+                  <input type="text" class="form-control">
+                </div>
+                <div class="form-group col-md-12">
+                  <label for="fileField">圖表說明</label>
+                  <textarea class="form-control" rows="5"></textarea>
+                </div>
+                <div class="form-group col-md-12">
+                  <label for="fileField">小結</label>
+                  <textarea class="form-control" rows="5"></textarea>
+                </div>
               </div>
-              <div class="checkbox">
-                <label>
-                  <input type="checkbox" value="">
-                  親民黨黨團</label>
-              </div>
-              <div class="checkbox">
-                <label>
-                  <input type="checkbox" value="">
-                  時代力量黨團</label>
+              <div class="col-md-7">
+                <div class="graphic-view"> 圖表預覽放這，應該是用iframe嵌入即可 </div>
               </div>
             </div>
           </div>
@@ -178,8 +168,8 @@
     </div>
   </div>
   <div class="text-center">
-    <button type="submit" class="btn btn-default">取消</button>
-    <button type="submit" class="btn btn-primary">儲存</button>
+    <button type="submit" class="btn btn-default" onclick="javascript:location.href='page-say-standpoint-01-add.html'">上一步</button>
+    <button type="submit" class="btn btn-primary" onclick="javascript:location.href='page-say-standpoint-03-add.html'">儲存及下一步</button>
   </div>
 </div>
 </div>

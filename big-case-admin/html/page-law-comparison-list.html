@@ -39,17 +39,16 @@
             <li><a href="basic-small-issue-list.html">小議題設定管理</a></li>
             <li><a href="basic-law-names-list.html">法案名目設定管理</a></li>
             <li><a href="basic-law-item-list.html">法案比較項目設定管理</a></li>
-            <li><a href="basic-vote-list.html">表決項目設定管理</a></li>
-          </ul>
+                      </ul>
         </li>
-        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">原始資料管理 <span class="caret"></span></a>
+        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">立委表態原始資料管理 <span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
             <li><a href="data-say-list.html">發言資料管理</a></li>
             <li><a href="data-law-proposal-list.html">法案提案連署內容管理</a></li>
             <li><a href="data-vote-result-list.html">表決結果資料管理</a></li>
           </ul>
         </li>
-        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">前台頁面組版管理 <span class="caret"></span></a>
+        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">議題實驗室頁面組版管理 <span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
             <li><a href="page-law-comparison-list.html">立委修法版本比較頁/提案連署統計管理</a></li>
             <li><a href="page-say-standpoint-list.html">立委/政黨發言立場統計頁管理</a></li>
@@ -77,29 +76,52 @@
               <option>8</option>
               <option>9</option>
             </select></td>
+            <td width="21%"><select name="select2" class="form-control">
+              <option>修法方向</option>
+              <option>上修罷免門檻</option>
+              <option>下修罷免門檻</option>
+            </select></td>
+            <td width="21%"><select name="select3" class="form-control">
+              <option>法案名目</option>
+              <option>公職人員選舉罷免法</option>
+              <option>9</option>
+            </select></td>
             <td width="42%"><button type="button" class="btn btn-default">搜尋</button></td>
-            <td width="26%"><a href="#" class="btn btn-primary">增加法案比較與連署統計</a></td>
+            <td width="26%"><a href="page-law-comparison-01-add.html" class="btn btn-primary">增加法案比較與連署統計</a></td>
           </tr>
         </table>
         <table class="table">
           <tr>
-            <th width="8%">小議題</th>
+            <th width="6%">小議題</th>
             <th width="5%">屆次</th>
             <th width="11%">修法方向</th>
-            <th width="18%">法案名目</th>
-            <th width="17%">選法案&amp;項目&amp;評分</th>
-            <th width="13%">修法版本比較</th>
-            <th width="11%">提案連署統計</th>
-            <th width="17%" class="text-center">操作</th>
+            <th width="19%">法案名目</th>
+            <th width="10%">版本名稱</th>
+            <th width="9%">修法版本比較</th>
+            <th width="10%">提案連署統計</th>
+            <th width="17%">建立時間</th>
+            <th width="13%" class="text-center">操作</th>
           </tr>
           <tr>
             <td>罷免</td>
             <td>8</td>
             <td>下修罷免門檻</td>
             <td>公職人員選舉罷免法</td>
-            <td>有</td>
+            <td>第一版</td>
             <td>上架</td>
             <td>上架</td>
+            <td>2016/10/10 24:00:00</td>
+            <td class="text-center"><a href="#" class="btn btn-link" data-toggle="modal" data-target="#myModal">刪除</a>｜<a href="#" class="btn btn-link">編輯</a></td>
+          </tr>
+          <tr>
+            <td>罷免</td>
+            <td>8</td>
+            <td>下修罷免門檻</td>
+            <td>公職人員選舉罷免法</td>
+            <td>第二版</td>
+            <td>上架</td>
+            <td>上架</td>
+            <td>2016/10/10 24:00:00</td>
             <td class="text-center"><a href="#" class="btn btn-link" data-toggle="modal" data-target="#myModal">刪除</a>｜<a href="#" class="btn btn-link">編輯</a></td>
           </tr>
           <tr>
@@ -107,9 +129,10 @@
             <td>8</td>
             <td>增加罷免門檻</td>
             <td>公職人員選舉罷免法</td>
-            <td>有</td>
+            <td>第一版</td>
             <td>上架</td>
             <td>下架</td>
+            <td>2016/10/10 24:00:00</td>
             <td class="text-center"><a href="#" class="btn btn-link" data-toggle="modal" data-target="#myModal">刪除</a>｜<a href="#" class="btn btn-link">編輯</a></td>
           </tr>
           <tr>
@@ -117,9 +140,10 @@
             <td>8</td>
             <td>下修罷免門檻</td>
             <td>總統副總統選舉罷免法</td>
-            <td>有</td>
+            <td>第一版</td>
             <td>下架</td>
             <td>上架</td>
+            <td>2016/10/10 24:00:00</td>
             <td class="text-center"><a href="#" class="btn btn-link" data-toggle="modal" data-target="#myModal">刪除</a>｜<a href="#" class="btn btn-link">編輯</a></td>
           </tr>
           <tr>
@@ -127,9 +151,10 @@
             <td>8</td>
             <td>增加罷免門檻</td>
             <td>總統副總統選舉罷免法</td>
-            <td>有</td>
+            <td>第一版</td>
             <td>上架</td>
             <td>下架</td>
+            <td>2016/10/10 24:00:00</td>
             <td class="text-center"><a href="#" class="btn btn-link" data-toggle="modal" data-target="#myModal">刪除</a>｜<a href="#" class="btn btn-link">編輯</a></td>
           </tr>
           <tr>
@@ -137,32 +162,14 @@
             <td>8</td>
             <td>下修公投門檻</td>
             <td>公民投票法</td>
-            <td>無</td>
-            <td>無</td>
-            <td>無</td>
+            <td>第一版</td>
+            <td>上架</td>
+            <td>下架</td>
+            <td>2016/10/10 24:00:00</td>
             <td class="text-center"><a href="#" class="btn btn-link" data-toggle="modal" data-target="#myModal">刪除</a>｜<a href="#" class="btn btn-link">編輯</a></td>
           </tr>
           <tr>
             <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td class="text-center"><a href="#" class="btn btn-link" data-toggle="modal" data-target="#myModal">刪除</a>｜<a href="#" class="btn btn-link">編輯</a></td>
-          </tr>
-          <tr>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td class="text-center"><a href="#" class="btn btn-link" data-toggle="modal" data-target="#myModal">刪除</a>｜<a href="#" class="btn btn-link">編輯</a></td>
-          </tr>
-          <tr>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
@@ -180,9 +187,22 @@
             <td>&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
+            <td>&nbsp;</td>
             <td class="text-center"><a href="#" class="btn btn-link" data-toggle="modal" data-target="#myModal">刪除</a>｜<a href="#" class="btn btn-link">編輯</a></td>
           </tr>
           <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td class="text-center"><a href="#" class="btn btn-link" data-toggle="modal" data-target="#myModal">刪除</a>｜<a href="#" class="btn btn-link">編輯</a></td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>

@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>新增發言資料</title>
+<title>新增發言立場統計-01</title>
 <!-- Bootstrap -->
 <link href="css/bootstrap.min.css" rel="stylesheet">
 <link href="css/style.css" rel="stylesheet">
@@ -61,95 +61,131 @@
 </nav>
 <div class="container">
   <div class="row">
-    <h2 class="text-center">新增發言資料</h2>
+    <h2 class="text-center">新增發言立場統計-01</h2>
+    <ul class="list-inline text-center">
+      <li><a href="page-say-standpoint-01-add.html">選時間範圍與委員會</a></li>
+      <li><a href="page-say-standpoint-02-add.html">設定立委發言立場統計頁面</a></li>
+      <li><a href="page-say-standpoint-03-add.html">設定政黨發言立場統計頁面</a></li>
+    </ul>
     <div class="col-md-12">
-      <div class="row">
+      <div class="row col-md-12">
         <div class="panel panel-default">
-          <div class="panel-heading">發言資料</div>
+          <div class="panel-heading">發言時間範圍與委員會</div>
           <div class="panel-body">
-            <div class="col-md-4">
+            <div class="col-md-5">
               <div class="form-group col-md-12">
                 <label for="fileField">小議題</label>
                 <select class="form-control">
-                  <option>請選擇</option>
+                  <option>小議題名</option>
                   <option>公投</option>
                   <option>罷免</option>
                 </select>
               </div>
               <div class="form-group col-md-12">
-                <label for="fileField">委員會</label>
+                <label for="fileField">爭點命題</label>
                 <select class="form-control">
-                  <option>請選擇</option>
-                  <option>院會</option>
-                  <option>教育文化委員會</option>
+                  <option>你支持下修罷免門檻嗎</option>
+                  <option>你支持提高罷免門檻嗎</option>
                 </select>
               </div>
               <div class="form-group col-md-12">
-                <label for="fileField">發言日期</label>
+                <label for="fileField">立院資料擷取時間範圍</label>
+                <div class="row">
+                <div class="col-md-6">
+                開始
                 <input type="text" class="form-control">
+                </div>
+                <div class="col-md-6">
+                結束
+                <input type="text" class="form-control">
+                </div>
+                </div>
               </div>
               <div class="form-group col-md-12">
-                <label for="fileField">屆次 </label>
-                <input type="text" disabled class="form-control" value="8">
-              </div>
-              <div class="form-group col-md-12">
-                <label for="fileField">立委名</label>
+                <label for="fileField">屆次</label>
                 <select class="form-control">
-                  <option>請選擇</option>
-                  <option>尤美女</option>
-                  <option>段宜康</option>
+                  <option>7</option>
+                  <option>8</option>
+                  <option>9</option>
                 </select>
               </div>
+            </div>
+            <div class="col-md-7">
+            
               <div class="form-group col-md-12">
-                <label for="fileField">當時政黨</label>
-                <input type="text" disabled class="form-control" value="民進黨">
-              </div>
-              <div class="form-group col-md-12">
-                <label for="fileField">tag</label>
-                <input type="text" class="form-control">
+                <label for="fileField">應發言未發言判斷條件</label>
               </div>
               <div class="form-group col-md-12">
-                <label for="fileField">立法院連結</label>
-                <input type="text" class="form-control">
+                <lable> 委員會 </lable>
+                <div class="col-md-12">
+                  <div class="checkbox-inline">
+                    <label>
+                      <input type="checkbox" value="">
+                      院會</label>
+                  </div>
+                  <div class="checkbox-inline">
+                    <label>
+                      <input type="checkbox" value="">
+                      A委員會</label>
+                  </div>
+                  <div class="checkbox-inline">
+                    <label>
+                      <input type="checkbox" value="">
+                      B委員會</label>
+                  </div>
+                  <div class="checkbox-inline">
+                    <label>
+                      <input type="checkbox" value="">
+                      C委員會</label>
+                  </div>
+                  <div class="checkbox-inline">
+                    <label>
+                      <input type="checkbox" value="">
+                      D委員會</label>
+                  </div>
+                  <div class="checkbox-inline">
+                    <label>
+                      <input type="checkbox" value="">
+                      E委員會</label>
+                  </div>
+                  <div class="checkbox-inline">
+                    <label>
+                      <input type="checkbox" value="">
+                      F委員會</label>
+                  </div>
+                  <div class="checkbox-inline">
+                    <label>
+                      <input type="checkbox" value="">
+                      G委員會</label>
+                  </div>
+                </div>
               </div>
-            </div>
-            <div class="col-md-8">
-            <div class="form-group col-md-12">
-              <label for="fileField">發言內容</label>
-              <textarea rows="10" class="form-control"></textarea>
-            </div>
-            <div class="form-group col-md-12">
-              <label for="fileField">爭點命題</label>
-              <select class="form-control">
-                <option>請選擇</option>
-                <option>你支持罷免門檻下修嗎</option>
-              </select>
-            </div>
-            <div class="form-group col-md-12">
-              <label for="fileField">立場摘要</label>
-              <textarea rows="5" class="form-control"></textarea>
-            </div>
-            <div class="form-group">
-              <lable class="col-md-12"> 立場判斷</lable>
-              <div class="col-md-12">
-                <div class="radio">
-                  <label>
-                    <input type="radio" name="optradio">
-                    贊成</label>
-                </div>
-                <div class="radio">
-                  <label>
-                    <input type="radio" name="optradio">
-                    反對</label>
-                </div>
-                <div class="radio">
-                  <label>
-                    <input type="radio" name="optradio">
-                    模糊</label>
+              <div class="form-group col-md-12">
+                <lable>會期（照屆次自動顯示有幾個會期）</lable>
+                <div class="col-md-12">
+                  <div class="checkbox-inline">
+                    <label>
+                      <input type="checkbox" value="">1
+                      </label>
+                  </div>
+                  <div class="checkbox-inline">
+                    <label>
+                      <input type="checkbox" value="">2
+                      </label>
+                  </div>
+                  <div class="checkbox-inline">
+                    <label>
+                      <input type="checkbox" value="">3
+                      </label>
+                  </div>
+                  <div class="checkbox-inline">
+                    <label>
+                      <input type="checkbox" value="">4
+                      </label>
+                  </div>
                 </div>
               </div>
-            </div>
-            </div>
+		    </div>
           </div>
         </div>
       </div>
@@ -157,7 +193,7 @@
   </div>
   <div class="text-center">
     <button type="submit" class="btn btn-default">取消</button>
-    <button type="submit" class="btn btn-primary">儲存</button>
+    <button type="submit" class="btn btn-primary" onclick="javascript:location.href='page-say-standpoint-02-add.html'">儲存及下一步</button>
   </div>
 </div>
 </div>
