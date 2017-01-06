@@ -20,7 +20,7 @@
   <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-      <a class="navbar-brand" href="login-index.html">沃草大平台管理後台</a></div>
+      <a class="navbar-brand" href="login-index.html">大沃草內容管理後台</a></div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">立院資料設定 <span class="caret"></span></a>
@@ -95,6 +95,7 @@
               <select class="form-control">
                 <option>博士</option>
                 <option>碩士</option>
+                <option>大學</option>
                 <option>高中職</option>
                 <option>國中</option>
                 <option>國小</option>
@@ -168,13 +169,17 @@
         </div>
       </div>
       <div class="panel panel-default">
-        <div class="panel-heading" id="3">選區歷史</div>
+        <div class="panel-heading" id="3">選舉歷史</div>
         <div class="panel-body">
           <table class="table">
             <tr>
-              <th width="27%">屆次</th>
-              <th width="47%">選區</th>
-              <th width="16%" >辦公室號碼</th>
+              <th width="8%">屆次</th>
+              <th width="12%">變動類型</th>
+              <th width="15%">選區</th>
+              <th width="15%">變動日期</th>
+              <th width="20%" >備註</th>
+              <th width="10%" >辦公室號碼</th>
+              <th width="10%" >身份</th>
               <th width="10%" >操作</th>
             </tr>
             <tr>
@@ -183,15 +188,26 @@
                   <option>9</option>
                   <option>8</option>
                 </select></td>
-              <td><select class="form-control">
-                  <option>請選擇</option>
-                  <option>台北市第1選區</option>
-                  <option>台北市第2選區</option>
-                  <option>台北市第3選區</option>
-                  <option>台北市第4選區</option>
-                  <option>台北市第5選區</option>
-                </select></td>
+              <td><select name="select" class="form-control">
+                <option>應屆選舉</option>
+                <option>補選就任</option>
+                <option>離職</option>
+              </select></td>
+              <td><select name="select3" class="form-control">
+                <option>台北市第1選區</option>
+                <option>台北市第2選區</option>
+                <option>台北市第3選區</option>
+                <option>台北市第4選區</option>
+                <option>台北市第5選區</option>
+              </select></td>
               <td><input type="text" class="form-control" value=""></td>
+              <td><input type="text" class="form-control" value=""></td>
+              <td><input type="text" class="form-control" value=""></td>
+              <td><select name="select5" class="form-control">
+                <option>院長</option>
+                <option>副院長</option>
+                <option>委員</option>
+              </select></td>
               <td><button type="button" class="btn btn-primary">新增</button></td>
             </tr>
             <tr>
@@ -199,14 +215,26 @@
                   <option>9</option>
                   <option>8</option>
                 </select></td>
-              <td><select class="form-control">
-                  <option>台北市第1選區</option>
-                  <option>台北市第2選區</option>
-                  <option>台北市第3選區</option>
-                  <option>台北市第4選區</option>
-                  <option>台北市第5選區</option>
-                </select></td>
+              <td><select name="select2" class="form-control">
+                <option>應屆選舉</option>
+                <option>補選</option>
+                <option>離職</option>
+              </select></td>
+              <td><select name="select4" class="form-control">
+                <option>台北市第1選區</option>
+                <option>台北市第2選區</option>
+                <option>台北市第3選區</option>
+                <option>台北市第4選區</option>
+                <option>台北市第5選區</option>
+              </select></td>
               <td><input type="text" class="form-control" value=""></td>
+              <td><input type="text" class="form-control" value=""></td>
+              <td><input type="text" class="form-control" value=""></td>
+              <td><select name="select6" class="form-control">
+                <option>院長</option>
+                <option>副院長</option>
+                <option>委員</option>
+              </select></td>
               <td><button type="button" class="btn btn-link">刪除</button></td>
             </tr>
           </table>
@@ -221,7 +249,7 @@
               <th width="15%">政黨</th>
               <th width="15%">黨團</th>
               <th width="13%">是幹部嗎？</th>
-              <th width="15%">變動日期</th>
+              <th width="15%">開始日期</th>
               <th width="22%">備註</th>
               <th width="10%" >操作</th>
             </tr>
@@ -271,7 +299,7 @@
                   <input type="text" class="form-control" value="">
                 </div></td>
               <td><input type="text" class="form-control" value="2016/10/10"></td>
-              <td><input type="text" class="form-control" value="離職去做文化部長"></td>
+              <td><input type="text" class="form-control" value=""></td>
               <td><button type="button" class="btn btn-link">刪除</button></td>
             </tr>
           </table>

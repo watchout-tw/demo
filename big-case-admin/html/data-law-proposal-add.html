@@ -20,7 +20,7 @@
   <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-      <a class="navbar-brand" href="login-index.html">沃草大平台管理後台</a></div>
+      <a class="navbar-brand" href="login-index.html">大沃草內容管理後台</a></div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">立院資料設定 <span class="caret"></span></a>
@@ -39,7 +39,7 @@
             <li><a href="basic-small-issue-list.html">小議題設定管理</a></li>
             <li><a href="basic-law-names-list.html">法案名目設定管理</a></li>
             <li><a href="basic-law-item-list.html">法案比較項目設定管理</a></li>
-                      </ul>
+          </ul>
         </li>
         <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">立委表態原始資料管理 <span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
@@ -65,7 +65,7 @@
     <div class="col-md-12">
       <div class="row">
         <div class="panel panel-default">
-          <div class="panel-heading">提案資料 / 立場判斷</div>
+          <div class="panel-heading">提案基本資料</div>
           <div class="panel-body">
             <div class="col-md-3">
               <div class="form-group col-md-12">
@@ -74,22 +74,6 @@
                   <option>請選擇</option>
                   <option>公職人員選舉罷免法</option>
                   <option>總統副總統選舉罷免法</option>
-                </select>
-              </div>
-              <div class="form-group col-md-12">
-                <label for="fileField">小議題</label>
-                <select class="form-control">
-                  <option>請選擇</option>
-                  <option>公投</option>
-                  <option>罷免</option>
-                </select>
-              </div>
-              <div class="form-group col-md-12">
-                <label for="fileField">修法方向</label>
-                <select class="form-control">
-                  <option>請選擇</option>
-                  <option>降低罷免門檻</option>
-                  <option>提高罷免門檻</option>
                 </select>
               </div>
               <div class="form-group col-md-12">
@@ -112,7 +96,7 @@
                   <div class="radio">
                     <label>
                       <input type="radio" name="optradio">
-                      原法案版本</label>
+                      原條文</label>
                   </div>
                   <div class="radio">
                     <label>
@@ -162,135 +146,250 @@
                 <label for="fileField">法案說明</label>
                 <textarea rows="8" class="form-control"></textarea>
               </div>
-              <table class="table">
-            <tr>
-              <th width="36%" rowspan="2" class="text-center">爭點命題</th>
-              <th colspan="4" class="text-center">立場判斷</th>
-              </tr>
-            <tr>
-              <th width="16%" class="text-center">贊成</th>
-              <th width="16%" class="text-center">模糊</th>
-              <th width="16%" class="text-center">反對</th>
-              <th width="16%" class="text-center">暫不選</th>
-            </tr>
-            <tr>
-              <td>你支持設置禁制區嗎？</td>
-				<td class="text-center"><input type="radio" name="radio" id="radio" value="radio">
-                  </td>
-				<td class="text-center"><input type="radio" name="radio" id="radio3" value="radio"></td>
-              <td class="text-center"><input type="radio" name="radio" id="radio5" value="radio"></td>
-              <td class="text-center"><input type="radio" name="radio" id="radio7" value="radio"></td>
-            </tr>
-            <tr>
-              <td>你支持廢除集會遊行法嗎？</td>
-              <td class="text-center"><input type="radio" name="radio" id="radio" value="radio"></td>
-              <td class="text-center"><input type="radio" name="radio" id="radio3" value="radio"></td>
-              <td class="text-center"><input type="radio" name="radio" id="radio5" value="radio"></td>
-              <td class="text-center"><input type="radio" name="radio" id="radio7" value="radio"></td>
-              </tr>
-          </table>
             </div>
           </div>
         </div>
         <div class="panel panel-default">
-          <div class="panel-heading">審議進度 / 比較項目</div>
+          <div class="panel-heading"> 立場判斷 / 審議進度</div>
           <div class="panel-body">
-          	<div class="col-md-5">
-          	<table class="table">
-            <tr>
-              <th>立院連結</th>
-              <th><input type="text" class="form-control"></th>
-              <th ><button type="button" class="btn btn-default">撈取立院資料</button></th>
-            </tr>
-            <tr>
-              <th width="30%">日期</th>
-              <th width="50%">審議進度</th>
-              <th width="20%" >操作</th>
-            </tr>
-            <tr>
-              <td><input type="text" class="form-control"></td>
-              <td><select class="form-control">
-                <option></option>
-                <option>一讀</option>
-                <option>委員會</option>
-                <option>二讀(廣泛討論)</option>
-                <option>二讀(逐條討論)</option>
-                <option>二讀(已決議)</option>
-                <option>三讀</option>
-                <option>退回程序</option>
-                <option>覆議(不維持原決議)</option>
-                <option>撤回</option>
-                <option>不予審議</option>
-                <option>覆議</option>
-              </select></td>
-              <td><button type="button" class="btn btn-primary">新增</button></td>
-            </tr>
-            <tr>
-              <td><input type="text" class="form-control"></td>
-              <td><select class="form-control">
-                <option></option>
-                <option>一讀</option>
-                <option>委員會</option>
-                <option>二讀(廣泛討論)</option>
-                <option>二讀(逐條討論)</option>
-                <option>二讀(已決議)</option>
-                <option>三讀</option>
-                <option>退回程序</option>
-                <option>覆議(不維持原決議)</option>
-                <option>撤回</option>
-                <option>不予審議</option>
-                <option>覆議</option>
-              </select></td>
-              <td><button type="button" class="btn btn-link">刪除</button></td>
-            </tr>
-            <tr>
-              <td><input type="text" class="form-control"></td>
-              <td><select class="form-control">
-                <option></option>
-                <option>一讀</option>
-                <option>委員會</option>
-                <option>二讀(廣泛討論)</option>
-                <option>二讀(逐條討論)</option>
-                <option>二讀(已決議)</option>
-                <option>三讀</option>
-                <option>退回程序</option>
-                <option>覆議(不維持原決議)</option>
-                <option>撤回</option>
-                <option>不予審議</option>
-                <option>覆議</option>
-              </select></td>
-              <td><button type="button" class="btn btn-link">刪除</button></td>
-            </tr>
-          </table>
-			  </div>
-         <div class="col-md-7">
-          	<table class="table">
-            <tr>
-              <th width="20%">比較項目</th>
-              <th width="25%">簡短內容</th>
-              <th width="40%">詳細內容</th>
-              <th width="15%" >操作</th>
-            </tr>
-            <tr>
-              <td><input type="text" class="form-control"></td>
-				<td><textarea name="textarea2" rows="5" class="form-control"></textarea></td>
-              <td><textarea name="textarea" rows="5" class="form-control"></textarea></td>
-              <td><button type="button" class="btn btn-primary">新增</button></td>
-            </tr>
-            <tr>
-              <td>提案人數門檻</td>
-              <td><textarea name="textarea3" rows="5" class="form-control"></textarea></td>
-              <td><textarea name="textarea5" rows="5" class="form-control"></textarea></td>
-              <td><button type="button" class="btn btn-link">刪除</button></td>
-            </tr>
-            <tr>
-              <td>連署人數門檻</td>
-              <td><textarea name="textarea4" rows="5" class="form-control"></textarea></td>
-              <td><textarea name="textarea6" rows="5" class="form-control"></textarea></td>
-              <td><button type="button" class="btn btn-link">刪除</button></td>
-            </tr>
-          </table>
-			  </div>
+            <div class="col-md-7">
+              <table class="table">
+                <tr>
+                  <th width="36%" rowspan="2" class="text-center">爭點命題</th>
+                  <th colspan="4" class="text-center">立場判斷</th>
+                </tr>
+                <tr>
+                  <th width="16%" class="text-center">贊成</th>
+                  <th width="16%" class="text-center">模糊</th>
+                  <th width="16%" class="text-center">反對</th>
+                  <th width="16%" class="text-center">暫不選</th>
+                </tr>
+                <tr>
+                  <td>你支持設置禁制區嗎？</td>
+                  <td class="text-center"><input type="radio" name="radio" id="radio" value="radio"></td>
+                  <td class="text-center"><input type="radio" name="radio" id="radio3" value="radio"></td>
+                  <td class="text-center"><input type="radio" name="radio" id="radio5" value="radio"></td>
+                  <td class="text-center"><input type="radio" name="radio" id="radio7" value="radio"></td>
+                </tr>
+                <tr>
+                  <td>你支持廢除集會遊行法嗎？</td>
+                  <td class="text-center"><input type="radio" name="radio" id="radio" value="radio"></td>
+                  <td class="text-center"><input type="radio" name="radio" id="radio3" value="radio"></td>
+                  <td class="text-center"><input type="radio" name="radio" id="radio5" value="radio"></td>
+                  <td class="text-center"><input type="radio" name="radio" id="radio7" value="radio"></td>
+                </tr>
+              </table>
+            </div>
+            <div class="col-md-5">
+              <table class="table">
+                <tr>
+                  <th>立院連結</th>
+                  <th><input type="text" class="form-control"></th>
+                  <th ><button type="button" class="btn btn-default">撈取立院資料</button></th>
+                </tr>
+                <tr>
+                  <th width="30%">日期</th>
+                  <th width="50%">審議進度</th>
+                  <th width="20%" >操作</th>
+                </tr>
+                <tr>
+                  <td><input type="text" class="form-control"></td>
+                  <td><select class="form-control">
+                      <option></option>
+                      <option>一讀</option>
+                      <option>委員會</option>
+                      <option>二讀(廣泛討論)</option>
+                      <option>二讀(逐條討論)</option>
+                      <option>二讀(已決議)</option>
+                      <option>三讀</option>
+                      <option>退回程序</option>
+                      <option>覆議(不維持原決議)</option>
+                      <option>撤回</option>
+                      <option>不予審議</option>
+                      <option>覆議</option>
+                    </select></td>
+                  <td><button type="button" class="btn btn-primary">新增</button></td>
+                </tr>
+                <tr>
+                  <td><input type="text" class="form-control"></td>
+                  <td><select class="form-control">
+                      <option></option>
+                      <option>一讀</option>
+                      <option>委員會</option>
+                      <option>二讀(廣泛討論)</option>
+                      <option>二讀(逐條討論)</option>
+                      <option>二讀(已決議)</option>
+                      <option>三讀</option>
+                      <option>退回程序</option>
+                      <option>覆議(不維持原決議)</option>
+                      <option>撤回</option>
+                      <option>不予審議</option>
+                      <option>覆議</option>
+                    </select></td>
+                  <td><button type="button" class="btn btn-link">刪除</button></td>
+                </tr>
+                <tr>
+                  <td><input type="text" class="form-control"></td>
+                  <td><select class="form-control">
+                      <option></option>
+                      <option>一讀</option>
+                      <option>委員會</option>
+                      <option>二讀(廣泛討論)</option>
+                      <option>二讀(逐條討論)</option>
+                      <option>二讀(已決議)</option>
+                      <option>三讀</option>
+                      <option>退回程序</option>
+                      <option>覆議(不維持原決議)</option>
+                      <option>撤回</option>
+                      <option>不予審議</option>
+                      <option>覆議</option>
+                    </select></td>
+                  <td><button type="button" class="btn btn-link">刪除</button></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading">比較項目</div>
+          <div class="panel-body">
+            <div class="col-md-12">
+              <table class="table">
+                <tr>
+                  <th width="20%">比較項目</th>
+                  <th width="25%">簡短內容</th>
+                  <th width="40%">詳細內容</th>
+                  <th width="15%" >操作</th>
+                </tr>
+                <tr>
+                  <td><input type="text" class="form-control"></td>
+                  <td><textarea name="textarea2" rows="5" class="form-control"></textarea></td>
+                  <td><textarea name="textarea" rows="5" class="form-control"></textarea></td>
+                  <td><button type="button" class="btn btn-primary">新增</button></td>
+                </tr>
+                <tr>
+                  <td>提案人數門檻</td>
+                  <td><textarea name="textarea3" rows="5" class="form-control"></textarea></td>
+                  <td><textarea name="textarea5" rows="5" class="form-control"></textarea></td>
+                  <td><button type="button" class="btn btn-link">刪除</button></td>
+                </tr>
+                <tr>
+                  <td>連署人數門檻</td>
+                  <td><textarea name="textarea4" rows="5" class="form-control"></textarea></td>
+                  <td><textarea name="textarea6" rows="5" class="form-control"></textarea></td>
+                  <td><button type="button" class="btn btn-link">刪除</button></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading">比較項目之小議題與修法方向群組設定（這功能可能要另外拆成獨立步驟但先放一起） </div>
+          <div class="panel-body">
+          <p>*每個小議題與修法方向只能增加一次不能增加多次</p>
+           <div class="col-md-12">
+             <div class="col-md-4"><select class="form-control">
+                <option>請選擇</option>
+                <option selected>公投</option>
+                <option>罷免</option>
+              </select></div>
+             <div class="col-md-4"><button type="submit" class="btn btn-default">增加小議題</button></div>
+            </div>
+            <div class="line"></div>
+            <div class="col-md-12">
+              <div class="form-group col-md-12">
+                <label for="fileField">小議題</label>
+                <input type="text" disabled class="form-control" value="小議題名">
+              </div>
+              <div class="col-md-11 input-group">
+             <div class="col-md-4"><select class="form-control">
+                <option>請選擇</option>
+                <option selected>A方向</option>
+                <option>B方向</option>
+              </select></div>
+             <div class="col-md-4"><button type="submit" class="btn btn-default">增加修法方向</button></div>
+              </div>
+            </div>
+            <div class="line"></div>
+            <div class="col-md-12">
+              <div class="form-group col-md-12">
+                <label for="fileField">小議題</label>
+                <input type="text" disabled class="form-control" value="罷免">
+              </div>
+              <div class="col-md-11 input-group">
+             <div class="col-md-4"><select class="form-control">
+                <option>請選擇</option>
+                <option selected>A方向</option>
+                <option>B方向</option>
+              </select></div>
+             <div class="col-md-4"><button type="submit" class="btn btn-default">增加修法方向</button></div>
+              </div>
+              <div class="col-md-11 input-group">
+                <div class="form-group col-md-12">
+                  <label for="fileField">修法方向</label>
+                  <input type="text" disabled class="form-control" value="降低罷免門檻">
+                </div>
+                <div class="form-group col-md-12">
+                  <label for="fileField">比較項目（多選，在input用多tag顯示）</label>
+                  <input type="text" class="form-control">
+                </div>
+              </div>
+              <div class="col-md-11 input-group">
+                <div class="form-group col-md-12">
+                  <label for="fileField">修法方向</label>
+                  <input type="text" disabled class="form-control" value="提高罷免門檻">
+                </div>
+                <div class="form-group col-md-12">
+                  <label for="fileField">比較項目（多選，在input用多tag顯示）</label>
+                  <input type="text" class="form-control">
+                </div>
+              </div>
+            </div>
+            <div class="line"></div>
+            <div class="col-md-12">
+              <div class="form-group col-md-12">
+                <label for="fileField">小議題</label>
+                <input type="text" disabled class="form-control" value="公投">
+              </div>
+              <div class="col-md-11 input-group">
+             <div class="col-md-4"><select class="form-control">
+                <option>請選擇</option>
+                <option selected>A方向</option>
+                <option>B方向</option>
+              </select></div>
+             <div class="col-md-4"><button type="submit" class="btn btn-default">增加修法方向</button></div>
+              </div>
+              <div class="col-md-11 input-group">
+                <div class="form-group col-md-12">
+                  <label for="fileField">修法方向</label>
+                  <input type="text" disabled class="form-control" value="方向A">
+                </div>
+                <div class="form-group col-md-12">
+                  <label for="fileField">比較項目（多選，在input用多tag顯示）</label>
+                  <input type="text" class="form-control">
+                </div>
+              </div>
+              <div class="col-md-11 input-group">
+                <div class="form-group col-md-12">
+                  <label for="fileField">修法方向</label>
+                  <input type="text" disabled class="form-control" value="方向B">
+                </div>
+                <div class="form-group col-md-12">
+                  <label for="fileField">比較項目（多選，在input用多tag顯示）</label>
+                  <input type="text" class="form-control">
+                </div>
+              </div>
+              <div class="col-md-11 input-group">
+                <div class="form-group col-md-12">
+                  <label for="fileField">修法方向</label>
+                  <input type="text" disabled class="form-control" value="方向C">
+                </div>
+                <div class="form-group col-md-12">
+                  <label for="fileField">比較項目（多選，在input用多tag顯示）</label>
+                  <input type="text" class="form-control">
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
