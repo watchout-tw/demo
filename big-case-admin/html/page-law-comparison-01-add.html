@@ -105,64 +105,54 @@
                   <option>總統副總統選舉罷免法</option>
                 </select>
               </div>
-              <div class="form-group col-md-12">
-                <label for="fileField">目前已有版本</label>
-                <select class="form-control">
-                  <option>無</option>
-                  <option>第一版</option>
-                  <option>第二版</option>
-                </select>
-                <button type="submit" class="btn btn-default">擷取複製版本內容</button>
-              </div>
-              <div class="form-group col-md-12">
-                <label for="fileField">組版版本名稱</label>
-                <input type="text" class="form-control">
-              </div>
-              <div class="form-group col-md-12">
-                <lable> 法案提案版本 </lable>
-                <div class="col-md-12">
-                  <div class="checkbox-inline">
+             <div class="form-group col-md-12">
+                <lable> 法案提案版本 &amp; 發展關鍵日期標定</lable>
+                <table class="table">
+                  <tbody>
+                    <tr>
+                      <td width="161">選版本</td>
+                      <td width="170">提案日</td>
+                      <td width="225">撤回日</td>
+                    </tr>
+                    <tr>
+                      <td><div class="checkbox-inline">
                     <label>
                       <input type="checkbox" value="">
                       原法案版本</label>
-                  </div>
-                  <div class="checkbox-inline">
+                  </div></td>
+                      <td>2016/10/10</td>
+                      <td><input type="text" class="form-control"></td>
+                    </tr>
+                    <tr>
+                      <td><div class="checkbox-inline">
                     <label>
                       <input type="checkbox" value="">
                       行政院版本</label>
-                  </div>
-                  <div class="checkbox-inline">
-                    <label>
-                      <input type="checkbox" value="">
-                      A委員</label>
-                  </div>
-                  <div class="checkbox-inline">
-                    <label>
-                      <input type="checkbox" value="">
-                      B委員</label>
-                  </div>
-                  <div class="checkbox-inline">
-                    <label>
-                      <input type="checkbox" value="">
-                      C委員</label>
-                  </div>
-                  <div class="checkbox-inline">
-                    <label>
-                      <input type="checkbox" value="">
-                      D委員</label>
-                  </div>
-                  <div class="checkbox-inline">
-                    <label>
-                      <input type="checkbox" value="">
-                      E委員</label>
-                  </div>
-                  <div class="checkbox-inline">
-                    <label>
-                      <input type="checkbox" value="">
-                      F委員</label>
-                  </div>
-                </div>
-              </div>
+                  </div></td>
+                      <td>2016/10/10</td>
+                      <td><input type="text" class="form-control"></td>
+                    </tr>
+                    <tr>
+                      <td><div class="checkbox-inline">
+                        <label>
+                          <input type="checkbox" value="">
+                          A委員</label>
+                      </div></td>
+                      <td>2016/10/10</td>
+                      <td><input type="text" class="form-control"></td>
+                    </tr>
+                    <tr>
+                      <td><div class="checkbox-inline">
+                        <label>
+                          <input type="checkbox" value="">
+                          B委員</label>
+                      </div></td>
+                      <td>2016/10/10</td>
+                      <td><input type="text" class="form-control"></td>
+                    </tr>
+                  </tbody>
+                </table>
+             </div>
               <div class="form-group col-md-12">
                 <lable>法條項目（只能設定3~6項）</lable>
                 <div class="col-md-12">
@@ -206,8 +196,94 @@
 			  </div>
             <div class="col-md-12">
             <p class="col-md-12 text-center">
-            	<button type="submit" class="btn btn-default">評分總表生成</button>
+            	<button type="submit" class="btn btn-default">法案價值命題 與 評分座標設定 & 法案評分總表生成</button>
             	</p>
+           	  <table class="table">
+           	    <tr>
+           	      <th colspan="7">法案價值命題 與 評分座標設定</th>
+       	        </tr>
+           	    <tr>
+           	      <th width="18%">版本/項目</th>
+           	      <th width="12%">提議人數門檻</th>
+           	      <th width="14%">連署人數門檻</th>
+           	      <th width="14%">投票人數門檻</th>
+           	      <th width="14%">公民投票審議委員會</th>
+           	      <th width="14%">年齡門檻</th>
+           	      <th width="14%">公投適用範圍</th>
+       	        </tr>
+           	    <tr>
+           	      <td>比較項目價值命題</td>
+           	      <td><input type="text" class="form-control"></td>
+           	      <td><input type="text" class="form-control"></td>
+           	      <td><input type="text" class="form-control"></td>
+           	      <td><input type="text" class="form-control"></td>
+           	      <td><input type="text" class="form-control"></td>
+           	      <td><input type="text" class="form-control"></td>
+       	        </tr>
+           	    <tr>
+           	      <td>比較項目座標說明</td>
+           	      <td><input type="text" class="form-control"></td>
+           	      <td><input type="text" class="form-control"></td>
+           	      <td><input type="text" class="form-control"></td>
+           	      <td><input type="text" class="form-control"></td>
+           	      <td><input type="text" class="form-control"></td>
+           	      <td><input type="text" class="form-control"></td>
+       	        </tr>
+           	    <tr>
+           	      <td>0分座標文字</td>
+           	      <td><input type="text" class="form-control"></td>
+           	      <td><input type="text" class="form-control"></td>
+           	      <td><input type="text" class="form-control"></td>
+           	      <td><input type="text" class="form-control"></td>
+           	      <td><input type="text" class="form-control"></td>
+           	      <td><input type="text" class="form-control"></td>
+       	        </tr>
+           	    <tr>
+           	      <td>1分座標文字</td>
+           	      <td><input type="text" class="form-control"></td>
+           	      <td><input type="text" class="form-control"></td>
+           	      <td><input type="text" class="form-control"></td>
+           	      <td><input type="text" class="form-control"></td>
+           	      <td><input type="text" class="form-control"></td>
+           	      <td><input type="text" class="form-control"></td>
+       	        </tr>
+           	    <tr>
+           	      <td>2分座標文字</td>
+           	      <td><input type="text" class="form-control"></td>
+           	      <td><input type="text" class="form-control"></td>
+           	      <td><input type="text" class="form-control"></td>
+           	      <td><input type="text" class="form-control"></td>
+           	      <td><input type="text" class="form-control"></td>
+           	      <td><input type="text" class="form-control"></td>
+       	        </tr>
+           	    <tr>
+           	      <td>3分座標文字</td>
+           	      <td><input type="text" class="form-control"></td>
+           	      <td><input type="text" class="form-control"></td>
+           	      <td><input type="text" class="form-control"></td>
+           	      <td><input type="text" class="form-control"></td>
+           	      <td><input type="text" class="form-control"></td>
+           	      <td><input type="text" class="form-control"></td>
+       	        </tr>
+           	    <tr>
+           	      <td>4分座標文字</td>
+           	      <td><input type="text" class="form-control"></td>
+           	      <td><input type="text" class="form-control"></td>
+           	      <td><input type="text" class="form-control"></td>
+           	      <td><input type="text" class="form-control"></td>
+           	      <td><input type="text" class="form-control"></td>
+           	      <td><input type="text" class="form-control"></td>
+       	        </tr>
+           	    <tr>
+           	      <td>5分座標文字</td>
+           	      <td><input type="text" class="form-control"></td>
+           	      <td><input type="text" class="form-control"></td>
+           	      <td><input type="text" class="form-control"></td>
+           	      <td><input type="text" class="form-control"></td>
+           	      <td><input type="text" class="form-control"></td>
+           	      <td><input type="text" class="form-control"></td>
+       	        </tr>
+       	      </table>
            	  <table class="table">
             		<tr>
             			<th width="16%">版本/項目</th>
