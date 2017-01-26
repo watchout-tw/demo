@@ -38,6 +38,7 @@
             <li><a href="basic-big-issue-list.html">大議題設定管理</a></li>
             <li><a href="basic-small-issue-list.html">小議題設定管理</a></li>
             <li><a href="basic-law-names-list.html">法案名目設定管理</a></li>
+<li><a href="basic-law-item-list.html">法案提案比較項目管理</a></li>
             
                       </ul>
         </li>
@@ -63,87 +64,92 @@
   <form role="form">
     <div class="row">
       <div class="col-md-12">
-        <h2 class="text-center">法案比較項目價值評分設定管理</h2>
+        <h2 class="text-center">法案提案比較項目管理</h2>
         <table class="table">
           <tr>
-            <td width="15%"><select class="form-control">
+            <td width="11%"><select class="form-control">
                 <option>小議題名</option>
                 <option>公投</option>
                 <option>罷免</option>
               </select></td>
-            <td width="29%"><select name="select" class="form-control">
+            <td width="17%"><select name="select2" class="form-control">
+              <option>選擇修法方向</option>
+              <option>提高門檻</option>
+              <option>降低門檻</option>
+            </select></td>
+            <td width="20%"><select name="select" class="form-control">
               <option>選擇法案</option>
               <option>公民投票法</option>
               <option>公職人員選舉罷免法</option>
             </select></td>
-            <td width="42%"><button type="button" class="btn btn-default">搜尋</button></td>
-            <td width="14%"></td>
+            <td width="39%"><button type="button" class="btn btn-default">搜尋</button></td>
+            <td width="13%"><a href="basic-law-item-add.html" class="btn btn-primary">新增比較項目</a></td>
           </tr>
         </table>
         <table class="table">
           <tr>
-            <th width="9%">小議題</th>
-            <th width="21%"><span class="text-center">法案名目</span></th>
-            <th width="15%">修法方向</th>
+            <th width="19%"><span class="text-center">法案名目</span></th>
             <th width="17%">比較項目</th>
-            <th width="20%">比較項目價值命題</th>
+            <th width="19%">比較項目價值命題</th>
+            <th width="12%">小議題</th>
+            <th width="15%">修法方向</th>
             <th width="18%" class="text-center">操作</th>
           </tr>
           <tr>
-            <td>罷免</td>
             <td>公職人員選舉罷免法</td>
-            <td>下修罷免門檻</td>
             <td>提議人數門檻</td>
             <td>下修提議人數門檻</td>
-            <td class="text-center"><a href="#" class="btn btn-link" data-toggle="modal" data-target="#myModal">刪除</a>｜<a href="page-law-item-edit.html" class="btn btn-link">編輯</a></td>
+            <td>罷免</td>
+            <td>下修罷免門檻</td>
+            <td class="text-center"><a href="#" class="btn btn-link" data-toggle="modal" data-target="#myModal">刪除</a>｜<a href="#" class="btn btn-link">編輯</a></td>
           </tr>
           <tr>
-            <td>罷免</td>
             <td>公職人員選舉罷免法</td>
-            <td>下修罷免門檻</td>
             <td>連署人數門檻</td>
             <td>下修連署人數門檻</td>
-            <td class="text-center"><a href="#" class="btn btn-link" data-toggle="modal" data-target="#myModal">刪除</a>｜<a href="page-law-item-edit.html" class="btn btn-link">編輯</a></td>
+            <td>罷免</td>
+            <td>下修罷免門檻</td>
+            <td class="text-center"><a href="#" class="btn btn-link" data-toggle="modal" data-target="#myModal">刪除</a>｜<a href="#" class="btn btn-link">編輯</a></td>
           </tr>
           <tr>
-            <td>罷免</td>
             <td>公職人員選舉罷免法</td>
-            <td>下修罷免門檻</td>
             <td>投票人數門檻</td>
             <td>下修投票人數門檻</td>
-            <td class="text-center"><a href="#" class="btn btn-link" data-toggle="modal" data-target="#myModal">刪除</a>｜<a href="page-law-item-edit.html" class="btn btn-link">編輯</a></td>
+            <td>罷免</td>
+            <td>下修罷免門檻</td>
+            <td class="text-center"><a href="#" class="btn btn-link" data-toggle="modal" data-target="#myModal">刪除</a>｜<a href="#" class="btn btn-link">編輯</a></td>
           </tr>
           <tr>
-            <td>罷免</td>
             <td>公職人員選舉罷免法</td>
-            <td>下修罷免門檻</td>
             <td>宣傳</td>
             <td>可以宣傳</td>
-            <td class="text-center"><a href="#" class="btn btn-link" data-toggle="modal" data-target="#myModal">刪除</a>｜<a href="page-law-item-edit.html" class="btn btn-link">編輯</a></td>
+            <td>罷免</td>
+            <td>下修罷免門檻</td>
+            <td class="text-center"><a href="#" class="btn btn-link" data-toggle="modal" data-target="#myModal">刪除</a>｜<a href="#" class="btn btn-link">編輯</a></td>
           </tr>
           <tr>
-            <td>罷免</td>
             <td>公職人員選舉罷免法</td>
-            <td>下修罷免門檻</td>
             <td>連署期間</td>
             <td>縮短連署期間</td>
-            <td class="text-center"><a href="#" class="btn btn-link" data-toggle="modal" data-target="#myModal">刪除</a>｜<a href="page-law-item-edit.html" class="btn btn-link">編輯</a></td>
+            <td>罷免</td>
+            <td>下修罷免門檻</td>
+            <td class="text-center"><a href="#" class="btn btn-link" data-toggle="modal" data-target="#myModal">刪除</a>｜<a href="#" class="btn btn-link">編輯</a></td>
           </tr>
           <tr>
-            <td>罷免</td>
             <td>公職人員選舉罷免法</td>
-            <td>下修罷免門檻</td>
             <td>舉行投票限制</td>
             <td>下修舉行投票限制</td>
-            <td class="text-center"><a href="#" class="btn btn-link" data-toggle="modal" data-target="#myModal">刪除</a>｜<a href="page-law-item-edit.html" class="btn btn-link">編輯</a></td>
+            <td>罷免</td>
+            <td>下修罷免門檻</td>
+            <td class="text-center"><a href="#" class="btn btn-link" data-toggle="modal" data-target="#myModal">刪除</a>｜<a href="#" class="btn btn-link">編輯</a></td>
           </tr>
           <tr>
-            <td>罷免</td>
             <td>公職人員選舉罷免法</td>
-            <td>下修罷免門檻</td>
             <td>其他</td>
             <td>&nbsp;</td>
-            <td class="text-center"><a href="#" class="btn btn-link" data-toggle="modal" data-target="#myModal">刪除</a>｜<a href="page-law-item-edit.html" class="btn btn-link">編輯</a></td>
+            <td>罷免</td>
+            <td>下修罷免門檻</td>
+            <td class="text-center"><a href="#" class="btn btn-link" data-toggle="modal" data-target="#myModal">刪除</a>｜<a href="#" class="btn btn-link">編輯</a></td>
           </tr>
           <tr>
             <td>&nbsp;</td>
@@ -151,7 +157,7 @@
             <td>&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
-            <td class="text-center"><a href="#" class="btn btn-link" data-toggle="modal" data-target="#myModal">刪除</a>｜<a href="page-law-item-edit.html" class="btn btn-link">編輯</a></td>
+            <td class="text-center"><a href="#" class="btn btn-link" data-toggle="modal" data-target="#myModal">刪除</a>｜<a href="#" class="btn btn-link">編輯</a></td>
           </tr>
           <tr>
             <td>&nbsp;</td>
@@ -159,7 +165,7 @@
             <td>&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
-            <td class="text-center"><a href="#" class="btn btn-link" data-toggle="modal" data-target="#myModal">刪除</a>｜<a href="page-law-item-edit.html" class="btn btn-link">編輯</a></td>
+            <td class="text-center"><a href="#" class="btn btn-link" data-toggle="modal" data-target="#myModal">刪除</a>｜<a href="#" class="btn btn-link">編輯</a></td>
           </tr>
           <tr>
             <td>&nbsp;</td>
@@ -167,7 +173,7 @@
             <td>&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
-            <td class="text-center"><a href="#" class="btn btn-link" data-toggle="modal" data-target="#myModal">刪除</a>｜<a href="page-law-item-edit.html" class="btn btn-link">編輯</a></td>
+            <td class="text-center"><a href="#" class="btn btn-link" data-toggle="modal" data-target="#myModal">刪除</a>｜<a href="#" class="btn btn-link">編輯</a></td>
           </tr>
         </table>
       </div>

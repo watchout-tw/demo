@@ -38,6 +38,7 @@
             <li><a href="basic-big-issue-list.html">大議題設定管理</a></li>
             <li><a href="basic-small-issue-list.html">小議題設定管理</a></li>
             <li><a href="basic-law-names-list.html">法案名目設定管理</a></li>
+<li><a href="basic-law-item-list.html">法案提案比較項目管理</a></li>
             
                       </ul>
         </li>
@@ -63,9 +64,9 @@
   <div class="row">
     <h2 class="text-center">新增法案比較與連署統計-01</h2>
     <ul class="list-inline text-center">
-      <li><a href="page-law-comparison-01-add.html">選法案法條與評分</a></li>
-      <li><a href="page-law-comparison-02-add.html">設定修法版本比較</a></li>
-      <li><a href="page-law-comparison-03-add.html">設定提案連署統計</a></li>
+      <li><a href="page-law-comparison-01-add.html">1.資料源設定：選法案法條與評分</a></li>
+      <li><a href="page-law-comparison-02-add.html">2.頁面設定：圖表頁類型與樣板配置</a></li>
+      <li><a href="page-law-comparison-03-add.html">3.設定頁面內容</a></li>
     </ul>
     <div class="col-md-12">
       <div class="row col-md-12">
@@ -73,6 +74,9 @@
           <div class="panel-heading">選法案法條與評分</div>
           <div class="panel-body">
             <div class="col-md-5">
+              <div class="form-group col-md-12">
+                <label for="fileField2">資料源名稱</label><input type="text" class="form-control">
+              </div>
               <div class="form-group col-md-12">
                 <label for="fileField">小議題</label>
                 <select class="form-control">
@@ -106,127 +110,6 @@
                 </select>
               </div>
              <div class="form-group col-md-12">
-                <lable> 前台顯示群組版本設定</lable>
-                <table class="table">
-                  <tbody>
-                    <tr>
-                      <td width="45">順序</td>
-                      <td width="213"><lable>群組版本名稱</lable></td>
-                      <td width="191">群組版本框選</td>
-                      <td width="103">操作</td>
-                    </tr>
-                    <tr>
-                      <td><input type="text" class="form-control"></td>
-                      <td><input type="text" class="form-control"></td>
-                      <td><div class="col-md-12">
-                        <div class="checkbox-inline">
-                          <label>
-                            <input type="checkbox" value="">
-                            原法案版本</label>
-                        </div>
-                        <div class="checkbox-inline">
-                          <label>
-                            <input type="checkbox" value="">
-                            行政院版本</label>
-                        </div>
-                        <div class="checkbox-inline">
-                          <label>
-                            <input type="checkbox" value="">
-                            A委員</label>
-                        </div>
-                        <div class="checkbox-inline">
-                          <label>
-                            <input type="checkbox" value="">
-                            B委員</label>
-                        </div>
-                      </div></td>
-                      <td><a href="page-law-comparison-01-add.html" class="btn btn-primary">新增</a></td>
-                    </tr>
-                    <tr>
-                      <td><input type="text" class="form-control"></td>
-                      <td><input type="text" class="form-control"></td>
-                      <td><div class="col-md-12">
-                        <div class="checkbox-inline">
-                          <label>
-                            <input type="checkbox" value="">
-                            原法案版本</label>
-                          </div>
-                        <div class="checkbox-inline">
-                          <label>
-                            <input type="checkbox" value="">
-                            行政院版本</label>
-                          </div>
-                        <div class="checkbox-inline">
-                          <label>
-                            <input type="checkbox" value="">
-                            A委員</label>
-                          </div>
-                        <div class="checkbox-inline">
-                          <label>
-                            <input type="checkbox" value="">
-                            B委員</label>
-                          </div>
-                      </div></td>
-                      <td><a href="#" class="btn btn-link" data-toggle="modal" data-target="#myModal">刪除</a></td>
-                    </tr>
-                    <tr>
-                      <td><input type="text" class="form-control"></td>
-                      <td><input type="text" class="form-control"></td>
-                      <td><div class="col-md-12">
-                        <div class="checkbox-inline">
-                          <label>
-                            <input type="checkbox" value="">
-                            原法案版本</label>
-                        </div>
-                        <div class="checkbox-inline">
-                          <label>
-                            <input type="checkbox" value="">
-                            行政院版本</label>
-                        </div>
-                        <div class="checkbox-inline">
-                          <label>
-                            <input type="checkbox" value="">
-                            A委員</label>
-                        </div>
-                        <div class="checkbox-inline">
-                          <label>
-                            <input type="checkbox" value="">
-                            B委員</label>
-                        </div>
-                      </div></td>
-                      <td><a href="#" class="btn btn-link" data-toggle="modal" data-target="#myModal">刪除</a></td>
-                    </tr>
-                    <tr>
-                      <td><input type="text" class="form-control"></td>
-                      <td><input type="text" class="form-control"></td>
-                      <td><div class="col-md-12">
-                        <div class="checkbox-inline">
-                          <label>
-                            <input type="checkbox" value="">
-                            原法案版本</label>
-                        </div>
-                        <div class="checkbox-inline">
-                          <label>
-                            <input type="checkbox" value="">
-                            行政院版本</label>
-                        </div>
-                        <div class="checkbox-inline">
-                          <label>
-                            <input type="checkbox" value="">
-                            A委員</label>
-                        </div>
-                        <div class="checkbox-inline">
-                          <label>
-                            <input type="checkbox" value="">
-                            B委員</label>
-                        </div>
-                      </div></td>
-                      <td><a href="#" class="btn btn-link" data-toggle="modal" data-target="#myModal">刪除</a></td>
-                    </tr>
-                  </tbody>
-                </table>
-             </div>
-              <div class="form-group col-md-12">
                 <lable>法案提案版本</lable>
                 <div class="col-md-12">
                   <div class="checkbox-inline">
@@ -251,7 +134,7 @@
                 </div>
               </div>
               <div class="form-group col-md-12">
-                <lable>法條項目（只能設定3~6項）</lable>
+                <lable>法案提案比較項目（只能設定3~6項）</lable>
                 <div class="col-md-12">
                   <div class="checkbox-inline">
                     <label>
@@ -293,7 +176,7 @@
 			  </div>
             <div class="col-md-12">
             <p class="col-md-12 text-center">
-            	<button type="submit" class="btn btn-default">法案價值命題 與 評分座標設定 & 法案評分總表生成</button>
+            	<button type="submit" class="btn btn-primary">法案價值命題 與 評分座標設定 & 法案評分總表生成</button><br>按了按鈕才顯示下面兩大表格
             	</p>
            	  <table class="table">
            	    <tr>
@@ -309,7 +192,16 @@
            	      <th width="14%">公投適用範圍</th>
        	        </tr>
            	    <tr>
-           	      <td>比較項目價值命題</td>
+           	      <td>比較項目價值命題<br><button type="button" class="btn btn-link">編輯</button></td>
+           	      <td>下修提案人數門檻</td>
+           	      <td>下修連署人數門檻</td>
+           	      <td>下修投票人數門檻</td>
+           	      <td>刪除公審會</td>
+           	      <td>下修投票年齡</td>
+           	      <td>擴大適用範圍</td>
+       	        </tr>
+           	    <tr>
+           	      <td>比較項目座標說明<br><button type="button" class="btn btn-primary">儲存</button></td>
            	      <td><input type="text" class="form-control"></td>
            	      <td><input type="text" class="form-control"></td>
            	      <td><input type="text" class="form-control"></td>
@@ -318,67 +210,58 @@
            	      <td><input type="text" class="form-control"></td>
        	        </tr>
            	    <tr>
-           	      <td>比較項目座標說明</td>
-           	      <td><input type="text" class="form-control"></td>
-           	      <td><input type="text" class="form-control"></td>
-           	      <td><input type="text" class="form-control"></td>
-           	      <td><input type="text" class="form-control"></td>
-           	      <td><input type="text" class="form-control"></td>
-           	      <td><input type="text" class="form-control"></td>
+           	      <td>0分座標文字<br><button type="button" class="btn btn-link">編輯</button></td>
+           	      <td>未修法</td>
+           	      <td>未修法</td>
+           	      <td>未修法</td>
+           	      <td>未修法</td>
+           	      <td>未修法</td>
+           	      <td>未修法</td>
        	        </tr>
            	    <tr>
-           	      <td>0分座標文字</td>
-           	      <td><input type="text" class="form-control"></td>
-           	      <td><input type="text" class="form-control"></td>
-           	      <td><input type="text" class="form-control"></td>
-           	      <td><input type="text" class="form-control"></td>
-           	      <td><input type="text" class="form-control"></td>
-           	      <td><input type="text" class="form-control"></td>
+           	      <td>1分座標文字<br><button type="button" class="btn btn-link">編輯</button></td>
+           	      <td>5%</td>
+           	      <td>5%</td>
+           	      <td>雙21</td>
+           	      <td>&nbsp;</td>
+           	      <td>20歲</td>
+           	      <td>&nbsp;</td>
        	        </tr>
            	    <tr>
-           	      <td>1分座標文字</td>
-           	      <td><input type="text" class="form-control"></td>
-           	      <td><input type="text" class="form-control"></td>
-           	      <td><input type="text" class="form-control"></td>
-           	      <td><input type="text" class="form-control"></td>
-           	      <td><input type="text" class="form-control"></td>
-           	      <td><input type="text" class="form-control"></td>
+           	      <td>2分座標文字<br><button type="button" class="btn btn-link">編輯</button></td>
+           	      <td>4%</td>
+           	      <td>4%</td>
+           	      <td>&nbsp;</td>
+           	      <td>&nbsp;</td>
+           	      <td>&nbsp;</td>
+           	      <td>&nbsp;</td>
        	        </tr>
            	    <tr>
-           	      <td>2分座標文字</td>
-           	      <td><input type="text" class="form-control"></td>
-           	      <td><input type="text" class="form-control"></td>
-           	      <td><input type="text" class="form-control"></td>
-           	      <td><input type="text" class="form-control"></td>
-           	      <td><input type="text" class="form-control"></td>
-           	      <td><input type="text" class="form-control"></td>
+           	      <td>3分座標文字<br><button type="button" class="btn btn-link">編輯</button></td>
+           	      <td>3%</td>
+           	      <td>3%</td>
+           	      <td>50%</td>
+           	      <td>&nbsp;</td>
+           	      <td>&nbsp;</td>
+           	      <td>&nbsp;</td>
        	        </tr>
            	    <tr>
-           	      <td>3分座標文字</td>
-           	      <td><input type="text" class="form-control"></td>
-           	      <td><input type="text" class="form-control"></td>
-           	      <td><input type="text" class="form-control"></td>
-           	      <td><input type="text" class="form-control"></td>
-           	      <td><input type="text" class="form-control"></td>
-           	      <td><input type="text" class="form-control"></td>
+           	      <td>4分座標文字<br><button type="button" class="btn btn-link">編輯</button></td>
+           	      <td>2%</td>
+           	      <td>2%</td>
+           	      <td>&nbsp;</td>
+           	      <td>&nbsp;</td>
+           	      <td>&nbsp;</td>
+           	      <td>&nbsp;</td>
        	        </tr>
            	    <tr>
-           	      <td>4分座標文字</td>
-           	      <td><input type="text" class="form-control"></td>
-           	      <td><input type="text" class="form-control"></td>
-           	      <td><input type="text" class="form-control"></td>
-           	      <td><input type="text" class="form-control"></td>
-           	      <td><input type="text" class="form-control"></td>
-           	      <td><input type="text" class="form-control"></td>
-       	        </tr>
-           	    <tr>
-           	      <td>5分座標文字</td>
-           	      <td><input type="text" class="form-control"></td>
-           	      <td><input type="text" class="form-control"></td>
-           	      <td><input type="text" class="form-control"></td>
-           	      <td><input type="text" class="form-control"></td>
-           	      <td><input type="text" class="form-control"></td>
-           	      <td><input type="text" class="form-control"></td>
+           	      <td>5分座標文字<br><button type="button" class="btn btn-link">編輯</button></td>
+           	      <td>1%</td>
+           	      <td>1%</td>
+           	      <td>25%</td>
+           	      <td> 廢除</td>
+           	      <td>18歲</td>
+           	      <td>領土</td>
        	        </tr>
        	      </table>
            	  <table class="table">

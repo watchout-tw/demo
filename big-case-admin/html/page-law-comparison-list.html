@@ -38,6 +38,7 @@
             <li><a href="basic-big-issue-list.html">大議題設定管理</a></li>
             <li><a href="basic-small-issue-list.html">小議題設定管理</a></li>
             <li><a href="basic-law-names-list.html">法案名目設定管理</a></li>
+<li><a href="basic-law-item-list.html">法案提案比較項目管理</a></li>
             
                       </ul>
         </li>
@@ -71,98 +72,163 @@
                 <option>公投</option>
                 <option>罷免</option>
               </select></td>
-            <td width="15%"><select name="select" class="form-control">
+            <td width="13%"><select name="select" class="form-control">
               <option>屆次</option>
               <option>8</option>
               <option>9</option>
             </select></td>
-            <td width="21%"><select name="select2" class="form-control">
-              <option>修法方向</option>
-              <option>上修罷免門檻</option>
-              <option>下修罷免門檻</option>
-            </select></td>
-            <td width="21%"><select name="select3" class="form-control">
-              <option>法案名目</option>
-              <option>公職人員選舉罷免法</option>
-              <option>9</option>
-            </select></td>
-            <td width="42%"><button type="button" class="btn btn-default">搜尋</button></td>
-            <td width="26%"><a href="page-law-comparison-01-add.html" class="btn btn-primary">增加法案比較與連署統計</a></td>
+            <td width="25%">
+              <input type="text" class="form-control" placeholder="輸入資料源名稱">
+            </td>
+            <td width="26%"><button class="btn btn-default">搜尋</button></td>
+            <td width="21%"><a href="page-law-comparison-01-add.html" class="btn btn-primary">增加法案比較與連署統計</a></td>
           </tr>
         </table>
         <table class="table">
           <tr>
-            <th width="7%">小議題</th>
-            <th width="6%">屆次</th>
-            <th width="13%">修法方向</th>
-            <th width="22%">法案名目</th>
-            <th width="13%">修法版本比較</th>
-            <th width="11%">提案連署統計</th>
-            <th width="14%">建立時間</th>
-            <th width="14%" class="text-center">操作</th>
+            <th width="2%">小議題</th>
+            <th width="2%">屆次</th>
+            <th width="7%">資料源名稱</th>
+            <th width="6%">修法方向</th>
+            <th width="11%">法案名目</th>
+            <th width="10%">法律提案版本</th>
+            <th width="8%">法案提案比較項目</th>
+            <th width="37%">頁面清單</th>
+            <th width="17%" class="text-center">操作</th>
           </tr>
           <tr>
             <td>罷免</td>
             <td>8</td>
+            <td>20150102 罷免法案</td>
             <td>下修罷免門檻</td>
             <td>公職人員選舉罷免法</td>
-            <td>上架</td>
-            <td>上架</td>
-            <td>2016/10/10 24:00:00</td>
+            <td>A版本<br>
+              B版本<br>
+              C版本</td>
+            <td>Ａ項目<br>
+              B項目<br>
+            C項目<br>
+            D項目<br>
+            E項目</td>
+            <td><table class="table">
+              <tr>
+                <th width="22%">頁面名稱</th>
+                <th width="22%">頁面類型</th>
+                <th width="19%">上下架</th>
+                <th width="37%" class="text-center">操作</th>
+                </tr>
+              <tr>
+                <td>罷免修法版本</td>
+                <td>修法版本比較</td>
+                <td>下架</td>
+                <td class="text-center"><a href="#" class="btn btn-link" data-toggle="modal" data-target="#myModal">刪除</a>｜<a href="#" class="btn btn-link">編輯</a></td>
+                </tr>
+              <tr>
+                <td>罷免連署版本</td>
+                <td>立委修法提案連署統計</td>
+                <td>下架</td>
+                <td class="text-center"><a href="#" class="btn btn-link" data-toggle="modal" data-target="#myModal">刪除</a>｜<a href="#" class="btn btn-link">編輯</a></td>
+                </tr>
+            </table></td>
             <td class="text-center"><a href="#" class="btn btn-link" data-toggle="modal" data-target="#myModal">刪除</a>｜<a href="#" class="btn btn-link">編輯</a></td>
           </tr>
           <tr>
             <td>罷免</td>
             <td>8</td>
+            <td>20150102 罷免法案</td>
             <td>下修罷免門檻</td>
             <td>公職人員選舉罷免法</td>
-            <td>上架</td>
-            <td>上架</td>
-            <td>2016/10/10 24:00:00</td>
+            <td>A版本<br>
+              B版本<br>
+              C版本</td>
+            <td>Ａ項目<br>
+              B項目<br>
+              C項目<br>
+              D項目<br>
+              E項目</td>
+            <td><table class="table">
+              <tr>
+                <th width="22%">頁面名稱</th>
+                <th width="22%">頁面類型</th>
+                <th width="19%">上下架</th>
+                <th width="37%" class="text-center">操作</th>
+              </tr>
+              <tr>
+                <td>罷免修法版本</td>
+                <td>修法版本比較</td>
+                <td>下架</td>
+                <td class="text-center"><a href="#" class="btn btn-link" data-toggle="modal" data-target="#myModal">刪除</a>｜<a href="#" class="btn btn-link">編輯</a></td>
+              </tr>
+              <tr>
+                <td>罷免連署版本</td>
+                <td>立委修法提案連署統計</td>
+                <td>下架</td>
+                <td class="text-center"><a href="#" class="btn btn-link" data-toggle="modal" data-target="#myModal">刪除</a>｜<a href="#" class="btn btn-link">編輯</a></td>
+              </tr>
+            </table></td>
             <td class="text-center"><a href="#" class="btn btn-link" data-toggle="modal" data-target="#myModal">刪除</a>｜<a href="#" class="btn btn-link">編輯</a></td>
           </tr>
           <tr>
             <td>罷免</td>
             <td>8</td>
-            <td>增加罷免門檻</td>
-            <td>公職人員選舉罷免法</td>
-            <td>上架</td>
-            <td>下架</td>
-            <td>2016/10/10 24:00:00</td>
-            <td class="text-center"><a href="#" class="btn btn-link" data-toggle="modal" data-target="#myModal">刪除</a>｜<a href="#" class="btn btn-link">編輯</a></td>
-          </tr>
-          <tr>
-            <td>罷免</td>
-            <td>8</td>
+            <td>20150102 罷免法案</td>
             <td>下修罷免門檻</td>
-            <td>總統副總統選舉罷免法</td>
-            <td>下架</td>
-            <td>上架</td>
-            <td>2016/10/10 24:00:00</td>
+            <td>公職人員選舉罷免法</td>
+            <td>A版本<br>
+              B版本<br>
+              C版本</td>
+            <td>Ａ項目<br>
+              B項目<br>
+              C項目<br>
+              D項目<br>
+              E項目</td>
+            <td><table class="table">
+              <tr>
+                <th width="22%">頁面名稱</th>
+                <th width="22%">頁面類型</th>
+                <th width="19%">上下架</th>
+                <th width="37%" class="text-center">操作</th>
+              </tr>
+              <tr>
+                <td>罷免修法版本</td>
+                <td>修法版本比較</td>
+                <td>下架</td>
+                <td class="text-center"><a href="#" class="btn btn-link" data-toggle="modal" data-target="#myModal">刪除</a>｜<a href="#" class="btn btn-link">編輯</a></td>
+              </tr>
+              <tr>
+                <td>罷免連署版本</td>
+                <td>立委修法提案連署統計</td>
+                <td>下架</td>
+                <td class="text-center"><a href="#" class="btn btn-link" data-toggle="modal" data-target="#myModal">刪除</a>｜<a href="#" class="btn btn-link">編輯</a></td>
+              </tr>
+            </table></td>
             <td class="text-center"><a href="#" class="btn btn-link" data-toggle="modal" data-target="#myModal">刪除</a>｜<a href="#" class="btn btn-link">編輯</a></td>
           </tr>
           <tr>
             <td>罷免</td>
             <td>8</td>
-            <td>增加罷免門檻</td>
-            <td>總統副總統選舉罷免法</td>
-            <td>上架</td>
-            <td>下架</td>
-            <td>2016/10/10 24:00:00</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td class="text-center"><a href="#" class="btn btn-link" data-toggle="modal" data-target="#myModal">刪除</a>｜<a href="#" class="btn btn-link">編輯</a></td>
+          </tr>
+          <tr>
+            <td>罷免</td>
+            <td>8</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
             <td class="text-center"><a href="#" class="btn btn-link" data-toggle="modal" data-target="#myModal">刪除</a>｜<a href="#" class="btn btn-link">編輯</a></td>
           </tr>
           <tr>
             <td>公投</td>
             <td>8</td>
-            <td>下修公投門檻</td>
-            <td>公民投票法</td>
-            <td>上架</td>
-            <td>下架</td>
-            <td>2016/10/10 24:00:00</td>
-            <td class="text-center"><a href="#" class="btn btn-link" data-toggle="modal" data-target="#myModal">刪除</a>｜<a href="#" class="btn btn-link">編輯</a></td>
-          </tr>
-          <tr>
-            <td>&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
@@ -179,6 +245,18 @@
             <td>&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td class="text-center"><a href="#" class="btn btn-link" data-toggle="modal" data-target="#myModal">刪除</a>｜<a href="#" class="btn btn-link">編輯</a></td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
             <td class="text-center"><a href="#" class="btn btn-link" data-toggle="modal" data-target="#myModal">刪除</a>｜<a href="#" class="btn btn-link">編輯</a></td>
           </tr>
           <tr>
@@ -189,9 +267,11 @@
             <td>&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
+            <td>&nbsp;</td>
             <td class="text-center"><a href="#" class="btn btn-link" data-toggle="modal" data-target="#myModal">刪除</a>｜<a href="#" class="btn btn-link">編輯</a></td>
           </tr>
           <tr>
+            <td>&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>

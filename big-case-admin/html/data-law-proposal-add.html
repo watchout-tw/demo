@@ -38,6 +38,7 @@
             <li><a href="basic-big-issue-list.html">大議題設定管理</a></li>
             <li><a href="basic-small-issue-list.html">小議題設定管理</a></li>
             <li><a href="basic-law-names-list.html">法案名目設定管理</a></li>
+<li><a href="basic-law-item-list.html">法案提案比較項目管理</a></li>
                       </ul>
         </li>
         <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">立委表態原始資料管理 <span class="caret"></span></a>
@@ -76,6 +77,10 @@
                 </select>
               </div>
               <div class="form-group col-md-12">
+                <label for="fileField4">關聯小議題</label>
+                <input type="text" disabled class="form-control" value="罷免,公投">
+              </div>
+              <div class="form-group col-md-12">
                 <label for="fileField">委員提案字號</label>
                 <input type="text" class="form-control">
               </div>
@@ -86,10 +91,6 @@
               <div class="form-group col-md-12">
                 <label for="fileField">屆次</label>
                 <input type="text" disabled class="form-control" value="8">
-              </div>
-                            <div class="form-group col-md-12">
-                <label for="fileField">關聯小議題</label>
-                <input type="text" disabled class="form-control" value="罷免">
               </div>
             </div>
             <div class="col-md-4">
@@ -156,6 +157,9 @@
           <div class="panel-heading"> 立場判斷 / 審議進度</div>
           <div class="panel-body">
             <div class="col-md-7">
+              <div class="form-group col-md-12">
+                <label for="fileField6">關聯小議題</label>
+                罷免 </div>
               <table class="table">
                 <tr>
                   <th width="36%" rowspan="2" class="text-center">爭點命題</th>
@@ -180,6 +184,35 @@
                   <td class="text-center"><input type="radio" name="radio" id="radio3" value="radio"></td>
                   <td class="text-center"><input type="radio" name="radio" id="radio5" value="radio"></td>
                   <td class="text-center"><input type="radio" name="radio" id="radio7" value="radio"></td>
+                </tr>
+              </table>
+              <div class="form-group col-md-12">
+                <label for="fileField8">關聯小議題</label>
+                公投</div>
+              <table class="table">
+                <tr>
+                  <th width="36%" rowspan="2" class="text-center">爭點命題</th>
+                  <th colspan="4" class="text-center">立場判斷</th>
+                </tr>
+                <tr>
+                  <th width="16%" class="text-center">贊成</th>
+                  <th width="16%" class="text-center">模糊</th>
+                  <th width="16%" class="text-center">反對</th>
+                  <th width="16%" class="text-center">暫不選</th>
+                </tr>
+                <tr>
+                  <td>你支持設置禁制區嗎？</td>
+                  <td class="text-center"><input type="radio" name="radio" id="radio2" value="radio"></td>
+                  <td class="text-center"><input type="radio" name="radio" id="radio4" value="radio"></td>
+                  <td class="text-center"><input type="radio" name="radio" id="radio6" value="radio"></td>
+                  <td class="text-center"><input type="radio" name="radio" id="radio8" value="radio"></td>
+                </tr>
+                <tr>
+                  <td>你支持廢除集會遊行法嗎？</td>
+                  <td class="text-center"><input type="radio" name="radio" id="radio2" value="radio"></td>
+                  <td class="text-center"><input type="radio" name="radio" id="radio4" value="radio"></td>
+                  <td class="text-center"><input type="radio" name="radio" id="radio6" value="radio"></td>
+                  <td class="text-center"><input type="radio" name="radio" id="radio8" value="radio"></td>
                 </tr>
               </table>
             </div>
@@ -254,8 +287,18 @@
           </div>
         </div>
         <div class="panel panel-default">
-          <div class="panel-heading">比較項目</div>
+          <div class="panel-heading">比較項目（新增的UI）</div>
           <div class="panel-body">
+           <div class="col-md-12">
+             <div class="form-group col-md-12">
+               <label for="fileField2">關聯小議題</label>
+               <select name="select3" class="form-control">
+                 <option>請選擇</option>
+                 <option>公投</option>
+                 <option>罷免</option>
+               </select>
+             </div>
+			  </div>
             <div class="col-md-12">
               <table class="table">
                 <tr>
@@ -273,15 +316,7 @@
                       <option>B方向</option>
                     </select>
                   </td>
-                  <td>
-                    <select name="select5" class="form-control">
-                      <option selected>請選擇</option>
-                      <option>新增新比較項目</option>
-                      <option>B項目</option>
-                      <option>C項目</option>
-                      <option>D項目</option>
-                    </select>
-                  <input type="text" class="form-control" placeholder="若沒有該種比較項目才輸入新增">
+                  <td><input type="text" class="form-control" placeholder="若沒有該種比較項目才輸入新增">
                   </td>
                   <td>
                     <textarea name="textarea" rows="5" class="form-control"></textarea>
@@ -290,40 +325,144 @@
                   <td><button type="button" class="btn btn-primary">新增</button></td>
                 </tr>
                 <tr>
+                  <td> 下修公投門檻</td>
+                  <td>提案門檻</td>
+                  <td><textarea name="textarea5" rows="5" class="form-control"></textarea></td>
+                  <td><textarea name="textarea6" rows="5" class="form-control"></textarea></td>
+                  <td><button class="btn btn-link">刪除</button></td>
+                </tr>
+                <tr>
+                  <td> 下修公投門檻</td>
+                  <td>連署門檻</td>
+                  <td><textarea name="textarea6" rows="5" class="form-control"></textarea></td>
+                  <td><textarea name="textarea6" rows="5" class="form-control"></textarea></td>
+                  <td><button class="btn btn-link">刪除</button></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading">比較項目（編輯的UI）</div>
+          <div class="panel-body">
+            <div class="col-md-12">
+              <div class="form-group col-md-12">
+                <label for="fileField3">關聯小議題</label>
+                罷免
+              </div>
+            </div>
+            <div class="col-md-12">
+              <table class="table">
+                <tr>
+                  <th width="15%">修法方向</th>
+                  <th width="22%">比較項目</th>
+                  <th width="19%">比較項目簡短內容</th>
+                  <th width="30%">比較項目詳細內容</th>
+                  <th width="14%" >操作</th>
+                </tr>
+                <tr>
+                  <td><select name="select6" class="form-control">
+                    <option>請選擇</option>
+                    <option selected>A方向</option>
+                    <option>B方向</option>
+                  </select></td>
+                  <td><input type="text" class="form-control" placeholder="若沒有該種比較項目才輸入新增"></td>
+                  <td><textarea name="textarea3" rows="5" class="form-control"></textarea></td>
+                  <td><textarea name="textarea3" rows="5" class="form-control"></textarea></td>
+                  <td><button type="button" class="btn btn-primary">新增</button></td>
+                </tr>
+                <tr>
+                  <td> 下修罷免門檻</td>
+                  <td>提案門檻</td>
+                  <td>簡短內容文字</td>
+                  <td>詳細內容文字</td>
+                  <td><button type="button" class="btn btn-primary">編輯</button></td>
+                </tr>
+                <tr>
+                  <td>下修罷免門檻</td>
+                  <td>投票門檻</td>
+                  <td>簡短內容文字</td>
+                  <td>詳細內容文字</td>
+                  <td><button type="button" class="btn btn-primary">編輯</button></td>
+                </tr>
+                <tr>
+                  <td>提高罷免門檻</td>
+                  <td>個人資料</td>
+                  <td>需身分證影本</td>
+                  <td>連署書必須附上身分證影本</td>
+                  <td><button type="button" class="btn btn-primary">編輯</button></td>
+                </tr>
+                <tr>
                   <td><select name="select" class="form-control">
                     <option>請選擇</option>
                     <option selected>A方向</option>
                     <option>B方向</option>
                   </select></td>
-                  <td><select name="select5" class="form-control">
-                    <option selected>請選擇</option>
-                    <option>新增新比較項目</option>
-                    <option>B項目</option>
-                    <option>C項目</option>
-                    <option>D項目</option>
-                  </select>
-                    <input type="text" class="form-control" placeholder="若沒有該種比較項目才輸入新增"></td>
-                  <td><textarea name="textarea" rows="5" class="form-control"></textarea></td>
-                  <td><textarea name="textarea2" rows="5" class="form-control"></textarea></td>
-                  <td><button type="button" class="btn btn-link">刪除</button></td>
+                  <td><input type="text" class="form-control"></td>
+                  <td><textarea name="textarea7" rows="5" class="form-control"></textarea></td>
+                  <td><textarea name="textarea7" rows="5" class="form-control"></textarea></td>
+                  <td><button type="button" class="btn btn-primary">儲存</button>
+                    <button class="btn btn-link">刪除</button></td>
+                </tr>
+              </table>
+            </div>
+            <div class="col-md-12">
+              <div class="form-group col-md-12">
+                <label for="fileField9">關聯小議題</label>
+                公投 </div>
+            </div>
+            <div class="col-md-12">
+              <table class="table">
+                <tr>
+                  <th width="15%">修法方向</th>
+                  <th width="22%">比較項目</th>
+                  <th width="19%">比較項目簡短內容</th>
+                  <th width="30%">比較項目詳細內容</th>
+                  <th width="14%" >操作</th>
                 </tr>
                 <tr>
-                  <td><select name="select2" class="form-control">
+                  <td><select name="select7" class="form-control">
                     <option>請選擇</option>
                     <option selected>A方向</option>
                     <option>B方向</option>
                   </select></td>
-                  <td><select name="select5" class="form-control">
-                    <option selected>請選擇</option>
-                    <option>新增新比較項目</option>
-                    <option>B項目</option>
-                    <option>C項目</option>
-                    <option>D項目</option>
-                  </select>
-                    <input type="text" class="form-control" placeholder="若沒有該種比較項目才輸入新增"></td>
-                  <td><textarea name="textarea" rows="5" class="form-control"></textarea></td>
-                  <td><textarea name="textarea2" rows="5" class="form-control"></textarea></td>
-                  <td><button type="button" class="btn btn-link">刪除</button></td>
+                  <td><input type="text" class="form-control" placeholder="若沒有該種比較項目才輸入新增"></td>
+                  <td><textarea name="textarea4" rows="5" class="form-control"></textarea></td>
+                  <td><textarea name="textarea4" rows="5" class="form-control"></textarea></td>
+                  <td><button type="button" class="btn btn-primary">新增</button></td>
+                </tr>
+                <tr>
+                  <td> 下修公投門檻</td>
+                  <td>提案門檻</td>
+                  <td>簡短內容文字</td>
+                  <td>詳細內容文字</td>
+                  <td><button type="button" class="btn btn-primary">編輯</button></td>
+                </tr>
+                <tr>
+                  <td>下修公投門檻</td>
+                  <td>投票門檻</td>
+                  <td>簡短內容文字</td>
+                  <td>詳細內容文字</td>
+                  <td><button type="button" class="btn btn-primary">編輯</button></td>
+                </tr>
+                <tr>
+                  <td>提高公投門檻</td>
+                  <td>個人資料</td>
+                  <td>需身分證影本</td>
+                  <td>連署書必須附上身分證影本</td>
+                  <td><button type="button" class="btn btn-primary">編輯</button>	</td>
+                </tr>
+                <tr>
+                  <td><select name="select" class="form-control">
+                    <option>請選擇</option>
+                    <option selected>A方向</option>
+                    <option>B方向</option>
+                  </select></td>
+                  <td><input type="text" class="form-control"></td>
+                  <td><textarea name="textarea7" rows="5" class="form-control"></textarea></td>
+                  <td><textarea name="textarea7" rows="5" class="form-control"></textarea></td>
+                  <td><button type="button" class="btn btn-primary">儲存</button>
+                    <button class="btn btn-link">刪除</button></td>
                 </tr>
               </table>
             </div>
