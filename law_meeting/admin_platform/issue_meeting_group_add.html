@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>消息列表與管理</title>
+<title>新增議題</title>
 <link href="css/reset.css" rel="stylesheet" type="text/css" />
 <link href="css/style.css" rel="stylesheet" type="text/css" />
 <link href="../css/thickbox.css" rel="stylesheet" type="text/css" />
@@ -80,35 +80,67 @@
   <div id="main" class="inner">
 <div id="header">司改國是會議意見平台網站管理後台 - <a href="admin_login.html" class="logout">我要登出</a> 
 </div>
-    <h1>其他說明管理</h1>
-    <div id="search_bar">
-     標題
-       <input type="text" name="textfield2" id="textfield2" />
-       <input type="submit" name="button" id="button" value="搜尋" />
-    </div>
-    <table width="100%" border="1" cellpadding="5">
-      <tr>
-        <th>編號</th>
-        <th width="490">標題</th>
-        <th>排序</th>
-        <th>操作</th>
-      </tr>
-      <tr>
-        <td width="39" align="center" valign="top">1</td>
-        <td><a href="info_view.html">說明標題說明標題說明標題說明標題說明標題</a></td>
-        <td width="135" align="center"><input name="textfield" type="text" class="input_08" id="textfield" /></td>
-        <td width="123" align="center"><a href="#">編輯</a>｜<a href="#">刪除</a></td>
-      </tr>
-      <tr class="even">
-        <td align="center" valign="top">2</td>
-        <td><a href="info_view.html">說明標題說明標題說明標題說明標題說明標題</a></td>
-        <td align="center"><input name="textfield3" type="text" class="input_08" id="textfield3" /></td>
-        <td align="center"><a href="#">編輯</a>｜<a href="#">刪除</a></td>
-      </tr>
-  </table>
-    <div class="btn">
-      <input type="submit" name="button2" id="button2" value="儲存順序" class="submit"/>
-    </div>
+    <h1>新增分組介紹</h1>
+<table width="100%" border="1" cellpadding="5">
+          <tr>
+            <th width="16%">作者</th>
+            <td width="33%">Joyhsu（管理員帳號）</td>
+            <th width="17%">最後修改時間</th>
+            <td width="34%">(系統於資料送出後自動記錄)</td>
+          </tr>
+          <tr>
+            <th valign="top">*組別名稱</th>
+            <td colspan="3"><input name="textfield3" type="text" class="input_04" id="textfield3" /></td>
+          </tr>
+          <tr>
+            <th valign="top">*組別介紹</th>
+            <td colspan="3"><textarea name="textfield2" class="input_09" id="textfield2">此處使用可自訂文字格式的編輯區域
+            </textarea></td>
+          </tr>
+          <tr>
+            <th valign="top">會議記錄</th>
+            <td colspan="3"><a href="set_meeting.html" target="_blank" class="set-btn">新增會議記錄</a></td>
+          </tr>
+          <tr>
+            <th valign="top">委員介紹</th>
+            <td colspan="3"><table width="100%" border="1" cellpadding="5">
+              <tr>
+                <th width="33%" valign="top">照片</th>
+                <th width="33%" valign="top">姓名</th>
+                <th width="57%">介紹</th>
+                <th width="10%">&nbsp;</th>
+              </tr>
+              <tr>
+                <td valign="top"><input type="file" name="fileField" id="fileField" /></td>
+                <td valign="top"><input name="textfield4" type="text" class="input_04" id="textfield4" /></td>
+                <td><textarea name="textfield" class="input_01" id="textfield">此處使用可自訂文字格式的編輯區域
+                </textarea></td>
+                <td><a href="#">刪除</a></td>
+              </tr>
+              <tr>
+                <td valign="top"><input type="file" name="fileField2" id="fileField2" /></td>
+                <td valign="top"><input name="textfield5" type="text" class="input_04" id="textfield5" /></td>
+                <td><textarea name="textfield6" class="input_01" id="textfield6">此處使用可自訂文字格式的編輯區域
+                </textarea></td>
+                <td><a href="#">刪除</a></td>
+              </tr>
+              <tr>
+                <td valign="top"><input type="file" name="fileField3" id="fileField3" /></td>
+                <td valign="top"><input name="textfield5" type="text" class="input_04" id="textfield7" /></td>
+                <td><textarea name="textfield7" class="input_01" id="textfield8">此處使用可自訂文字格式的編輯區域
+                </textarea></td>
+                <td><a href="#">刪除</a></td>
+              </tr>
+            </table>
+            <a href="set_issue.html" target="_blank" class="set-btn">新增一行</a></td>
+          </tr>
+          </table>
+<div class="btn">
+        <input type="submit" name="button" id="button" value="儲存" class="submit"/>
+</div>
+        
+
+
   </div>
 </div>
 </div>
