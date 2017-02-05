@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>立院屆次 / 會期設定管理</title>
+<title>樣板設定管理</title>
 <!-- Bootstrap -->
 <link href="css/bootstrap.min.css" rel="stylesheet">
 <link href="css/style.css" rel="stylesheet">
@@ -66,35 +66,94 @@
   <form role="form">
     <div class="row">
       <div class="col-md-12">
-        <h2 class="text-center">立院屆次 / 會期設定管理</h2>
-        <ul class="nav nav-tabs">
-          <li class="active"><a href="ly-session-list.html">屆次</a></li>
-          <li><a href="ly-duration-list.html">會期</a></li>
-        </ul>
-        <table class="table table-list">
+        <h2 class="text-center">樣板設定管理</h2>
+        <table class="table">
           <tr>
-            <td width="80%"></td>
-            <td width="10%"><a href="ly-session-add.html" class="btn btn-primary">新增屆次</a></td>
-            <td width="10%"><a href="ly-duration-add.html" class="btn btn-primary">新增會期</a></td>
+            <td width="29%" height="42"><select class="form-control">
+                <option>頁面類型</option>
+                <option>修法版本比較</option>
+                <option>立委修法提案連署統計</option>
+              </select></td>
+            <td><button class="btn btn-default">搜尋</button></td>
+            <td width="14%"><a href="page-template-add.html" class="btn btn-primary">新增樣板</a></td>
           </tr>
         </table>
         <table class="table">
           <tr>
-            <th width="15%">屆次</th>
-            <th width="15%">起</th>
-            <th width="14%">迄</th>
-            <th width="31%">政黨</th>
-            <th width="25%" class="text-center">操作</th>
+            <th width="20%">樣板名稱</th>
+            <th width="21%">頁面類型</th>
+            <th width="38%">圖表（組）</th>
+            <th width="21%" class="text-center">操作</th>
           </tr>
           <tr>
-            <td>8</td>
-            <td>2012/02</td>
-            <td>2012/02</td>
-            <td>國民黨，民進黨，時代力量，親民黨</td>
+            <td>修法版本比較</td>
+            <td>修法版本比較</td>
+            <td><p>修法小總表<br>
+              法條比一比<br>
+              立委提案比一比<br>
+              修法細節一覽表</p></td>
             <td class="text-center"><a href="#" class="btn btn-link" data-toggle="modal" data-target="#myModal">刪除</a>｜<a href="#" class="btn btn-link">編輯</a></td>
+          </tr>
+          <tr>
+            <td>立委修法提案連署統計</td>
+            <td>立委修法提案連署統計</td>
+            <td>提案連署政黨人數統計（組-3圖表）<br>
+              提案連署人關係圖            （組-2圖表）<br></td>
+            <td class="text-center"><a href="#" class="btn btn-link" data-toggle="modal" data-target="#myModal">刪除</a>｜<a href="#" class="btn btn-link">編輯</a></td>
+          </tr>
+          <tr>
+            <td>政黨發言統計</td>
+            <td>政黨發言統計</td>
+            <td><p>政黨發言次數統計<br>
+              政黨發言立場統計<br>
+              修法生命週期 </p></td>
+            <td class="text-center"><a href="#" class="btn btn-link" data-toggle="modal" data-target="#myModal">刪除</a>｜<a href="#" class="btn btn-link">編輯</a></td>
+          </tr>
+          <tr>
+            <td>立委發言統計</td>
+            <td>立委發言統計</td>
+            <td>立委發言次數統計<br>
+              立委發言時間軸<br>
+              修法生命週期 </td>
+            <td class="text-center"><a href="#" class="btn btn-link" data-toggle="modal" data-target="#myModal">刪除</a>｜<a href="#" class="btn btn-link">編輯</a></td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td class="text-center">&nbsp;</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td class="text-center">&nbsp;</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td class="text-center">&nbsp;</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td class="text-center">&nbsp;</td>
           </tr>
         </table>
       </div>
+    </div>
+    <div class="text-center">
+      <ul class="pagination">
+        <li><a href="#">&laquo; 第一頁</a></li>
+        <li><a href="#">1</a></li>
+        <li class="active"><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li><a href="#">最末頁 &raquo;</a></li>
+      </ul>
     </div>
   </form>
 </div>

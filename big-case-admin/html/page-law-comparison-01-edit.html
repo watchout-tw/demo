@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>新增法案比較與連署統計-01</title>
+<title>編輯法案資料源</title>
 <!-- Bootstrap -->
 <link href="css/bootstrap.min.css" rel="stylesheet">
 <link href="css/style.css" rel="stylesheet">
@@ -64,17 +64,13 @@
 </nav>
 <div class="container">
   <div class="row">
-    <h2 class="text-center">新增法案比較與連署統計-01</h2>
-    <ul class="list-inline text-center">
-      <li><a href="page-law-comparison-01-add.html">1.資料源設定：選法案法條與評分</a></li>
-      <li><a href="page-law-comparison-02-add.html">2.頁面設定：圖表頁類型與樣板配置</a></li>
-      <li><a href="page-law-comparison-03-add.html">3.設定頁面內容</a></li>
-    </ul>
+    <h2 class="text-center">編輯法案資料源</h2>
     <div class="col-md-12">
       <div class="row col-md-12">
         <div class="panel panel-default">
           <div class="panel-heading">選法案法條與評分</div>
           <div class="panel-body">
+            <p class="col-md-12 text-center"> 請注意！資料源調整後，將會直接影響此資料源關聯頁面的圖表結果。</p>
             <div class="col-md-5">
               <div class="form-group col-md-12">
                 <label for="fileField2">資料源名稱</label><input type="text" class="form-control">
@@ -178,8 +174,8 @@
 			  </div>
             <div class="col-md-12">
             <p class="col-md-12 text-center">
-            	<button type="submit" class="btn btn-primary">法案價值命題 與 評分座標設定 & 法案評分總表生成</button><br>按了按鈕才顯示下面兩大表格
-            	</p>
+            	<button type="submit" class="btn btn-primary">法案價值命題 與 評分座標設定 & 法案評分總表重新生成</button><br>
+            	請注意！總表重新生成後，同資料源下產生之頁面圖表結果將同步更新成新資料。</p>
            	  <table class="table">
            	    <tr>
            	      <th colspan="7">法案價值命題 與 評分座標設定</th>
@@ -513,7 +509,7 @@
   </div>
   <div class="text-center">
     <button type="submit" class="btn btn-default">取消</button>
-    <button type="submit" class="btn btn-primary" onclick="javascript:location.href='page-law-comparison-02-add.html'">儲存及下一步</button>
+    <button type="submit" class="btn btn-primary">儲存</button>
   </div>
 </div>
 </div>

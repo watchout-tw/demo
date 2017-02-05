@@ -54,6 +54,8 @@
             <li><a href="page-law-comparison-list.html">立委修法版本比較頁/提案連署統計管理</a></li>
             <li><a href="page-say-standpoint-list.html">立委/政黨發言立場統計頁管理</a></li>
             <li><a href="page-issue-list.html">小議題首頁管理</a></li>
+<li><a href="page-template-list.html">樣板設定管理</a></li>
+<li><a href="page-type-list.html">頁面類型清單</a></li>
           </ul>
         </li>
       </ul>
@@ -64,19 +66,19 @@
   <div class="row">
     <h2 class="text-center">新增發言立場統計-01</h2>
     <ul class="list-inline text-center">
-      <li><a href="page-say-standpoint-01-add.html">選時間範圍與委員會</a></li>
-      <li><a href="page-say-standpoint-02-add.html">設定立委發言立場統計頁面</a></li>
-      <li><a href="page-say-standpoint-03-add.html">設定政黨發言立場統計頁面</a></li>
+      <li><a href="page-say-standpoint-01-add.html">1.資料源設定：選時間範圍與委員會</a></li>
+      <li><a href="page-say-standpoint-02-add.html">2.頁面設定：圖表頁類型與樣板配置</a></li>
+      <li><a href="page-say-standpoint-03-add.html">3.設定頁面內容</a></li>
     </ul>
     <div class="col-md-12">
       <div class="row col-md-12">
         <div class="panel panel-default">
-          <div class="panel-heading">發言時間範圍與委員會</div>
+          <div class="panel-heading">發言時間範圍與委員會 ＆關聯法案</div>
           <div class="panel-body">
             <div class="col-md-5">
               <div class="form-group col-md-12">
                 <label for="fileField">小議題</label>
-                <select class="form-control">
+                <select name="select" class="form-control">
                   <option>小議題名</option>
                   <option>公投</option>
                   <option>罷免</option>
@@ -84,27 +86,39 @@
               </div>
               <div class="form-group col-md-12">
                 <label for="fileField">爭點命題</label>
-                <select class="form-control">
+                <select name="select" class="form-control">
                   <option>你支持下修罷免門檻嗎</option>
                   <option>你支持提高罷免門檻嗎</option>
                 </select>
               </div>
               <div class="form-group col-md-12">
+                <label for="fileField3">關聯法案名目</label>
+                <div class="col-md-12">
+                  <div class="checkbox-inline">
+                    <label>
+                      <input type="checkbox" value="">
+                      公職人員選舉罷免法</label></div>
+                  <div class="checkbox-inline">
+                    <label>
+                      <input type="checkbox" value="">
+                      總統副總統選舉罷免法 </label>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group col-md-12">
                 <label for="fileField">立院資料擷取時間範圍</label>
                 <div class="row">
-                <div class="col-md-6">
-                開始
-                <input type="text" class="form-control">
-                </div>
-                <div class="col-md-6">
-                結束
-                <input type="text" class="form-control">
-                </div>
+                  <div class="col-md-6"> 開始
+                    <input type="text" class="form-control">
+                  </div>
+                  <div class="col-md-6"> 結束
+                    <input type="text" class="form-control">
+                  </div>
                 </div>
               </div>
               <div class="form-group col-md-12">
                 <label for="fileField">屆次</label>
-                <select class="form-control">
+                <select name="select" class="form-control">
                   <option>7</option>
                   <option>8</option>
                   <option>9</option>
@@ -112,7 +126,6 @@
               </div>
             </div>
             <div class="col-md-7">
-            
               <div class="form-group col-md-12">
                 <label for="fileField">應發言未發言判斷條件</label>
               </div>
@@ -166,27 +179,27 @@
                 <div class="col-md-12">
                   <div class="checkbox-inline">
                     <label>
-                      <input type="checkbox" value="">1
-                      </label>
+                      <input type="checkbox" value="">
+                      1 </label>
                   </div>
                   <div class="checkbox-inline">
                     <label>
-                      <input type="checkbox" value="">2
-                      </label>
+                      <input type="checkbox" value="">
+                      2 </label>
                   </div>
                   <div class="checkbox-inline">
                     <label>
-                      <input type="checkbox" value="">3
-                      </label>
+                      <input type="checkbox" value="">
+                      3 </label>
                   </div>
                   <div class="checkbox-inline">
                     <label>
-                      <input type="checkbox" value="">4
-                      </label>
+                      <input type="checkbox" value="">
+                      4 </label>
                   </div>
                 </div>
               </div>
-		    </div>
+            </div>
           </div>
         </div>
       </div>

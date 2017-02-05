@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>新增法案比較項目</title>
+<title>編輯發言資料源</title>
 <!-- Bootstrap -->
 <link href="css/bootstrap.min.css" rel="stylesheet">
 <link href="css/style.css" rel="stylesheet">
@@ -64,125 +64,142 @@
 </nav>
 <div class="container">
   <div class="row">
-    <h2 class="text-center">新增法案比較項目</h2>
+    <h2 class="text-center">編輯發言資料源</h2>
     <div class="col-md-12">
-      <div class="row">
+      <div class="row col-md-12">
         <div class="panel panel-default">
-          <div class="panel-heading">比較項目資料</div>
+          <div class="panel-heading">發言時間範圍與委員會</div>
           <div class="panel-body">
-            <div class="col-md-3">
+            <p class="col-md-12 text-center"> 請注意！資料源調整後，將會直接影響此資料源關聯頁面的圖表結果。</p>
+            <div class="col-md-5">
               <div class="form-group col-md-12">
-                <label for="fileField10">小議題</label>
-                <select name="select2" class="form-control">
+                <label for="fileField">小議題</label>
+                <select class="form-control">
                   <option>小議題名</option>
                   <option>公投</option>
                   <option>罷免</option>
                 </select>
               </div>
               <div class="form-group col-md-12">
-                <label for="fileField11">修法方向</label>
-                <select name="select3" class="form-control">
-                  <option>選擇修法方向</option>
-                  <option>提高門檻</option>
-                  <option>降低門檻</option>
+                <label for="fileField">爭點命題</label>
+                <select class="form-control">
+                  <option>你支持下修罷免門檻嗎</option>
+                  <option>你支持提高罷免門檻嗎</option>
                 </select>
               </div>
               <div class="form-group col-md-12">
-                <label for="fileField20">法案名目</label>
-                <select name="select" class="form-control">
-                  <option>選擇法案</option>
-                  <option>公民投票法</option>
-                  <option>公職人員選舉罷免法</option>
+                <label for="fileField3">關聯法案名目</label>
+                <div class="col-md-12">
+                  <div class="checkbox-inline">
+                    <label>
+                      <input type="checkbox" value="">
+                      公職人員選舉罷免法</label>
+                  </div>
+                  <div class="checkbox-inline">
+                    <label>
+                      <input type="checkbox" value="">
+                      總統副總統選舉罷免法 </label>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group col-md-12">
+                <label for="fileField">立院資料擷取時間範圍</label>
+                <div class="row">
+                <div class="col-md-6">
+                開始
+                <input type="text" class="form-control">
+                </div>
+                <div class="col-md-6">
+                結束
+                <input type="text" class="form-control">
+                </div>
+                </div>
+              </div>
+              <div class="form-group col-md-12">
+                <label for="fileField">屆次</label>
+                <select class="form-control">
+                  <option>7</option>
+                  <option>8</option>
+                  <option>9</option>
                 </select>
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-7">
+            
               <div class="form-group col-md-12">
-                <label for="fileField13">比較項目</label>
-                <input type="text" class="form-control" value="提案門檻">
+                <label for="fileField">應發言未發言判斷條件</label>
               </div>
               <div class="form-group col-md-12">
-                <label for="fileField8">比較項目價值命題</label>
-                <input type="text" class="form-control" value="下修提案門檻">
+                <lable> 委員會 </lable>
+                <div class="col-md-12">
+                  <div class="checkbox-inline">
+                    <label>
+                      <input type="checkbox" value="">
+                      院會</label>
+                  </div>
+                  <div class="checkbox-inline">
+                    <label>
+                      <input type="checkbox" value="">
+                      A委員會</label>
+                  </div>
+                  <div class="checkbox-inline">
+                    <label>
+                      <input type="checkbox" value="">
+                      B委員會</label>
+                  </div>
+                  <div class="checkbox-inline">
+                    <label>
+                      <input type="checkbox" value="">
+                      C委員會</label>
+                  </div>
+                  <div class="checkbox-inline">
+                    <label>
+                      <input type="checkbox" value="">
+                      D委員會</label>
+                  </div>
+                  <div class="checkbox-inline">
+                    <label>
+                      <input type="checkbox" value="">
+                      E委員會</label>
+                  </div>
+                  <div class="checkbox-inline">
+                    <label>
+                      <input type="checkbox" value="">
+                      F委員會</label>
+                  </div>
+                  <div class="checkbox-inline">
+                    <label>
+                      <input type="checkbox" value="">
+                      G委員會</label>
+                  </div>
+                </div>
               </div>
               <div class="form-group col-md-12">
-                <label for="fileField9">比較項目內容簡易說明</label>
-                <input type="text" class="form-control" value="有效投票人數的幾%或幾人">
+                <lable>會期（照屆次自動顯示有幾個會期）</lable>
+                <div class="col-md-12">
+                  <div class="checkbox-inline">
+                    <label>
+                      <input type="checkbox" value="">1
+                      </label>
+                  </div>
+                  <div class="checkbox-inline">
+                    <label>
+                      <input type="checkbox" value="">2
+                      </label>
+                  </div>
+                  <div class="checkbox-inline">
+                    <label>
+                      <input type="checkbox" value="">3
+                      </label>
+                  </div>
+                  <div class="checkbox-inline">
+                    <label>
+                      <input type="checkbox" value="">4
+                      </label>
+                  </div>
+                </div>
               </div>
-            </div>
-            <div class="col-md-5">
-              <table class="table">
-                <tr>
-                  <th width="25%">分數</th>
-                  <th width="75%">比較項目座標文字（限10字)</th>
-                </tr>
-                <tr>
-                  <td>1</td>
-                  <td><input type="text" class="form-control" value="0.5%"></td>
-                </tr>
-                <tr>
-                  <td>2</td>
-                  <td><input type="text" class="form-control" value="0.03%"></td>
-                </tr>
-                <tr>
-                  <td>3</td>
-                  <td><input type="text" class="form-control" value="0.01%"></td>
-                </tr>
-                <tr>
-                  <td>4</td>
-                  <td><input type="text" class="form-control" value="100人"></td>
-                </tr>
-                <tr>
-                  <td>5</td>
-                  <td><input type="text" class="form-control" value="刪除人數限制"></td>
-                </tr>
-              </table>
-            </div>
-            <div class="col-md-8 col-md-offset-3 text-center">
-            <button type="submit" class="btn btn-default">增加比較項目</button>
-			  </div>
-            <div class="col-md-4 col-md-offset-3">
-              <div class="form-group col-md-12">
-                <label for="fileField21">比較項目</label>
-                <input type="text" class="form-control" value="提案門檻">
-              </div>
-              <div class="form-group col-md-12">
-                <label for="fileField22">比較項目價值命題</label>
-                <input type="text" class="form-control" value="下修提案門檻">
-              </div>
-              <div class="form-group col-md-12">
-                <label for="fileField23">比較項目內容簡易說明</label>
-                <input type="text" class="form-control" value="有效投票人數的幾%或幾人">
-              </div>
-            </div>
-            <div class="col-md-5">
-              <table class="table">
-                <tr>
-                  <th width="25%">分數</th>
-                  <th width="75%">比較項目座標文字（限10字)</th>
-                </tr>
-                <tr>
-                  <td>1</td>
-                  <td><input type="text" class="form-control" value="0.5%"></td>
-                </tr>
-                <tr>
-                  <td>2</td>
-                  <td><input type="text" class="form-control" value="0.03%"></td>
-                </tr>
-                <tr>
-                  <td>3</td>
-                  <td><input type="text" class="form-control" value="0.01%"></td>
-                </tr>
-                <tr>
-                  <td>4</td>
-                  <td><input type="text" class="form-control" value="100人"></td>
-                </tr>
-                <tr>
-                  <td>5</td>
-                  <td><input type="text" class="form-control" value="刪除人數限制"></td>
-                </tr>
-              </table>
-            </div>
+		    </div>
           </div>
         </div>
       </div>

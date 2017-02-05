@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>新增發言立場統計-02</title>
+<title>新增法案比較與連署統計-01</title>
 <!-- Bootstrap -->
 <link href="css/bootstrap.min.css" rel="stylesheet">
 <link href="css/style.css" rel="stylesheet">
@@ -54,6 +54,8 @@
             <li><a href="page-law-comparison-list.html">立委修法版本比較頁/提案連署統計管理</a></li>
             <li><a href="page-say-standpoint-list.html">立委/政黨發言立場統計頁管理</a></li>
             <li><a href="page-issue-list.html">小議題首頁管理</a></li>
+<li><a href="page-template-list.html">樣板設定管理</a></li>
+<li><a href="page-type-list.html">頁面類型清單</a></li>
           </ul>
         </li>
       </ul>
@@ -64,104 +66,72 @@
   <div class="row">
     <h2 class="text-center">新增發言立場統計-02</h2>
     <ul class="list-inline text-center">
-      <li><a href="page-say-standpoint-01-add.html">選時間範圍與委員會</a></li>
-      <li><a href="page-say-standpoint-02-add.html">設定立委發言立場統計頁面</a></li>
-      <li><a href="page-say-standpoint-03-add.html">設定政黨發言立場統計頁面</a></li>
+      <li><a href="page-say-standpoint-01-add.html">1.資料源設定：選時間範圍與委員會</a></li>
+      <li><a href="page-say-standpoint-02-add.html">2.頁面設定：圖表頁類型與樣板配置</a></li>
+      <li><a href="page-say-standpoint-03-add.html">3.設定頁面內容</a></li>
     </ul>
     <div class="col-md-12">
       <div class="row col-md-12">
         <div class="panel panel-default">
-          <div class="panel-heading">立委發言立場統計文字設定</div>
+          <div class="panel-heading">圖表頁類型與樣板配置</div>
           <div class="panel-body">
-           <div class="col-md-4 col-md-offset-4">
-              <div class="form-group col-md-12">
-                <label for="fileField">頁面上下架</label>
-                <select class="form-control">
-                  <option>下架</option>
-                  <option>上架</option>
-                </select>
-              </div>
+            <div class="form-group col-md-3">
+              <label for="fileField">頁面類型</label>
+              <select name="select3" class="form-control">
+                <option selected>政黨發言統計</option>
+                <option>立委發言統計</option>
+                <option>（與前台法案相關圖表頁類型對應）</option>
+              </select>
             </div>
-            <div class="col-md-12">
-              <h3 class="text-center">立委發言次數統計</h3>
-              <div class="col-md-5">
-                <div class="form-group col-md-12">
-                  <label for="fileField">顯示 / 不顯示</label>
-                  <select class="form-control">
-                    <option>顯示</option>
-                    <option>不顯示</option>
-                  </select>
-                </div>
-                <div class="form-group col-md-12">
-                  <label for="fileField">自訂標題</label>
-                  <input type="text" class="form-control">
-                </div>
-                <div class="form-group col-md-12">
-                  <label for="fileField">圖表說明</label>
-                  <textarea class="form-control" rows="5"></textarea>
-                </div>
-                <div class="form-group col-md-12">
-                  <label for="fileField">小結</label>
-                  <textarea class="form-control" rows="5"></textarea>
-                </div>
-              </div>
-              <div class="col-md-7">
-                <div class="graphic-view"> 圖表預覽放這，應該是用iframe嵌入即可 </div>
-              </div>
+            <div class="form-group col-md-4">
+              <label for="fileField">頁面名稱</label>
+              <input type="text" class="form-control" placeholder="(僅後台顯示辨識用）">
             </div>
-            <div class="col-md-12">
-              <h3 class="text-center">發言時間軸</h3>
-              <div class="col-md-5">
-                <div class="form-group col-md-12">
-                  <label for="fileField">顯示 / 不顯示</label>
-                  <select class="form-control">
-                    <option>顯示</option>
-                    <option>不顯示</option>
-                  </select>
-                </div>
-                <div class="form-group col-md-12">
-                  <label for="fileField">自訂標題</label>
-                  <input type="text" class="form-control">
-                </div>
-                <div class="form-group col-md-12">
-                  <label for="fileField">圖表說明</label>
-                  <textarea class="form-control" rows="5"></textarea>
-                </div>
-                <div class="form-group col-md-12">
-                  <label for="fileField">小結</label>
-                  <textarea class="form-control" rows="5"></textarea>
-                </div>
-              </div>
-              <div class="col-md-7">
-                <div class="graphic-view"> 圖表預覽放這，應該是用iframe嵌入即可 </div>
-              </div>
+            <div class="form-group col-md-2">
+              <label for="fileField4">前台上下架狀態</label>
+              <select name="select" class="form-control">
+                <option>下架</option>
+                <option>上架</option>
+              </select>
             </div>
-            <div class="col-md-12">
-              <h3 class="text-center">修法時間軸</h3>
-              <div class="col-md-5">
-                <div class="form-group col-md-12">
-                  <label for="fileField">顯示 / 不顯示</label>
-                  <select class="form-control">
-                    <option>顯示</option>
-                    <option>不顯示</option>
-                  </select>
-                </div>
-                <div class="form-group col-md-12">
-                  <label for="fileField">自訂標題</label>
-                  <input type="text" class="form-control">
-                </div>
-                <div class="form-group col-md-12">
-                  <label for="fileField">圖表說明</label>
-                  <textarea class="form-control" rows="5"></textarea>
-                </div>
-                <div class="form-group col-md-12">
-                  <label for="fileField">小結</label>
-                  <textarea class="form-control" rows="5"></textarea>
-                </div>
-              </div>
-              <div class="col-md-7">
-                <div class="graphic-view"> 圖表預覽放這，應該是用iframe嵌入即可 </div>
-              </div>
+            <div class="form-group col-md-3">
+              <label for="fileField5">選樣板</label>
+              <select name="select2" class="form-control">
+                <option>政黨發言統計1</option>
+                <option>政黨發言統計2</option>
+                <option>立委發言統計1</option>
+                <option>立委發言統計2</option>
+                <option>（樣板自訂，名稱可可定跟圖表頁類型相同以方便選擇）</option>
+              </select>
+            </div>
+            <p class="col-md-12 text-center">
+              <button type="submit" class="btn btn-primary">樣板預覽</button>
+              <br>
+              按了按鈕才在「版型」顯示樣板，拖曳可調整排序。<br>
+              預設右邊是空白，使用者也可以從左拉元素到右方。</p>
+            <div class="col-md-4">
+              <h3>圖表選擇</h3>
+              <div class="col-md-12 drag-block">政黨發言次數統計<br>
+              （搭配小圖讓編輯可一眼知道是什麼圖表）</div>
+              <div class="col-md-12 drag-block">政黨發言立場統計<br>
+                （搭配小圖讓編輯可一眼知道是什麼圖表）</div>
+              <div class="col-md-12 drag-block">政黨發言時間軸<br>
+                （搭配小圖讓編輯可一眼知道是什麼圖表）</div>
+              <div class="col-md-12 drag-block">立委發言次數統計<br>
+                （搭配小圖讓編輯可一眼知道是什麼圖表）</div>
+              <div class="col-md-12 drag-block">立委發言時間軸<br>
+                （搭配小圖讓編輯可一眼知道是什麼圖表）</div>
+              <div class="col-md-12 drag-block">修法生命週期<br>
+                （搭配小圖讓編輯可一眼知道是什麼圖表）</div>
+            </div>
+            <div class="col-md-8">
+            <h3>版型</h3>
+            	<div class="col-md-12 drag-block">政黨發言次數統計<br>
+（搭配小圖讓編輯可一眼知道是什麼圖表）</div>
+            	<div class="col-md-12 drag-block">政黨發言立場統計<br>
+（搭配小圖讓編輯可一眼知道是什麼圖表）</div>
+            	<div class="col-md-12 drag-block">修法生命週期<br>
+（搭配小圖讓編輯可一眼知道是什麼圖表）</div>
             </div>
           </div>
         </div>
@@ -169,8 +139,8 @@
     </div>
   </div>
   <div class="text-center">
-    <button type="submit" class="btn btn-default" onclick="javascript:location.href='page-say-standpoint-01-add.html'">上一步</button>
-    <button type="submit" class="btn btn-primary" onclick="javascript:location.href='page-say-standpoint-03-add.html'">儲存及下一步</button>
+    <button type="submit" class="btn btn-primary" onclick="javascript:location.href='page-law-comparison-01-add.html'">儲存及上一步</button>
+    <button type="submit" class="btn btn-primary" onclick="javascript:location.href='page-law-comparison-03-add.html'">儲存及下一步</button>
   </div>
 </div>
 </div>

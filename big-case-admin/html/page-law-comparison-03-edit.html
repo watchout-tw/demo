@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>新增法案比較與連署統計-03</title>
+<title>編輯法案組版頁面</title>
 <!-- Bootstrap -->
 <link href="css/bootstrap.min.css" rel="stylesheet">
 <link href="css/style.css" rel="stylesheet">
@@ -64,11 +64,11 @@
 </nav>
 <div class="container">
   <div class="row">
-    <h2 class="text-center">新增發言立場統計-03</h2>
+    <h2 class="text-center">編輯法案組版頁面</h2>
     <ul class="list-inline text-center">
-      <li><a href="page-say-standpoint-01-add.html">1.資料源設定：選時間範圍與委員會</a></li>
-      <li><a href="page-say-standpoint-02-add.html">2.頁面設定：圖表頁類型與樣板配置</a></li>
-      <li><a href="page-say-standpoint-03-add.html">3.設定頁面內容</a></li>
+      
+      <li><a href="page-law-comparison-02-edit.html">圖表頁類型與樣板配置</a></li>
+      <li><a href="page-law-comparison-03-edit.html">設定頁面內容</a></li>
     </ul>
     <div class="col-md-12">
       <div class="row col-md-12">
@@ -76,7 +76,76 @@
           <div class="panel-heading">設定頁面內容</div>
           <div class="panel-body">
             <div class="col-md-12">
-              <h3 class="text-center">政黨發言次數統計</h3>
+              <h3 class="text-center">修法小總表</h3>
+              <div class="form-group col-md-3">
+                <label for="fileField2">顯示 / 不顯示</label>
+                <select name="select6" class="form-control">
+                  <option>顯示</option>
+                  <option>不顯示</option>
+                </select>
+              </div>
+              <div class="form-group col-md-9">
+                <label for="fileField23">自訂標題</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="form-group col-md-12">
+                <label for="fileField24">圖表說明</label>
+                <textarea name="textarea7" rows="5" class="form-control"></textarea>
+              </div>
+              <table class="table">
+                <tr>
+                  <th width="16%">版本/項目</th>
+                  <th width="14%">提議人數門檻</th>
+                  <th width="14%">連署人數門檻</th>
+                  <th width="14%">投票人數門檻</th>
+                  <th width="14%">公民投票審議委員會</th>
+                  <th width="14%">年齡門檻</th>
+                  <th width="14%">公投適用範圍</th>
+                </tr>
+                <tr>
+                  <td>原公投法</td>
+                  <td>0.5%</td>
+                  <td>5%</td>
+                  <td>雙二一</td>
+                  <td>有</td>
+                  <td>20歲</td>
+                  <td>增加領土</td>
+                </tr>
+                <tr>
+                  <td>行政院</td>
+                  <td>未修法</td>
+                  <td>未修法</td>
+                  <td>未修法</td>
+                  <td>未修法</td>
+                  <td>未修法</td>
+                  <td>未修法</td>
+                </tr>
+                <tr>
+                  <td>陳亭妃</td>
+                  <td>0.01%</td>
+                  <td>5%</td>
+                  <td>雙二一</td>
+                  <td>有</td>
+                  <td>20歲</td>
+                  <td>增加國號</td>
+                </tr>
+                <tr>
+                  <td>葉宜津</td>
+                  <td>100人</td>
+                  <td>5%</td>
+                  <td>雙二一</td>
+                  <td>有</td>
+                  <td>20歲                  </td>
+                  <td>增加主權</td>
+                </tr>
+              </table>
+              <div class="form-group col-md-12">
+                <label for="fileField25">小結</label>
+                <textarea name="textarea8" rows="5" class="form-control"></textarea>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <h3 class="text-center">法條比一比</h3>
               <div class="form-group col-md-3">
                 <label for="fileField3">顯示 / 不顯示</label>
                 <select name="select" class="form-control">
@@ -88,12 +157,12 @@
                 <label for="fileField4">自訂標題</label>
                 <input type="text" class="form-control">
               </div>
-              <div class="col-md-12">
-                <div class="graphic-view"> 圖表預覽放這</div>
-              </div>
               <div class="form-group col-md-12">
                 <label for="fileField5">圖表說明</label>
                 <textarea name="textarea2" rows="5" class="form-control"></textarea>
+              </div>
+              <div class="col-md-12">
+                <div class="graphic-view"> 圖表預覽放這</div>
               </div>
               <div class="form-group col-md-12">
                 <label for="fileField6">小結</label>
@@ -101,7 +170,7 @@
               </div>
             </div>
             <div class="col-md-12">
-              <h3 class="text-center">政黨發言立場統計</h3>
+              <h3 class="text-center">立委提案比一比</h3>
               <div class="form-group col-md-3">
                 <label for="fileField7">顯示 / 不顯示</label>
                 <select name="select2" class="form-control">
@@ -113,15 +182,12 @@
                 <label for="fileField8">自訂標題</label>
                 <input type="text" class="form-control">
               </div>
-              <div class="col-md-12">
-                <div class="graphic-view gv-s"> 政黨立場數字統計圖表預覽放這</div>
-              </div>
-              <div class="col-md-12">
-                <div class="graphic-view"> 圖表預覽放這</div>
-              </div>
               <div class="form-group col-md-12">
                 <label for="fileField9">圖表說明</label>
                 <textarea name="textarea3" rows="5" class="form-control"></textarea>
+              </div>
+              <div class="col-md-12">
+                <div class="graphic-view"> 圖表預覽放這</div>
               </div>
               <div class="form-group col-md-12">
                 <label for="fileField10">小結</label>
@@ -129,57 +195,7 @@
               </div>
             </div>
             <div class="col-md-12">
-              <h3 class="text-center">立委發言次數統計</h3>
-              <div class="form-group col-md-3">
-                <label for="fileField15">顯示 / 不顯示</label>
-                <select name="select4" class="form-control">
-                  <option>顯示</option>
-                  <option>不顯示</option>
-                </select>
-              </div>
-              <div class="form-group col-md-9">
-                <label for="fileField16">自訂標題</label>
-                <input type="text" class="form-control">
-              </div>
-              <div class="col-md-12">
-                <div class="graphic-view"> 圖表預覽放這</div>
-              </div>
-              <div class="form-group col-md-12">
-                <label for="fileField17">圖表說明</label>
-                <textarea name="textarea5" rows="5" class="form-control"></textarea>
-              </div>
-              <div class="form-group col-md-12">
-                <label for="fileField18">小結</label>
-                <textarea name="textarea5" rows="5" class="form-control"></textarea>
-              </div>
-            </div>
-            <div class="col-md-12">
-              <h3 class="text-center">立委發言時間軸</h3>
-              <div class="form-group col-md-3">
-                <label for="fileField19">顯示 / 不顯示</label>
-                <select name="select5" class="form-control">
-                  <option>顯示</option>
-                  <option>不顯示</option>
-                </select>
-              </div>
-              <div class="form-group col-md-9">
-                <label for="fileField20">自訂標題</label>
-                <input type="text" class="form-control">
-              </div>
-              <div class="col-md-12">
-                <div class="graphic-view">圖表預覽放這</div>
-              </div>
-              <div class="form-group col-md-12">
-                <label for="fileField21">圖表說明</label>
-                <textarea name="textarea6" rows="5" class="form-control"></textarea>
-              </div>
-              <div class="form-group col-md-12">
-                <label for="fileField22">小結</label>
-                <textarea name="textarea6" rows="5" class="form-control"></textarea>
-              </div>
-            </div>
-            <div class="col-md-12">
-              <h3 class="text-center">修法生命週期</h3>
+              <h3 class="text-center">修法細節一覽表</h3>
               <div class="form-group col-md-3">
                 <label for="fileField11">顯示 / 不顯示</label>
                 <select name="select3" class="form-control">
@@ -191,16 +207,75 @@
                 <label for="fileField12">自訂標題</label>
                 <input type="text" class="form-control">
               </div>
-              <div class="col-md-12">
-                <div class="graphic-view"> 圖表預覽放這</div>
-              </div>
               <div class="form-group col-md-12">
                 <label for="fileField13">圖表說明</label>
                 <textarea name="textarea4" rows="5" class="form-control"></textarea>
               </div>
+              <div class="col-md-12">
+                <div class="graphic-view"> 圖表預覽放這</div>
+              </div>
               <div class="form-group col-md-12">
                 <label for="fileField14">小結</label>
                 <textarea name="textarea4" rows="5" class="form-control"></textarea>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <h3 class="text-center">提案連署政黨人數統計</h3>
+              <div class="form-group col-md-3">
+                <label for="fileField15">顯示 / 不顯示</label>
+                <select name="select4" class="form-control">
+                  <option>顯示</option>
+                  <option>不顯示</option>
+                </select>
+              </div>
+              <div class="form-group col-md-9">
+                <label for="fileField16">自訂標題</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="form-group col-md-12">
+                <label for="fileField26">圖表說明</label>
+                <textarea name="textarea9" rows="5" class="form-control"></textarea>
+              </div>
+              <div class="col-md-12">
+                <div class="graphic-view"> 連署人名圖表預覽放這，應該是用iframe嵌入即可 </div>
+              </div>
+              <div class="col-md-6">
+                <div class="graphic-view"> 各黨提案連署人百分比圖表預覽放這，應該是用iframe嵌入即可 </div>
+              </div>
+              <div class="col-md-6">
+                <div class="graphic-view"> 各黨提案連署人百分比圖表預覽放這，應該是用iframe嵌入即可 </div>
+              </div>
+              <div class="form-group col-md-12">
+                <label for="fileField18">小結</label>
+                <textarea name="textarea5" rows="5" class="form-control"></textarea>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <h3 class="text-center">提案連署人關係圖</h3>
+              <div class="form-group col-md-3">
+                <label for="fileField19">顯示 / 不顯示</label>
+                <select name="select5" class="form-control">
+                  <option>顯示</option>
+                  <option>不顯示</option>
+                </select>
+              </div>
+              <div class="form-group col-md-9">
+                <label for="fileField20">自訂標題</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="form-group col-md-12">
+                <label for="fileField27">圖表說明</label>
+                <textarea name="textarea10" rows="5" class="form-control"></textarea>
+              </div>
+              <div class="col-md-12">
+                <div class="graphic-view gv-s"> 連署人名圖表預覽放這，應該是用iframe嵌入即可 </div>
+              </div>
+              <div class="col-md-12">
+                <div class="graphic-view"> 連署人名圖表預覽放這，應該是用iframe嵌入即可 </div>
+              </div>
+              <div class="form-group col-md-12">
+                <label for="fileField22">小結</label>
+                <textarea name="textarea6" rows="5" class="form-control"></textarea>
               </div>
             </div>
             <div class="text-center">
@@ -212,7 +287,7 @@
     </div>
   </div>
   <div class="text-center">
-    <button type="submit" class="btn btn-primary" onclick="javascript:location.href='page-law-comparison-02-add.html'">儲存及上一步</button>
+    <button type="submit" class="btn btn-default" onclick="javascript:location.href='page-law-comparison-01-add.html'">取消</button>
     <button type="submit" class="btn btn-primary">儲存</button>
   </div>
 </div>

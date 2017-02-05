@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>立院屆次 / 會期設定管理</title>
+<title>編輯法案組版頁面</title>
 <!-- Bootstrap -->
 <link href="css/bootstrap.min.css" rel="stylesheet">
 <link href="css/style.css" rel="stylesheet">
@@ -63,56 +63,88 @@
   </div>
 </nav>
 <div class="container">
-  <form role="form">
-    <div class="row">
-      <div class="col-md-12">
-        <h2 class="text-center">立院屆次 / 會期設定管理</h2>
-        <ul class="nav nav-tabs">
-          <li class="active"><a href="ly-session-list.html">屆次</a></li>
-          <li><a href="ly-duration-list.html">會期</a></li>
-        </ul>
-        <table class="table table-list">
-          <tr>
-            <td width="80%"></td>
-            <td width="10%"><a href="ly-session-add.html" class="btn btn-primary">新增屆次</a></td>
-            <td width="10%"><a href="ly-duration-add.html" class="btn btn-primary">新增會期</a></td>
-          </tr>
-        </table>
-        <table class="table">
-          <tr>
-            <th width="15%">屆次</th>
-            <th width="15%">起</th>
-            <th width="14%">迄</th>
-            <th width="31%">政黨</th>
-            <th width="25%" class="text-center">操作</th>
-          </tr>
-          <tr>
-            <td>8</td>
-            <td>2012/02</td>
-            <td>2012/02</td>
-            <td>國民黨，民進黨，時代力量，親民黨</td>
-            <td class="text-center"><a href="#" class="btn btn-link" data-toggle="modal" data-target="#myModal">刪除</a>｜<a href="#" class="btn btn-link">編輯</a></td>
-          </tr>
-        </table>
-      </div>
-    </div>
-  </form>
-</div>
-<!-- Modal -->
-<div class="modal fade bs-example-modal-sm" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-sm">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-        <h4 class="modal-title" id="myModalLabel">系統提示</h4>
-      </div>
-      <div class="modal-body"> 你確定要刪除此筆資料？ </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
-        <button type="button" class="btn btn-primary">確定刪除</button>
+  <div class="row">
+    <h2 class="text-center">編輯法案組版頁面</h2>
+    <ul class="list-inline text-center">
+      
+      <li><a href="page-law-comparison-02-edit.html">圖表頁類型與樣板配置</a></li>
+      <li><a href="page-law-comparison-03-edit.html">設定頁面內容</a></li>
+    </ul>
+    <div class="col-md-12">
+      <div class="row col-md-12">
+        <div class="panel panel-default">
+          <div class="panel-heading">圖表頁類型與樣板配置</div>
+          <div class="panel-body">
+            <div class="form-group col-md-3">
+              <label for="fileField">頁面類型</label>
+              <select name="select3" class="form-control">
+                <option selected>修法版本比較</option>
+                <option>立委修法提案連署統計</option>
+                <option>（與前台法案相關圖表頁類型對應）</option>
+              </select>
+            </div>
+            <div class="form-group col-md-4">
+              <label for="fileField">頁面名稱</label>
+              <input type="text" class="form-control" placeholder="(僅後台顯示辨識用）">
+            </div>
+            <div class="form-group col-md-2">
+              <label for="fileField4">前台上下架狀態</label>
+              <select name="select" class="form-control">
+                <option>下架</option>
+                <option>上架</option>
+              </select>
+            </div>
+            <div class="form-group col-md-3">
+              <label for="fileField5">選樣板</label>
+              <select name="select2" class="form-control">
+                <option>修法版本比較1</option>
+                <option>修法版本比較2</option>
+                <option>立委修法提案連署統計1</option>
+                <option>立委修法提案連署統計2</option>
+                <option>（樣板自訂，名稱可可定跟圖表頁類型相同以方便選擇）</option>
+              </select>
+            </div>
+            <p class="col-md-12 text-center">
+              <button type="submit" class="btn btn-primary">樣板預覽</button>
+              <br>
+              按了按鈕才在「版型」顯示樣板，拖曳可調整排序。<br>
+              預設右邊是空白，使用者也可以從左拉元素到右方。</p>
+              <div class="col-md-4">
+              <h3>圖表選擇</h3>
+              <div class="col-md-12 drag-block">修法小總表<br>
+（搭配小圖讓編輯可一眼知道是什麼圖表）</div>
+            	<div class="col-md-12 drag-block">法條比一比<br>
+（搭配小圖讓編輯可一眼知道是什麼圖表）</div>
+            	<div class="col-md-12 drag-block">立委提案比一比<br>
+（搭配小圖讓編輯可一眼知道是什麼圖表）</div>
+            	<div class="col-md-12 drag-block">修法細節一覽表<br>
+（搭配小圖讓編輯可一眼知道是什麼圖表）</div>
+            	<div class="col-md-12 drag-block">提案連署政黨人數統計<br>
+           	    （搭配小圖讓編輯可一眼知道是什麼圖表）</div>
+            	<div class="col-md-12 drag-block">提案連署人關係圖<br>
+           	    （搭配小圖讓編輯可一眼知道是什麼圖表）</div>
+              </div>
+            <div class="col-md-8">
+              <h3>版型</h3>
+            	<div class="col-md-12 drag-block">修法小總表<br>
+（搭配小圖讓編輯可一眼知道是什麼圖表）</div>
+            	<div class="col-md-12 drag-block">法條比一比<br>
+（搭配小圖讓編輯可一眼知道是什麼圖表）</div>
+            	<div class="col-md-12 drag-block">立委提案比一比<br>
+（搭配小圖讓編輯可一眼知道是什麼圖表）</div>
+            	<div class="col-md-12 drag-block">修法細節一覽表<br>
+（搭配小圖讓編輯可一眼知道是什麼圖表）</div>
+          </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
+  <div class="text-center">
+    <button type="submit" class="btn btn-default" onclick="javascript:location.href='page-law-comparison-01-add.html'">取消</button>
+    <button type="submit" class="btn btn-primary">儲存</button>
+  </div>
+</div>
 </div>
 <!-- jQuery (Bootstrap 所有外掛均需要使用) --> 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 

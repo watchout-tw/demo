@@ -54,6 +54,8 @@
             <li><a href="page-law-comparison-list.html">立委修法版本比較頁/提案連署統計管理</a></li>
             <li><a href="page-say-standpoint-list.html">立委/政黨發言立場統計頁管理</a></li>
             <li><a href="page-issue-list.html">小議題首頁管理</a></li>
+<li><a href="page-template-list.html">樣板設定管理</a></li>
+<li><a href="page-type-list.html">頁面類型清單</a></li>
           </ul>
         </li>
       </ul>
@@ -75,6 +77,21 @@
           <div class="panel-body">
             <div class="col-md-12">
               <h3 class="text-center">修法小總表</h3>
+              <div class="form-group col-md-3">
+                <label for="fileField2">顯示 / 不顯示</label>
+                <select name="select6" class="form-control">
+                  <option>顯示</option>
+                  <option>不顯示</option>
+                </select>
+              </div>
+              <div class="form-group col-md-9">
+                <label for="fileField23">自訂標題</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="form-group col-md-12">
+                <label for="fileField24">圖表說明</label>
+                <textarea name="textarea7" rows="5" class="form-control"></textarea>
+              </div>
               <table class="table">
                 <tr>
                   <th width="16%">版本/項目</th>
@@ -122,6 +139,10 @@
                   <td>增加主權</td>
                 </tr>
               </table>
+              <div class="form-group col-md-12">
+                <label for="fileField25">小結</label>
+                <textarea name="textarea8" rows="5" class="form-control"></textarea>
+              </div>
             </div>
             <div class="col-md-12">
               <h3 class="text-center">法條比一比</h3>
@@ -136,12 +157,12 @@
                 <label for="fileField4">自訂標題</label>
                 <input type="text" class="form-control">
               </div>
-              <div class="col-md-12">
-                <div class="graphic-view"> 圖表預覽放這</div>
-              </div>
               <div class="form-group col-md-12">
                 <label for="fileField5">圖表說明</label>
                 <textarea name="textarea2" rows="5" class="form-control"></textarea>
+              </div>
+              <div class="col-md-12">
+                <div class="graphic-view"> 圖表預覽放這</div>
               </div>
               <div class="form-group col-md-12">
                 <label for="fileField6">小結</label>
@@ -161,12 +182,12 @@
                 <label for="fileField8">自訂標題</label>
                 <input type="text" class="form-control">
               </div>
-              <div class="col-md-12">
-                <div class="graphic-view"> 圖表預覽放這</div>
-              </div>
               <div class="form-group col-md-12">
                 <label for="fileField9">圖表說明</label>
                 <textarea name="textarea3" rows="5" class="form-control"></textarea>
+              </div>
+              <div class="col-md-12">
+                <div class="graphic-view"> 圖表預覽放這</div>
               </div>
               <div class="form-group col-md-12">
                 <label for="fileField10">小結</label>
@@ -186,12 +207,12 @@
                 <label for="fileField12">自訂標題</label>
                 <input type="text" class="form-control">
               </div>
-              <div class="col-md-12">
-                <div class="graphic-view"> 圖表預覽放這</div>
-              </div>
               <div class="form-group col-md-12">
                 <label for="fileField13">圖表說明</label>
                 <textarea name="textarea4" rows="5" class="form-control"></textarea>
+              </div>
+              <div class="col-md-12">
+                <div class="graphic-view"> 圖表預覽放這</div>
               </div>
               <div class="form-group col-md-12">
                 <label for="fileField14">小結</label>
@@ -211,6 +232,10 @@
                 <label for="fileField16">自訂標題</label>
                 <input type="text" class="form-control">
               </div>
+              <div class="form-group col-md-12">
+                <label for="fileField26">圖表說明</label>
+                <textarea name="textarea9" rows="5" class="form-control"></textarea>
+              </div>
               <div class="col-md-12">
                 <div class="graphic-view"> 連署人名圖表預覽放這，應該是用iframe嵌入即可 </div>
               </div>
@@ -219,10 +244,6 @@
               </div>
               <div class="col-md-6">
                 <div class="graphic-view"> 各黨提案連署人百分比圖表預覽放這，應該是用iframe嵌入即可 </div>
-              </div>
-              <div class="form-group col-md-12">
-                <label for="fileField17">圖表說明</label>
-                <textarea name="textarea5" rows="5" class="form-control"></textarea>
               </div>
               <div class="form-group col-md-12">
                 <label for="fileField18">小結</label>
@@ -242,15 +263,15 @@
                 <label for="fileField20">自訂標題</label>
                 <input type="text" class="form-control">
               </div>
+              <div class="form-group col-md-12">
+                <label for="fileField27">圖表說明</label>
+                <textarea name="textarea10" rows="5" class="form-control"></textarea>
+              </div>
               <div class="col-md-12">
                 <div class="graphic-view gv-s"> 連署人名圖表預覽放這，應該是用iframe嵌入即可 </div>
               </div>
               <div class="col-md-12">
                 <div class="graphic-view"> 連署人名圖表預覽放這，應該是用iframe嵌入即可 </div>
-              </div>
-              <div class="form-group col-md-12">
-                <label for="fileField21">圖表說明</label>
-                <textarea name="textarea6" rows="5" class="form-control"></textarea>
               </div>
               <div class="form-group col-md-12">
                 <label for="fileField22">小結</label>
@@ -267,7 +288,7 @@
   </div>
   <div class="text-center">
     <button type="submit" class="btn btn-primary" onclick="javascript:location.href='page-law-comparison-02-add.html'">儲存及上一步</button>
-    <button type="submit" class="btn btn-primary" onclick="javascript:location.href='page-law-comparison-04-add.html'">儲存</button>
+    <button type="submit" class="btn btn-primary">儲存</button>
   </div>
 </div>
 </div>

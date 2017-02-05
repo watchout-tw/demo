@@ -53,6 +53,8 @@
             <li><a href="page-law-comparison-list.html">立委修法版本比較頁/提案連署統計管理</a></li>
             <li><a href="page-say-standpoint-list.html">立委/政黨發言立場統計頁管理</a></li>
             <li><a href="page-issue-list.html">小議題首頁管理</a></li>
+<li><a href="page-template-list.html">樣板設定管理</a></li>
+<li><a href="page-type-list.html">頁面類型清單</a></li>
           </ul>
         </li>
       </ul>
@@ -225,7 +227,7 @@
           </div>
         </div>
         <div class="panel panel-default">
-          <div class="panel-heading">法案圖表系列頁面時間軸顯示群組設定</div>
+          <div class="panel-heading">法案圖表系列頁面時間軸顯示群組設定（放這跟目前前台規劃頁面對照會不直覺。但放這原因是法案圖表系列頁面的時間軸上，顯示的群組有可能跨「資料源」，所以本功能無法單純放在「資料源設定」）</div>
           <div class="panel-body">
             <div class="col-md-12">
               <table class="table">
@@ -233,115 +235,43 @@
                   <tr>
                     <td width="5%">順序</td>
                     <td width="30%"><lable>群組版本名稱</lable></td>
-                    <td width="60%"><p>群組版本框選（顯示此議題關聯的所有法案版本）</p></td>
+                    <td width="60%"><p>法案資料源 </p></td>
                     <td width="5%">操作</td>
                   </tr>
                   <tr>
                     <td><input type="text" class="form-control"></td>
                     <td><input type="text" class="form-control"></td>
-                    <td><div class="col-md-12">
-                      <div class="checkbox-inline">
-                        <label>
-                          <input type="checkbox" value="">
-                          原法案版本</label>
-                      </div>
-                      <div class="checkbox-inline">
-                        <label>
-                          <input type="checkbox" value="">
-                          行政院版本</label>
-                      </div>
-                      <div class="checkbox-inline">
-                        <label>
-                          <input type="checkbox" value="">
-                          A委員</label>
-                      </div>
-                      <div class="checkbox-inline">
-                        <label>
-                          <input type="checkbox" value="">
-                          B委員</label>
-                      </div>
-                    </div></td>
+                    <td><select name="select11" class="form-control">
+                      <option>資料源名稱A</option>
+                      <option>資料源名稱B</option>
+                    </select></td>
                     <td><a href="page-law-comparison-01-add.html" class="btn btn-primary">新增</a></td>
                   </tr>
                   <tr>
                     <td><input type="text" class="form-control"></td>
                     <td><input type="text" class="form-control"></td>
-                    <td><div class="col-md-12">
-                      <div class="checkbox-inline">
-                        <label>
-                          <input type="checkbox" value="">
-                          原法案版本</label>
-                      </div>
-                      <div class="checkbox-inline">
-                        <label>
-                          <input type="checkbox" value="">
-                          行政院版本</label>
-                      </div>
-                      <div class="checkbox-inline">
-                        <label>
-                          <input type="checkbox" value="">
-                          A委員</label>
-                      </div>
-                      <div class="checkbox-inline">
-                        <label>
-                          <input type="checkbox" value="">
-                          B委員</label>
-                      </div>
-                    </div></td>
+                    <td><select name="select12" class="form-control">
+                      <option>資料源名稱A</option>
+                      <option>資料源名稱B</option>
+                    </select></td>
                     <td><a href="#" class="btn btn-link" data-toggle="modal" data-target="#myModal">刪除</a></td>
                   </tr>
                   <tr>
                     <td><input type="text" class="form-control"></td>
                     <td><input type="text" class="form-control"></td>
-                    <td><div class="col-md-12">
-                      <div class="checkbox-inline">
-                        <label>
-                          <input type="checkbox" value="">
-                          原法案版本</label>
-                      </div>
-                      <div class="checkbox-inline">
-                        <label>
-                          <input type="checkbox" value="">
-                          行政院版本</label>
-                      </div>
-                      <div class="checkbox-inline">
-                        <label>
-                          <input type="checkbox" value="">
-                          A委員</label>
-                      </div>
-                      <div class="checkbox-inline">
-                        <label>
-                          <input type="checkbox" value="">
-                          B委員</label>
-                      </div>
-                    </div></td>
+                    <td><select name="select13" class="form-control">
+                      <option>資料源名稱A</option>
+                      <option>資料源名稱B</option>
+                    </select></td>
                     <td><a href="#" class="btn btn-link" data-toggle="modal" data-target="#myModal">刪除</a></td>
                   </tr>
                   <tr>
                     <td><input type="text" class="form-control"></td>
                     <td><input type="text" class="form-control"></td>
-                    <td><div class="col-md-12">
-                      <div class="checkbox-inline">
-                        <label>
-                          <input type="checkbox" value="">
-                          原法案版本</label>
-                      </div>
-                      <div class="checkbox-inline">
-                        <label>
-                          <input type="checkbox" value="">
-                          行政院版本</label>
-                      </div>
-                      <div class="checkbox-inline">
-                        <label>
-                          <input type="checkbox" value="">
-                          A委員</label>
-                      </div>
-                      <div class="checkbox-inline">
-                        <label>
-                          <input type="checkbox" value="">
-                          B委員</label>
-                      </div>
-                    </div></td>
+                    <td><select name="select14" class="form-control">
+                      <option>資料源名稱A</option>
+                      <option>資料源名稱B</option>
+                    </select></td>
                     <td><a href="#" class="btn btn-link" data-toggle="modal" data-target="#myModal">刪除</a></td>
                   </tr>
                 </tbody>
@@ -356,13 +286,15 @@
               <h3 class="text-center">立委修法版本比較</h3>
                 <table class="table">
                   <tr>
-                    <th width="34%">修法方向</th>
-                    <th width="43%">法案名目</th>
-                    <th width="23%">顯示</th>
+                    <th width="27%">修法方向</th>
+                    <th width="31%">法案名目</th>
+                    <th width="17%">上下架狀態</th>
+                    <th width="25%">顯示</th>
                   </tr>
                   <tr>
                     <td>降低罷免門檻</td>
                     <td>公職人員選舉罷免法</td>
+                    <td>上架</td>
                     <td><select name="select" class="form-control">
                         <option>是</option>
                         <option>否</option>
@@ -371,6 +303,7 @@
                   <tr>
                     <td>提高罷免門檻</td>
                     <td>公職人員選舉罷免法</td>
+                    <td>上架</td>
                     <td><select name="select" class="form-control">
                         <option>是</option>
                         <option>否</option>
@@ -379,14 +312,16 @@
                   <tr>
                     <td>降低罷免門檻</td>
                     <td>總統副總統選舉罷免法</td>
-                    <td><select name="select" class="form-control">
-                        <option>是</option>
-                        <option>否</option>
-                      </select></td>
+                    <td>下架</td>
+                    <td><select name="select22" disabled class="form-control">
+                      <option>是</option>
+                      <option selected>否</option>
+                    </select></td>
                   </tr>
                   <tr>
                     <td>下修罷免門檻</td>
                     <td>公職人員選舉罷免法</td>
+                    <td>上架</td>
                     <td><select name="select" class="form-control">
                         <option>是</option>
                         <option>否</option>
@@ -395,6 +330,7 @@
                   <tr>
                     <td>降低罷免門檻</td>
                     <td>公職人員選舉罷免法</td>
+                    <td>上架</td>
                     <td><select name="select" class="form-control">
                         <option>是</option>
                         <option>否</option>
@@ -403,22 +339,25 @@
                   <tr>
                     <td>降低罷免門檻</td>
                     <td>總統副總統選舉罷免法</td>
-                    <td><select name="select" class="form-control">
-                        <option>是</option>
-                        <option>否</option>
-                      </select></td>
+                    <td>下架</td>
+                    <td><select name="select21" disabled class="form-control">
+                      <option>是</option>
+                      <option selected>否</option>
+                    </select></td>
                   </tr>
                 </table>
                 <h3 class="text-center">立委提案連署統計</h3>
                 <table class="table">
                   <tr>
-                    <th width="34%">修法方向</th>
-                    <th width="43%">法案名目</th>
-                    <th width="23%">顯示</th>
+                    <th width="27%">修法方向</th>
+                    <th width="31%">法案名目</th>
+                    <th width="17%">上下架狀態</th>
+                    <th width="25%">顯示</th>
                   </tr>
                   <tr>
                     <td>降低罷免門檻</td>
                     <td>公職人員選舉罷免法</td>
+                    <td>上架</td>
                     <td><select name="select3" class="form-control">
                       <option>是</option>
                       <option>否</option>
@@ -427,6 +366,7 @@
                   <tr>
                     <td>提高罷免門檻</td>
                     <td>公職人員選舉罷免法</td>
+                    <td>上架</td>
                     <td><select name="select3" class="form-control">
                       <option>是</option>
                       <option>否</option>
@@ -435,14 +375,16 @@
                   <tr>
                     <td>降低罷免門檻</td>
                     <td>總統副總統選舉罷免法</td>
-                    <td><select name="select3" class="form-control">
+                    <td>下架</td>
+                    <td><select name="select20" disabled class="form-control">
                       <option>是</option>
-                      <option>否</option>
+                      <option selected>否</option>
                     </select></td>
                   </tr>
                   <tr>
                     <td>下修罷免門檻</td>
                     <td>公職人員選舉罷免法</td>
+                    <td>上架</td>
                     <td><select name="select3" class="form-control">
                       <option>是</option>
                       <option>否</option>
@@ -451,6 +393,7 @@
                   <tr>
                     <td>降低罷免門檻</td>
                     <td>公職人員選舉罷免法</td>
+                    <td>上架</td>
                     <td><select name="select3" class="form-control">
                       <option>是</option>
                       <option>否</option>
@@ -459,20 +402,23 @@
                   <tr>
                     <td>降低罷免門檻</td>
                     <td>總統副總統選舉罷免法</td>
-                    <td><select name="select3" class="form-control">
+                    <td>下架</td>
+                    <td><select name="select19" disabled class="form-control">
                       <option>是</option>
-                      <option>否</option>
+                      <option selected>否</option>
                     </select></td>
                   </tr>
                 </table>
                 <h3 class="text-center">立委發言立場統計</h3>
                 <table class="table">
                   <tr>
-                    <th width="66%">爭點命題</th>
-                    <th width="34%">顯示</th>
+                    <th width="49%">爭點命題</th>
+                    <th width="19%">上下架</th>
+                    <th width="32%">顯示</th>
                   </tr>
                   <tr>
                     <td>你支持下修罷免門檻嗎？</td>
+                    <td>上架</td>
                     <td><select name="select2" class="form-control">
                       <option>是</option>
                       <option>否</option>
@@ -480,6 +426,7 @@
                   </tr>
                   <tr>
                     <td>你支持刪除禁制區嗎？</td>
+                    <td>上架</td>
                     <td><select name="select2" class="form-control">
                       <option>是</option>
                       <option>否</option>
@@ -487,55 +434,62 @@
                   </tr>
                   <tr>
                     <td>你支持下修罷免門檻嗎？</td>
-                    <td><select name="select2" class="form-control">
+                    <td>下架</td>
+                    <td><select name="select18" disabled class="form-control">
                       <option>是</option>
-                      <option>否</option>
+                      <option selected>否</option>
                     </select></td>
                   </tr>
                   <tr>
                     <td>你支持刪除禁制區嗎？</td>
-                    <td><select name="select2" class="form-control">
+                    <td>下架</td>
+                    <td><select name="select17" disabled class="form-control">
                       <option>是</option>
-                      <option>否</option>
+                      <option selected>否</option>
                     </select></td>
                   </tr>
               </table>
               <h3 class="text-center">政黨發言立場統計</h3>
-                <table class="table">
-                  <tr>
-                    <th width="66%">爭點命題</th>
-                    <th width="34%">顯示</th>
-                  </tr>
-                  <tr>
-                    <td>你支持下修罷免門檻嗎？</td>
-                    <td><select name="select2" class="form-control">
-                      <option>是</option>
-                      <option>否</option>
-                    </select></td>
-                  </tr>
-                  <tr>
-                    <td>你支持刪除禁制區嗎？</td>
-                    <td><select name="select2" class="form-control">
-                      <option>是</option>
-                      <option>否</option>
-                    </select></td>
-                  </tr>
-                  <tr>
-                    <td>你支持下修罷免門檻嗎？</td>
-                    <td><select name="select2" class="form-control">
-                      <option>是</option>
-                      <option>否</option>
-                    </select></td>
-                  </tr>
-                  <tr>
-                    <td>你支持刪除禁制區嗎？</td>
-                    <td><select name="select2" class="form-control">
-                      <option>是</option>
-                      <option>否</option>
-                    </select></td>
-                  </tr>
+              <table class="table">
+                <tr>
+                  <th width="49%">爭點命題</th>
+                  <th width="19%">上下架</th>
+                  <th width="32%">顯示</th>
+                </tr>
+                <tr>
+                  <td>你支持下修罷免門檻嗎？</td>
+                  <td>上架</td>
+                  <td><select name="select15" class="form-control">
+                    <option>是</option>
+                    <option>否</option>
+                  </select></td>
+                </tr>
+                <tr>
+                  <td>你支持刪除禁制區嗎？</td>
+                  <td>上架</td>
+                  <td><select name="select15" class="form-control">
+                    <option>是</option>
+                    <option>否</option>
+                  </select></td>
+                </tr>
+                <tr>
+                  <td>你支持下修罷免門檻嗎？</td>
+                  <td>下架</td>
+                  <td><select name="select16" disabled class="form-control">
+                    <option>是</option>
+                    <option selected>否</option>
+                  </select></td>
+                </tr>
+                <tr>
+                  <td>你支持刪除禁制區嗎？</td>
+                  <td>下架</td>
+                  <td><select name="select15" disabled class="form-control">
+                    <option>是</option>
+                    <option selected>否</option>
+                  </select></td>
+                </tr>
               </table>
-              </div>
+            </div>
           </div>
         </div>
         <div class="panel panel-default">
